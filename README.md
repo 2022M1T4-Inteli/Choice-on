@@ -18,7 +18,7 @@ O jogo se desenrola em um ambiente escolar (feira de ciências), onde o jogador 
 <br><br>
 <p align="center">
 <img src="https://github.com/2022M1T4/Projeto1/blob/main/images/Choice%20on.jpeg?raw=true" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+  Logo Choice On by <a href="http://www.nyphotographic.com/">Joao Gonzalez</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
 
