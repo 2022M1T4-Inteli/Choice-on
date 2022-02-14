@@ -8,7 +8,7 @@
 
 ## Nome do Grupo: Future Minds
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Pedro Romão</a>, <a href="https://www.linkedin.com/in/victorbarq/">Allan Casado</a>, <a href="https://www.linkedin.com/in/victorbarq/">Gabriela Barretto</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Gonzalez</a>, <a href="https://www.linkedin.com/in/victorbarq/">Bianca Lima</a>, <a href="https://www.linkedin.com/in/victorbarq/">Camila Anacleto</a>
+## Integrantes: <a href="https://www.linkedin.com/in/pedro-romão-734b4920a/">Pedro Romão</a>, <a href="https://www.linkedin.com/in/victorbarq/">Allan Casado</a>, <a href="https://www.linkedin.com/in/victorbarq/">Gabriela Barretto</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Gonzalez</a>, <a href="https://www.linkedin.com/in/victorbarq/">Bianca Lima</a>, <a href="https://www.linkedin.com/in/victorbarq/">Camila Anacleto</a>
 
 ## Descrição
 
