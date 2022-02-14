@@ -10,6 +10,10 @@
 
 ## Integrantes: <a href="https://www.linkedin.com/in/pedro-romão-734b4920a/">Pedro Romão</a>, <a href="https://www.linkedin.com/in/victorbarq/">Allan Casado</a>, <a href="https://www.linkedin.com/in/victorbarq/">Gabriela Barretto</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Gonzalez</a>, <a href="https://www.linkedin.com/in/victorbarq/">Bianca Lima</a>, <a href="https://www.linkedin.com/in/victorbarq/">Camila Anacleto</a>
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99193652/153876844-699982fd-914f-491f-a33e-aa0ad8b4c766.png">
+
+
 ## Descrição
 
 📜 Descrição curta sobre o que seu projeto faz.
