@@ -2,7 +2,7 @@
 
 [ext_resource path="res://sprites/logo.png" type="Texture" id=1]
 [ext_resource path="res://sprites/background menu.png" type="Texture" id=2]
-[ext_resource path="res://sprites/sprite_botao-removebg-preview.png" type="Texture" id=3]
+[ext_resource path="res://sprites/botãoMenu.png" type="Texture" id=3]
 [ext_resource path="res://GD/menu.gd" type="Script" id=4]
 
 [sub_resource type="AnimatedTexture" id=1]

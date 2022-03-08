@@ -1,4 +1,6 @@
 extends KinematicBody2D
+
+#váriaveis desse código
 const speed = 60
 const gravity = 9.8
 const Floor = Vector2(0, -1)
@@ -6,6 +8,7 @@ var velocity = Vector2()
 var bateu = false
 var sentido = "direita"
 func _physics_process(delta):
+	#Detecta se o personagem precisa inverter o movimento
 	if is_on_wall() == true:
 		bateu = true
 		if sentido == "direita":
