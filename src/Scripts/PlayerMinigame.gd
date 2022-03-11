@@ -3,10 +3,10 @@ extends KinematicBody2D
 var motion = Vector2(0,0)
 var up = Vector2(0,-1)
 
-const JUMPFORCE = 700
+const JUMPFORCE = 700 
 const GRAVITY = 25
-const WALL_SLIDE_ACC = 15
-const MAX_WALL_SLIDE_SPEED = 120
+const WALL_SLIDE_ACC = 15 #aceleração quando na parede
+const MAX_WALL_SLIDE_SPEED = 120 #velocidade maxima quando na parede
 
 var countJump = 0
 
@@ -24,17 +24,17 @@ func _physics_process(delta):
 	else:
 		$AnimatedSprite.play("idle")
 
-	if Input.is_action_just_pressed("pulo") && countJump < 2:
+	if Input.is_action_just_pressed("pulo") && countJump < 2: #funcao para executar o pulo e pulo duplo, limitando o player
 		motion.y = -JUMPFORCE
 		countJump += 1
 
-	if is_on_wall() && (Input.is_action_pressed("ui_left") || Input.is_action_pressed("ui_right")):
+	if is_on_wall() && (Input.is_action_pressed("ui_left") || Input.is_action_pressed("ui_right")): #essa condicao permite o jogador deslizar devagar em contato com paredes
 		countJump == 1
 		if motion.y >= 0:
 			motion.y = min(motion.y + WALL_SLIDE_ACC, MAX_WALL_SLIDE_SPEED)
 	
 	motion = move_and_slide(motion, up) #move and slide para executar a movimentação
-	a_gravity()
+	a_gravity() #funcao que aplica a gravidade e reinicia o pulo duplo
 
 	#esse estilo de código deixa o personagem sem freio |||
 
@@ -52,7 +52,7 @@ func a_gravity():
 
 
 func _on_Fallzone1_body_entered(body):
-	get_tree().change_scene("res://TSCN/Cena1.tscn")
+	get_tree().change_scene("res://TSCN/Cena1.tscn") #funcao exclusiva da interacao do player com a fallzone
 
 
 func _on_Fallzone2_body_entered(body):
