@@ -24,7 +24,7 @@ func _physics_process(delta):
 	else:
 		$AnimatedSprite.play("idle")
 
-	if Input.is_action_just_pressed("pulo") && countJump < 2: #funcao para executar o pulo e pulo duplo, limitando o player
+	if Input.is_action_just_pressed("pulo") && countJump < 2: #condicao para executar o pulo e pulo duplo, limitando o player
 		motion.y = -JUMPFORCE
 		countJump += 1
 
