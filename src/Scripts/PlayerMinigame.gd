@@ -24,9 +24,14 @@ func _physics_process(delta):
 	else:
 		$AnimatedSprite.play("idle")
 
-	if Input.is_action_just_pressed("pulo") && countJump < 2: #condicao para executar o pulo e pulo duplo, limitando o player
-		motion.y = -JUMPFORCE
-		countJump += 1
+	if Input.is_action_just_pressed("pulo"):
+		
+		if countJump < 2:
+			motion.y = -JUMPFORCE
+			if is_on_wall() && Input.is_action_pressed("ui_right"):
+				motion.x = -SPEED
+			elif is_on_wall() && Input.is_action_pressed("ui_left"):
+				motion.x = +SPEED
 
 	if is_on_wall() && (Input.is_action_pressed("ui_left") || Input.is_action_pressed("ui_right")): #essa condicao permite o jogador deslizar devagar em contato com paredes
 		countJump == 1
