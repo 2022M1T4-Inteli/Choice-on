@@ -3,7 +3,7 @@ extends KinematicBody2D
 var motion = Vector2(0,0)
 var up = Vector2(0,-1)
 var points = 0
-var side = 2
+var side = "zero"
 
 const SPEED = 460
 const JUMPFORCE = 700
@@ -30,21 +30,21 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("pulo"): #funçao para pular, e pular nas paredes
 		if countJump < 2:
 			motion.y = -JUMPFORCE
-			if is_on_wall() && Input.is_action_pressed("ui_right") && side != 1:
+			if is_on_wall() && Input.is_action_pressed("ui_right"):
 				motion.x = -SPEED
-			elif is_on_wall() && Input.is_action_pressed("ui_left") && side != 0:
+			elif is_on_wall() && Input.is_action_pressed("ui_left"):
 				motion.x = +SPEED
 		countJump += 1
 
-	if is_on_wall() && Input.is_action_pressed("ui_left"):
+	if is_on_wall() && Input.is_action_pressed("ui_left") && side != "left":
 		countJump = 1
-		side = 0
+		side = "left"
 		if motion.y >= 0:
 			motion.y = min(motion.y + WALL_SLIDE_ACC, MAX_WALL_SLIDE_SPEED)
 			
-	if is_on_wall() && Input.is_action_pressed("ui_right"):
+	if is_on_wall() && Input.is_action_pressed("ui_right") && side != "right":
 		countJump = 1
-		side = 1
+		side = "right"
 		if motion.y >= 0:
 			motion.y = min(motion.y + WALL_SLIDE_ACC, MAX_WALL_SLIDE_SPEED)
 	
@@ -57,12 +57,13 @@ func _physics_process(delta):
 
 	print(motion.y)
 	print(motion.x)
+	print(side)
 
 func a_gravity():
 	if is_on_floor():
 		countJump = 0
 		motion.y = 0
-		side = 2
+		side = "zero"
 	else:
 		motion.y += GRAVITY
 
