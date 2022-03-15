@@ -17,9 +17,9 @@ func _physics_process(delta):
 	
 	move_and_slide(motion * SPEED)
 	
-	if Input.is_action_pressed("pulo") && onTenda==true:
+	if Input.is_action_pressed("pulo") && onTenda == true:
 		#get_tree().change_scene("res://TSCN/professor.tscn")
 		get_tree().change_scene("res://TSCN/Cena1.tscn")
 
-func _on_Tenda2_body_entered(body):
+func onTenda():
 	onTenda = true
