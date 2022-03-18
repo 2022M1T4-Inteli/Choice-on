@@ -8,4 +8,4 @@ func _on_Sair_pressed():
 	get_tree().quit()
 
 func _on_Start_pressed():
-	get_tree().change_scene("res://TSCN/Feira.tscn")
+	get_tree().change_scene("res://Cenas/Feira.tscn")
