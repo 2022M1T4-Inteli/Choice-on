@@ -1,24 +1,60 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=20 format=2]
 
-[ext_resource path="res://sprites/boneco.png" type="Texture" id=1]
-[ext_resource path="res://GD/Player_Feira.gd" type="Script" id=2]
+[ext_resource path="res://sprites/spritegaroto/tile010.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Player_Feira.gd" type="Script" id=2]
+[ext_resource path="res://sprites/spritegaroto/tile015.png" type="Texture" id=3]
+[ext_resource path="res://sprites/spritegaroto/tile014.png" type="Texture" id=4]
+[ext_resource path="res://sprites/spritegaroto/tile007.png" type="Texture" id=5]
+[ext_resource path="res://sprites/spritegaroto/tile000.png" type="Texture" id=6]
+[ext_resource path="res://sprites/spritegaroto/tile005.png" type="Texture" id=7]
+[ext_resource path="res://sprites/spritegaroto/tile001.png" type="Texture" id=8]
+[ext_resource path="res://sprites/spritegaroto/tile011.png" type="Texture" id=9]
+[ext_resource path="res://sprites/spritegaroto/tile003.png" type="Texture" id=10]
+[ext_resource path="res://sprites/spritegaroto/tile008.png" type="Texture" id=11]
+[ext_resource path="res://sprites/spritegaroto/tile004.png" type="Texture" id=12]
+[ext_resource path="res://sprites/spritegaroto/tile006.png" type="Texture" id=13]
+[ext_resource path="res://sprites/spritegaroto/tile002.png" type="Texture" id=14]
+[ext_resource path="res://sprites/spritegaroto/tile013.png" type="Texture" id=15]
+[ext_resource path="res://sprites/spritegaroto/tile012.png" type="Texture" id=16]
+[ext_resource path="res://sprites/spritegaroto/tile009.png" type="Texture" id=17]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 33.5715, 52.1429 )
+extents = Vector2( 22.1429, 43.5714 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 7 ), ExtResource( 13 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "walk up",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "walk down",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 17 ), ExtResource( 1 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walk left",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 15 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "walk right",
+"speed": 8.0
+} ]
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 162, 106 )
+position = Vector2( 160, 99 )
 scale = Vector2( 0.7, 0.7 )
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -5.00012, -2.14285 )
+position = Vector2( -6.4286, 10.7143 )
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -1.42859, -1.42859 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 1 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -8.57144, 5.71428 )
+scale = Vector2( 0.475, 0.475 )
+frames = SubResource( 2 )
+animation = "walk left"
