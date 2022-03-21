@@ -20,8 +20,13 @@ func _physics_process(delta):
 	if direction == 1:
 		motion.x = SPEED
 	else:
-		motion.x = SPEED * -1
+		motion.x = -SPEED 
 
 	motion.y += GRAVITY
 
 	motion = move_and_slide(motion, up)
+
+func _on_FallzoneMob_body_entered(body):
+	print("morri")
+	body.queue_free()
+#	MobSpawner.limite += 1
