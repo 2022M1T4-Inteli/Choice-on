@@ -90,6 +90,7 @@ Classglobal="*res://Scripts/classglobal.gd"
 
 [display]
 
+window/size/height=565
 window/size/resizable=false
 
 [editor_plugins]
