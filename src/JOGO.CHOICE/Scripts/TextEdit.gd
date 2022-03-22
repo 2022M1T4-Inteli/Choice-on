@@ -42,21 +42,21 @@ func _process(delta):
 		
 func load_dialog():
 	self.visible = true
-	Classglobal.frozen == true
+	Classglobal.frozen = true
 	if Classglobal.Scene == "feira":
 		if dialogNumber_D < dialogDiretor.size():
 			self.text = dialogDiretor[dialogNumber_D]
 			dialogNumber_D += 1
 		else:
 			self.visible = false
-			Classglobal.frozen == false
+			Classglobal.frozen = false
 	elif Classglobal.Scene == "professor":
 		if dialogNumber_P < dialogProfessor.size():
 			print("professor")
 			self.text = dialogProfessor[dialogNumber_P]
 			dialogNumber_P += 1
 		else:
-			Classglobal.frozen== false
+			Classglobal.frozen= false
 
 #func load_Artefatos():
 #	self.visible = true

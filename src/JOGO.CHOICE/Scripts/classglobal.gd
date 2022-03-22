@@ -1,5 +1,5 @@
 extends Node
 
-var frozen
+var frozen = true
 
 var Scene 

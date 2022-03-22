@@ -52,7 +52,7 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 14026, 4205 )
+position = Vector2( 14097, 4192 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -97,29 +97,23 @@ limit_right = 17600
 limit_bottom = 6095
 
 [node name="Artefatos" type="Node2D" parent="."]
-visible = false
 
 [node name="Artefato" parent="Artefatos" instance=ExtResource( 5 )]
-visible = false
 show_behind_parent = true
 light_mask = 0
-position = Vector2( 1099, -660 )
+position = Vector2( 677, 3307 )
 
 [node name="Artefato2" parent="Artefatos" instance=ExtResource( 5 )]
-visible = false
 position = Vector2( 719, 81 )
 
 [node name="Artefato3" parent="Artefatos" instance=ExtResource( 5 )]
-visible = false
 position = Vector2( 1252, 348 )
 
 [node name="Artefato4" parent="Artefatos" instance=ExtResource( 5 )]
-visible = false
 position = Vector2( 521, -268 )
 
 [node name="Artefato5" parent="Artefatos" instance=ExtResource( 5 )]
-visible = false
-position = Vector2( 594, 1289 )
+position = Vector2( 589, 3060 )
 
 [node name="Fallzones" type="Node2D" parent="."]
 visible = false

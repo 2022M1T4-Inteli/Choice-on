@@ -9,7 +9,7 @@ func _ready():
 	$Button4/Resposta4.text = 'Quarta'
 
 func _on_Button_pressed():
-	#get_tree().change_scene(Cena aqui)
+	#get_tree().change_scene(Proxima Cena)
 	pass
 
 
