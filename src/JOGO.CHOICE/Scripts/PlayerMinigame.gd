@@ -6,7 +6,7 @@ var points = 0
 var side = "zero"
 
 const SPEED = 460
-const JUMPFORCE = 700
+const JUMPFORCE = 670
 const GRAVITY = 25
 const WALL_SLIDE_ACC = 15
 const MAX_WALL_SLIDE_SPEED = 120
@@ -17,7 +17,6 @@ func _physics_process(delta):
 
 	if Input.is_action_pressed("ui_right"): #Leitor de Input, analisa e age no eixo x do player
 		motion.x = SPEED
-#		get_parent().get_node("Player/AnimatedSprite")
 		$AnimatedSprite.play("walk") #relaciona o sprite certo ao movimento do player
 		$AnimatedSprite.flip_h = false
 
@@ -51,18 +50,10 @@ func _physics_process(delta):
 
 	motion = move_and_slide(motion, up) #move and slide para executar a movimentação
 	a_gravity()
-	
-#	if Artefato.PLAYER == true:
-#		print("fofofofofofofofo")
-#		GlobalTextEdit.load_Artefatos()
-#	foundArtefato()
+
 #	esse estilo de código deixa o personagem sem freio |||
 
 	motion.x = lerp(motion.x,0,0.5) # Lerp permite a nice gliding stop |||
-
-#	print(motion.y)
-#	print(motion.x)
-#	print(side)
 
 func a_gravity():
 	if is_on_floor():
@@ -71,11 +62,6 @@ func a_gravity():
 		side = "zero"
 	else:
 		motion.y += GRAVITY
-
-#func foundArtefato():
-#	if Artefato.PLAYER == true:
-#		print("fofofofofofofofo")
-#		GlobalTextEdit.load_Artefatos()
 
 func _on_Fallzone1_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn") 

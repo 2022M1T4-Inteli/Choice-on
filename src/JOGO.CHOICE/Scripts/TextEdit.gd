@@ -56,7 +56,7 @@ func load_dialog():
 			self.text = dialogProfessor[dialogNumber_P]
 			dialogNumber_P += 1
 		else:
-			Classglobal.frozen= false
+			Classglobal.frozen = false
 
 #func load_Artefatos():
 #	self.visible = true

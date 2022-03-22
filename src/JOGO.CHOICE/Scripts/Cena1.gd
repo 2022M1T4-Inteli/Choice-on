@@ -2,6 +2,7 @@ extends Node2D
 
 func _ready():
 	Classglobal.Scene = "Cena 1"
+	Classglobal.lives = 10
 	pass 
 
 func _process(delta):
@@ -16,6 +17,9 @@ func _process(delta):
 			$Player/Camera2D.current = true
 			$Player/Sprite.visible = false
 			$Player/Sprite2.visible = false
+			
+		if Classglobal.lives <= 0:
+			get_tree().change_scene("res://Cenas/Cena1.tscn")
 			
 
 

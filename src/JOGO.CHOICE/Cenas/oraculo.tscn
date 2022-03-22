@@ -37,7 +37,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 11.7209, 4.77013 )
+extents = Vector2( 31.0962, 20.3403 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -64,7 +64,8 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Area2D"]
-position = Vector2( 0.0992546, -0.161005 )
+position = Vector2( 19.4745, -12.3974 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="Quizz" parent="." instance=ExtResource( 3 )]
