@@ -79,3 +79,4 @@ __meta__ = {
 
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
 [connection signal="pressed" from="Sair" to="." method="_on_Sair_pressed"]
+[connection signal="toggled" from="CheckButton" to="." method="_on_CheckButton_toggled"]
