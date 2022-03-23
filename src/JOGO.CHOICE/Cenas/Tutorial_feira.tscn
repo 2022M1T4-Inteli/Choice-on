@@ -40,15 +40,15 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=23]
 animations = [ {
-"frames": [ ExtResource( 19 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 28 ) ],
-"loop": true,
-"name": "left",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 24 ), ExtResource( 17 ), ExtResource( 29 ) ],
 "loop": true,
 "name": "right",
 "speed": 6.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "left",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 25 ), ExtResource( 23 ), ExtResource( 18 ), ExtResource( 20 ) ],
 "loop": true,
@@ -104,7 +104,7 @@ position = Vector2( 1026, 126 )
 scale = Vector2( 3.83858, 3.51389 )
 frames = SubResource( 5 )
 animation = "setas"
-frame = 4
+frame = 3
 playing = true
 script = ExtResource( 12 )
 
@@ -131,7 +131,7 @@ position = Vector2( 144, 407 )
 scale = Vector2( 0.449375, 0.391607 )
 frames = SubResource( 23 )
 animation = "left"
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Node2D/garoto"]
@@ -186,7 +186,6 @@ __meta__ = {
 position = Vector2( 1274.89, 259.194 )
 scale = Vector2( 0.476128, 0.414847 )
 frames = SubResource( 6 )
-frame = 1
 playing = true
 offset = Vector2( -967.489, 205.632 )
 
@@ -206,7 +205,7 @@ script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-dialogPath = "C:\\Users\\prcd2\\Documents\\JOGO.CHOICE\\dialogotutorialfeira.json"
+dialogPath = "C:\\Users\\Inteli\\Documents\\GitHub\\Projeto1\\src\\JOGO.CHOICE\\dialogotutorialfeira.json"
 
 [node name="Text" type="RichTextLabel" parent="ColorRect"]
 margin_left = 123.0

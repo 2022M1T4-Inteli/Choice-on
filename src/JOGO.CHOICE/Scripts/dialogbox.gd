@@ -17,7 +17,7 @@ func _ready():
 
 func _process(delta):
 	
-	if Input.is_action_just_pressed("ui_select"):
+	if Input.is_key_pressed(KEY_E):
 		if finished:
 			nextphrase()
 		else:
