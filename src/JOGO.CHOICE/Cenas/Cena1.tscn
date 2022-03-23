@@ -112,7 +112,6 @@ position = Vector2( 5156, 2363 )
 position = Vector2( 5083, 2363 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-visible = false
 position = Vector2( 4316, 3280 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -147,7 +146,7 @@ __meta__ = {
 }
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( 3995, 2120 )
+position = Vector2( 3845, 2120 )
 scale = Vector2( 2222.95, -77.3916 )
 zoom = Vector2( 10, 10 )
 limit_left = 0
