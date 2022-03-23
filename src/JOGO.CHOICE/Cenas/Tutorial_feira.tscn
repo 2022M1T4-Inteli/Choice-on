@@ -1,0 +1,274 @@
+[gd_scene load_steps=37 format=2]
+
+[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (2).png" type="Texture" id=1]
+[ext_resource path="res://sprites/setas/seta11.png" type="Texture" id=2]
+[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=3]
+[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (1).png" type="Texture" id=4]
+[ext_resource path="res://sprites/setas/seta22.png" type="Texture" id=5]
+[ext_resource path="res://sprites/moedas/spriteboy/maxresdefault.jpg" type="Texture" id=6]
+[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (5).png" type="Texture" id=7]
+[ext_resource path="res://sprites/setas/seta33.png" type="Texture" id=8]
+[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker.png" type="Texture" id=9]
+[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (4).png" type="Texture" id=10]
+[ext_resource path="res://script/dialogbox.gd" type="Script" id=11]
+[ext_resource path="res://script/seta.gd" type="Script" id=12]
+[ext_resource path="res://script/garoto.gd" type="Script" id=13]
+[ext_resource path="res://sprites/tileset/caminhozin.tres" type="TileSet" id=14]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "setas",
+"speed": 0.5
+} ]
+
+[sub_resource type="StreamTexture" id=8]
+flags = 4
+load_path = "res://.import/tile013.png-106fe25f5f9fa5b9fb4c0a6be8962cc0.stex"
+
+[sub_resource type="StreamTexture" id=9]
+flags = 4
+load_path = "res://.import/tile015.png-d6d4b2b03ea3a539bc318fa39244b446.stex"
+
+[sub_resource type="StreamTexture" id=10]
+flags = 4
+load_path = "res://.import/tile014.png-0d1846808dbc9f95a19de9b68867a7dc.stex"
+
+[sub_resource type="StreamTexture" id=11]
+flags = 4
+load_path = "res://.import/tile008.png-02780bc66684bff4baad3cb789c316a8.stex"
+
+[sub_resource type="StreamTexture" id=12]
+flags = 4
+load_path = "res://.import/tile009.png-66f9374ef8962934ab412da916302792.stex"
+
+[sub_resource type="StreamTexture" id=13]
+flags = 4
+load_path = "res://.import/tile010.png-5e810d7cd97129c94e931d7e55911f5f.stex"
+
+[sub_resource type="StreamTexture" id=14]
+flags = 4
+load_path = "res://.import/tile011.png-70588364141d5a42692c2412ce96cd3d.stex"
+
+[sub_resource type="StreamTexture" id=15]
+flags = 4
+load_path = "res://.import/tile004.png-301ee1d03a35221b54c826084c865de8.stex"
+
+[sub_resource type="StreamTexture" id=16]
+flags = 4
+load_path = "res://.import/tile005.png-3ba39d4d9139f92e28caaef7711f80fa.stex"
+
+[sub_resource type="StreamTexture" id=17]
+flags = 4
+load_path = "res://.import/tile006.png-0215ee315700a30722ebdbc7acf6f34c.stex"
+
+[sub_resource type="StreamTexture" id=18]
+flags = 4
+load_path = "res://.import/tile007.png-7c9484f7ad64e61ca3cc9012cb8127b8.stex"
+
+[sub_resource type="StreamTexture" id=19]
+flags = 4
+load_path = "res://.import/tile000.png-4decb4429c104ef6abd4f06ed0cd9cb9.stex"
+
+[sub_resource type="StreamTexture" id=20]
+flags = 4
+load_path = "res://.import/tile001.png-4c4f8c5779296750e0beee5eb835f7d1.stex"
+
+[sub_resource type="StreamTexture" id=21]
+flags = 4
+load_path = "res://.import/tile002.png-569945740fd5bf85c26c792362dc75bc.stex"
+
+[sub_resource type="StreamTexture" id=22]
+flags = 4
+load_path = "res://.import/tile003.png-137c7a1f1a3a881bb60bb3646be9fa5a.stex"
+
+[sub_resource type="SpriteFrames" id=23]
+animations = [ {
+"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "right",
+"speed": 6.0
+}, {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": true,
+"name": "left",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
+"loop": true,
+"name": "up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 19 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ) ],
+"loop": true,
+"name": "down",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=24]
+radius = 25.0
+
+[sub_resource type="RectangleShape2D" id=26]
+extents = Vector2( 32.8151, 8.88195 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 10 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+} ]
+
+[sub_resource type="CircleShape2D" id=7]
+radius = 19.0263
+
+[sub_resource type="BitmapFont" id=25]
+
+[node name="Tutorial_feira" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Background" type="Sprite" parent="Node2D"]
+position = Vector2( 643.5, 382 )
+scale = Vector2( 1.00703, 1.07222 )
+texture = ExtResource( 6 )
+
+[node name="setas" type="AnimatedSprite" parent="Node2D"]
+position = Vector2( 1026, 126 )
+scale = Vector2( 3.83858, 3.51389 )
+frames = SubResource( 5 )
+animation = "setas"
+frame = 5
+playing = true
+script = ExtResource( 12 )
+
+[node name="SetaTimer" type="Timer" parent="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="Node2D"]
+position = Vector2( 241, 478.5 )
+scale = Vector2( 4.93333, 4.92857 )
+tile_set = ExtResource( 14 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -65534, 1, 0, -65533, 1, 0, -65532, 1, 0, -65531, 1, 0, -65530, 1, 0, -65529, 1, 0, -65528, 1, 0, -65527, 1, 0, -65526, 1, 0, -65525, 1, 0, -65524, 1, 0, 65533, 1, 0, 65534, 1, 0, 65535, 1, 0, 0, 1, 0, 1, 1, 0, 2, 1, 0 )
+
+[node name="garoto" type="KinematicBody2D" parent="Node2D"]
+position = Vector2( -49, 75 )
+scale = Vector2( 1, 0.999997 )
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="boy" type="AnimatedSprite" parent="Node2D/garoto"]
+position = Vector2( 144, 407 )
+scale = Vector2( 0.449375, 0.391607 )
+frames = SubResource( 23 )
+animation = "left"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Node2D/garoto"]
+position = Vector2( 148, 411 )
+shape = SubResource( 24 )
+
+[node name="collisions" type="KinematicBody2D" parent="Node2D"]
+position = Vector2( -697, 570 )
+
+[node name="CollisionShape2" type="CollisionShape2D" parent="Node2D/collisions"]
+position = Vector2( 2104, -22 )
+rotation = 1.5708
+scale = Vector2( 1, 100 )
+shape = SubResource( 26 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/collisions"]
+position = Vector2( 696.779, 229.117 )
+rotation = -3.14159
+scale = Vector2( 1, 100 )
+shape = SubResource( 26 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/collisions"]
+position = Vector2( 1286, -315 )
+rotation = 1.5708
+scale = Vector2( 1, 100 )
+shape = SubResource( 26 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/collisions"]
+position = Vector2( 1287, 29 )
+rotation = 1.5708
+scale = Vector2( 1, 100 )
+shape = SubResource( 26 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Node2D/collisions"]
+position = Vector2( 159.805, -180.188 )
+rotation = 1.5708
+scale = Vector2( 1, 100 )
+shape = SubResource( 26 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Node2D/collisions"]
+position = Vector2( 1999, -587 )
+scale = Vector2( 1, 100 )
+shape = SubResource( 26 )
+
+[node name="moedaArea2D" type="Area2D" parent="Node2D"]
+position = Vector2( 23, 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="moeda" type="AnimatedSprite" parent="Node2D/moedaArea2D"]
+position = Vector2( 1274.89, 259.194 )
+scale = Vector2( 0.476128, 0.414847 )
+frames = SubResource( 6 )
+frame = 2
+playing = true
+offset = Vector2( -967.489, 205.632 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/moedaArea2D"]
+position = Vector2( 818, 346 )
+shape = SubResource( 7 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 21.0
+margin_top = 16.0
+margin_right = 611.0
+margin_bottom = 192.0
+grow_horizontal = 0
+size_flags_horizontal = 3
+color = Color( 0.01, 0.02, 0.005, 0 )
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+dialogPath = "C:\\Users\\Inteli\\Desktop\\tutorial\\dialogotutorialfeira.json"
+
+[node name="Text" type="RichTextLabel" parent="ColorRect"]
+margin_left = 123.0
+margin_top = 61.0
+margin_right = 553.0
+margin_bottom = 222.0
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/bold_font = SubResource( 25 )
+bbcode_enabled = true
+tab_size = 22
+custom_effects = [ null, null ]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="ColorRect"]
+
+[connection signal="timeout" from="Node2D/SetaTimer" to="Node2D/garoto" method="_on_SetaTimer_timeout"]
+[connection signal="body_entered" from="Node2D/moedaArea2D" to="Node2D/garoto" method="_on_moedaArea2D_body_entered"]
