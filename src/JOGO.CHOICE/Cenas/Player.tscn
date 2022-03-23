@@ -24,12 +24,12 @@ animation = "walk"
 
 [node name="Sprite" type="Sprite" parent="."]
 visible = false
-position = Vector2( -1, 12 )
-scale = Vector2( 0.316719, 0.316719 )
+position = Vector2( 1, 11 )
+scale = Vector2( 0.39961, 0.39961 )
 texture = ExtResource( 3 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 visible = false
-position = Vector2( 0, 4.00001 )
-scale = Vector2( 0.222061, 0.222061 )
+position = Vector2( 2, 11 )
+scale = Vector2( 0.269175, 0.269175 )
 texture = ExtResource( 4 )

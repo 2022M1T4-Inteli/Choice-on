@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=20 format=2]
+[gd_resource type="TileSet" load_steps=19 format=2]
 
 [ext_resource path="res://WorldTiles/tileYellow_23.png" type="Texture" id=6]
 [ext_resource path="res://WorldTiles/tileYellow_24.png" type="Texture" id=10]
@@ -8,7 +8,6 @@
 [ext_resource path="res://WorldTiles/tileYellow_05.png" type="Texture" id=18]
 [ext_resource path="res://WorldTiles/1.png" type="Texture" id=20]
 [ext_resource path="res://WorldTiles/rojo.png" type="Texture" id=21]
-[ext_resource path="res://WorldTiles/yelloww.jpg" type="Texture" id=22]
 [ext_resource path="res://WorldTiles/tijolo.jpg" type="Texture" id=23]
 [ext_resource path="res://WorldTiles/tijoloo.jpg" type="Texture" id=24]
 
@@ -191,20 +190,6 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 20/shape_one_way_margin = 0.0
 20/shapes = [  ]
 20/z_index = 0
-21/name = "yelloww.jpg 21"
-21/texture = ExtResource( 22 )
-21/tex_offset = Vector2( 0, 0 )
-21/modulate = Color( 1, 1, 1, 1 )
-21/region = Rect2( 0, 0, 32, 32 )
-21/tile_mode = 0
-21/occluder_offset = Vector2( 0, 0 )
-21/navigation_offset = Vector2( 0, 0 )
-21/shape_offset = Vector2( 0, 0 )
-21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-21/shape_one_way = false
-21/shape_one_way_margin = 0.0
-21/shapes = [  ]
-21/z_index = 0
 22/name = "tijolo.jpg 22"
 22/texture = ExtResource( 23 )
 22/tex_offset = Vector2( 0, 0 )

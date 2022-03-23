@@ -35,3 +35,6 @@ func _physics_process(delta):
 
 func onTenda():
 	onTenda = true
+	
+func offTenda():
+	onTenda = false
