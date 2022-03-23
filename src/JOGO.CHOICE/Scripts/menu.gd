@@ -10,7 +10,7 @@ func _on_Sair_pressed():
 
 
 func _on_Start_pressed():
-	get_tree().change_scene("res://Cenas/Feira.tscn")
+	get_tree().change_scene("res://Cenas/Tutorial_feira.tscn")
 
 
 func _on_CheckButton_toggled(button_pressed):

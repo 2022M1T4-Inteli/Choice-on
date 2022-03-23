@@ -10,10 +10,25 @@
 [ext_resource path="res://sprites/setas/seta33.png" type="Texture" id=8]
 [ext_resource path="res://sprites/moedas/ezgif.com-gif-maker.png" type="Texture" id=9]
 [ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (4).png" type="Texture" id=10]
-[ext_resource path="res://script/dialogbox.gd" type="Script" id=11]
-[ext_resource path="res://script/seta.gd" type="Script" id=12]
-[ext_resource path="res://script/garoto.gd" type="Script" id=13]
+[ext_resource path="res://Scripts/dialogbox.gd" type="Script" id=11]
+[ext_resource path="res://Scripts/seta.gd" type="Script" id=12]
+[ext_resource path="res://Scripts/garoto.gd" type="Script" id=13]
 [ext_resource path="res://sprites/tileset/caminhozin.tres" type="TileSet" id=14]
+[ext_resource path="res://sprites/garoto/tile003.png" type="Texture" id=15]
+[ext_resource path="res://sprites/garoto/tile001.png" type="Texture" id=16]
+[ext_resource path="res://sprites/garoto/tile014.png" type="Texture" id=17]
+[ext_resource path="res://sprites/garoto/tile006.png" type="Texture" id=18]
+[ext_resource path="res://sprites/garoto/tile008.png" type="Texture" id=19]
+[ext_resource path="res://sprites/garoto/tile007.png" type="Texture" id=20]
+[ext_resource path="res://sprites/garoto/tile009.png" type="Texture" id=21]
+[ext_resource path="res://sprites/garoto/tile010.png" type="Texture" id=22]
+[ext_resource path="res://sprites/garoto/tile005.png" type="Texture" id=23]
+[ext_resource path="res://sprites/garoto/tile012.png" type="Texture" id=24]
+[ext_resource path="res://sprites/garoto/tile004.png" type="Texture" id=25]
+[ext_resource path="res://sprites/garoto/tile000.png" type="Texture" id=26]
+[ext_resource path="res://sprites/garoto/tile002.png" type="Texture" id=27]
+[ext_resource path="res://sprites/garoto/tile011.png" type="Texture" id=28]
+[ext_resource path="res://sprites/garoto/tile013.png" type="Texture" id=29]
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
@@ -23,89 +38,29 @@ animations = [ {
 "speed": 0.5
 } ]
 
-[sub_resource type="StreamTexture" id=8]
-flags = 4
-load_path = "res://.import/tile013.png-106fe25f5f9fa5b9fb4c0a6be8962cc0.stex"
-
-[sub_resource type="StreamTexture" id=9]
-flags = 4
-load_path = "res://.import/tile015.png-d6d4b2b03ea3a539bc318fa39244b446.stex"
-
-[sub_resource type="StreamTexture" id=10]
-flags = 4
-load_path = "res://.import/tile014.png-0d1846808dbc9f95a19de9b68867a7dc.stex"
-
-[sub_resource type="StreamTexture" id=11]
-flags = 4
-load_path = "res://.import/tile008.png-02780bc66684bff4baad3cb789c316a8.stex"
-
-[sub_resource type="StreamTexture" id=12]
-flags = 4
-load_path = "res://.import/tile009.png-66f9374ef8962934ab412da916302792.stex"
-
-[sub_resource type="StreamTexture" id=13]
-flags = 4
-load_path = "res://.import/tile010.png-5e810d7cd97129c94e931d7e55911f5f.stex"
-
-[sub_resource type="StreamTexture" id=14]
-flags = 4
-load_path = "res://.import/tile011.png-70588364141d5a42692c2412ce96cd3d.stex"
-
-[sub_resource type="StreamTexture" id=15]
-flags = 4
-load_path = "res://.import/tile004.png-301ee1d03a35221b54c826084c865de8.stex"
-
-[sub_resource type="StreamTexture" id=16]
-flags = 4
-load_path = "res://.import/tile005.png-3ba39d4d9139f92e28caaef7711f80fa.stex"
-
-[sub_resource type="StreamTexture" id=17]
-flags = 4
-load_path = "res://.import/tile006.png-0215ee315700a30722ebdbc7acf6f34c.stex"
-
-[sub_resource type="StreamTexture" id=18]
-flags = 4
-load_path = "res://.import/tile007.png-7c9484f7ad64e61ca3cc9012cb8127b8.stex"
-
-[sub_resource type="StreamTexture" id=19]
-flags = 4
-load_path = "res://.import/tile000.png-4decb4429c104ef6abd4f06ed0cd9cb9.stex"
-
-[sub_resource type="StreamTexture" id=20]
-flags = 4
-load_path = "res://.import/tile001.png-4c4f8c5779296750e0beee5eb835f7d1.stex"
-
-[sub_resource type="StreamTexture" id=21]
-flags = 4
-load_path = "res://.import/tile002.png-569945740fd5bf85c26c792362dc75bc.stex"
-
-[sub_resource type="StreamTexture" id=22]
-flags = 4
-load_path = "res://.import/tile003.png-137c7a1f1a3a881bb60bb3646be9fa5a.stex"
-
 [sub_resource type="SpriteFrames" id=23]
 animations = [ {
-"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
-"loop": true,
-"name": "right",
-"speed": 6.0
-}, {
-"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"frames": [ ExtResource( 19 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 28 ) ],
 "loop": true,
 "name": "left",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
+"frames": [ ExtResource( 24 ), ExtResource( 17 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "right",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 25 ), ExtResource( 23 ), ExtResource( 18 ), ExtResource( 20 ) ],
 "loop": true,
 "name": "up",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 19 ) ],
+"frames": [ ExtResource( 26 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ) ],
+"frames": [ ExtResource( 26 ), ExtResource( 15 ), ExtResource( 27 ), ExtResource( 16 ) ],
 "loop": true,
 "name": "down",
 "speed": 5.0
@@ -149,7 +104,7 @@ position = Vector2( 1026, 126 )
 scale = Vector2( 3.83858, 3.51389 )
 frames = SubResource( 5 )
 animation = "setas"
-frame = 5
+frame = 4
 playing = true
 script = ExtResource( 12 )
 
@@ -231,7 +186,7 @@ __meta__ = {
 position = Vector2( 1274.89, 259.194 )
 scale = Vector2( 0.476128, 0.414847 )
 frames = SubResource( 6 )
-frame = 2
+frame = 1
 playing = true
 offset = Vector2( -967.489, 205.632 )
 
@@ -251,7 +206,7 @@ script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-dialogPath = "C:\\Users\\Inteli\\Desktop\\tutorial\\dialogotutorialfeira.json"
+dialogPath = "C:\\Users\\prcd2\\Documents\\JOGO.CHOICE\\dialogotutorialfeira.json"
 
 [node name="Text" type="RichTextLabel" parent="ColorRect"]
 margin_left = 123.0

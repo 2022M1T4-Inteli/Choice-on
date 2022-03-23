@@ -25,4 +25,4 @@ func _physics_process(delta):
 	move_and_slide(velocidade)
 
 func _on_moedaArea2D_body_entered(body):
-	get_parent().get_node("moedaArea2D").queue_free()
+	get_tree().change_scene("res://Cenas/Feira.tscn")
