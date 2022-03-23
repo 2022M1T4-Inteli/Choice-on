@@ -70,7 +70,7 @@ animations = [ {
 radius = 25.0
 
 [sub_resource type="RectangleShape2D" id=26]
-extents = Vector2( 32.8151, 8.88195 )
+extents = Vector2( 36.4076, 8.88195 )
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
@@ -104,7 +104,7 @@ position = Vector2( 1026, 126 )
 scale = Vector2( 3.83858, 3.51389 )
 frames = SubResource( 5 )
 animation = "setas"
-frame = 3
+frame = 4
 playing = true
 script = ExtResource( 12 )
 
@@ -131,7 +131,7 @@ position = Vector2( 144, 407 )
 scale = Vector2( 0.449375, 0.391607 )
 frames = SubResource( 23 )
 animation = "left"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Node2D/garoto"]
@@ -142,7 +142,7 @@ shape = SubResource( 24 )
 position = Vector2( -697, 570 )
 
 [node name="CollisionShape2" type="CollisionShape2D" parent="Node2D/collisions"]
-position = Vector2( 2104, -22 )
+position = Vector2( 2063, -52 )
 rotation = 1.5708
 scale = Vector2( 1, 100 )
 shape = SubResource( 26 )
@@ -154,19 +154,19 @@ scale = Vector2( 1, 100 )
 shape = SubResource( 26 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/collisions"]
-position = Vector2( 1286, -315 )
+position = Vector2( 1332, -240 )
 rotation = 1.5708
 scale = Vector2( 1, 100 )
 shape = SubResource( 26 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/collisions"]
-position = Vector2( 1287, 29 )
+position = Vector2( 1285, 22 )
 rotation = 1.5708
 scale = Vector2( 1, 100 )
 shape = SubResource( 26 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Node2D/collisions"]
-position = Vector2( 159.805, -180.188 )
+position = Vector2( 208, -166 )
 rotation = 1.5708
 scale = Vector2( 1, 100 )
 shape = SubResource( 26 )
@@ -186,6 +186,7 @@ __meta__ = {
 position = Vector2( 1274.89, 259.194 )
 scale = Vector2( 0.476128, 0.414847 )
 frames = SubResource( 6 )
+frame = 1
 playing = true
 offset = Vector2( -967.489, 205.632 )
 
