@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://player/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -7,21 +7,25 @@
 [ext_resource path="res://Cenas/Artefato.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Cenas/MobSpawner.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Cena1.gd" type="Script" id=7]
-[ext_resource path="res://Scripts/TextEditFase1.gd" type="Script" id=8]
-[ext_resource path="res://HelvetiPixel.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Cenas/RichTextLabel.gd" type="Script" id=8]
+[ext_resource path="res://Cenas/Ceu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Cenas/oraculo.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Cenas/MobSpawner_One.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Cenas/coin.tscn" type="PackedScene" id=13]
 [ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=14]
-[ext_resource path="res://sprites/coracao-removebg-preview.png" type="Texture" id=15]
+[ext_resource path="res://sprites/bomba.png" type="Texture" id=15]
+[ext_resource path="res://VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=16]
 
-[sub_resource type="DynamicFont" id=3]
-size = 90
-font_data = ExtResource( 9 )
+[sub_resource type="DynamicFont" id=11]
+size = 40
+font_data = ExtResource( 16 )
 
-[sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 0.847059, 0.415686, 0.415686, 1 )
+[sub_resource type="StyleBoxFlat" id=12]
+border_width_left = 30
+border_width_top = 10
+border_width_right = 30
+border_width_bottom = 10
 
 [sub_resource type="DynamicFontData" id=7]
 font_path = "res://VCR_OSD_MONO_1.001.ttf"
@@ -60,6 +64,9 @@ texture = ExtResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Ceu" parent="." instance=ExtResource( 9 )]
+position = Vector2( 871, 1981 )
 
 [node name="oraculo" parent="." instance=ExtResource( 10 )]
 position = Vector2( 15230, 3951 )
@@ -100,13 +107,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextEdit" type="TextEdit" parent="Player/Control"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Player/Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/font = SubResource( 3 )
-custom_styles/normal = SubResource( 4 )
-readonly = true
-wrap_enabled = true
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
 script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -288,17 +294,19 @@ position = Vector2( 2882, 2462 )
 [node name="coin4" parent="." instance=ExtResource( 13 )]
 position = Vector2( 449, 2678 )
 
-[node name="coin5" parent="." instance=ExtResource( 13 )]
-position = Vector2( 889, 4555 )
+[node name="Moedas" type="Node2D" parent="."]
 
-[node name="coin6" parent="." instance=ExtResource( 13 )]
-position = Vector2( 629, 5130 )
+[node name="coin8" parent="Moedas" instance=ExtResource( 13 )]
+position = Vector2( 3596, 3012 )
 
-[node name="coin7" parent="." instance=ExtResource( 13 )]
+[node name="coin7" parent="Moedas" instance=ExtResource( 13 )]
 position = Vector2( 925, 1601 )
 
-[node name="coin8" parent="." instance=ExtResource( 13 )]
-position = Vector2( 3596, 3012 )
+[node name="coin5" parent="Moedas" instance=ExtResource( 13 )]
+position = Vector2( 889, 4555 )
+
+[node name="coin6" parent="Moedas" instance=ExtResource( 13 )]
+position = Vector2( 629, 5130 )
 
 [connection signal="body_entered" from="Artefatos/Artefato_N" to="Player" method="_on_Artefato_N_body_entered"]
 [connection signal="body_entered" from="Artefatos/Artefato_I2" to="Player" method="_on_Artefato_I2_body_entered"]

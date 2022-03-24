@@ -12,7 +12,7 @@ func _on_Timer_timeout():
 		var enemy = enemyScene.instance()
 		rand.randomize() 
 		var x = rand.randf_range(0, 1500)
-		enemy.position.y = 300
+		enemy.position.y = 500
 		enemy.position.x = x
 #		enemy.detect_cliffs = false
 		add_child(enemy)

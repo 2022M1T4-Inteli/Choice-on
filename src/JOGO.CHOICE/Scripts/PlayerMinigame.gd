@@ -80,27 +80,27 @@ func _on_Fallzone2_body_entered(body):
 
 
 func _on_Artefato_E_body_entered(body):
-	$Control/TextEdit.load_Artefatos()
+	$Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "E"
 
 
 func _on_Artefato_N_body_entered(body):
-	$Control/TextEdit.load_Artefatos()
+	$Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "N"
 
 
 func _on_Artefato_T_body_entered(body):
-	$Control/TextEdit.load_Artefatos()
+	$Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato += "T"
 
 
 func _on_Artefato_I2_body_entered(body):
-	$Control/TextEdit.load_Artefatos()
+	$Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "I2"
 
 
 func _on_Artefato_I_body_entered(body):
-	$Control/TextEdit.load_Artefatos()
+	$Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "I"
 
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://sprites/bmo/platformChar_duck.png" type="Texture" id=1]
 [ext_resource path="res://sprites/bmo/platformChar_jump.png" type="Texture" id=2]
@@ -8,21 +8,22 @@
 [ext_resource path="res://sprites/bmo/platformChar_walk2.png" type="Texture" id=6]
 [ext_resource path="res://sprites/tileset/WorldCena1.tres" type="TileSet" id=7]
 [ext_resource path="res://Cenas/artefato1.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scripts/dialogbox.gd" type="Script" id=9]
 [ext_resource path="res://Scripts/robozin.gd" type="Script" id=10]
 [ext_resource path="res://sprites/céu.jpg" type="Texture" id=11]
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 26, 212.5 )
 
-[sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 466.25, 40.0001 )
-
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "climb",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ), ExtResource( 6 ) ],
@@ -35,11 +36,6 @@ animations = [ {
 "name": "duck",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "climb",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "air",
@@ -48,8 +44,6 @@ animations = [ {
 
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 22.5, 27.5001 )
-
-[sub_resource type="DynamicFont" id=13]
 
 [node name="Tutorial_minigame" type="Control"]
 anchor_right = 1.0
@@ -60,6 +54,12 @@ __meta__ = {
 
 [node name="Node2D" type="Node2D" parent="."]
 
+[node name="Sprite" type="Sprite" parent="Node2D"]
+position = Vector2( 0, -47 )
+scale = Vector2( 2.58984, 1.54102 )
+texture = ExtResource( 11 )
+centered = false
+
 [node name="Area2D" type="KinematicBody2D" parent="Node2D"]
 position = Vector2( 510, 293 )
 scale = Vector2( 0.798437, 0.825 )
@@ -69,25 +69,10 @@ position = Vector2( -611.194, -19.394 )
 scale = Vector2( 1.252, 200 )
 shape = SubResource( 6 )
 
-[node name="Area2D2" type="KinematicBody2D" parent="Node2D"]
-position = Vector2( 510, 293 )
-scale = Vector2( 0.798437, 0.825 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D2"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/Area2D"]
 position = Vector2( 814.091, -12.1212 )
 scale = Vector2( 1.252, 200 )
 shape = SubResource( 6 )
-
-[node name="Area2D5" type="Area2D" parent="Node2D"]
-position = Vector2( 510, 293 )
-scale = Vector2( 0.798437, 0.825 )
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="Node2D/Area2D5"]
-position = Vector2( 5.9491, 306.667 )
-scale = Vector2( 1.25245, 1.21212 )
-shape = SubResource( 10 )
-
-[node name="SetaTimer" type="Timer" parent="Node2D"]
 
 [node name="Robozinho" type="KinematicBody2D" parent="Node2D"]
 position = Vector2( 2, 31 )
@@ -117,49 +102,3 @@ tile_data = PoolIntArray( -131066, 0, 0, -65536, 0, 0, -65530, 0, 0, 65532, 0, 0
 
 [node name="artefato2" parent="Node2D" instance=ExtResource( 8 )]
 position = Vector2( 866, 430 )
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="Node2D"]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Node2D/ParallaxBackground"]
-
-[node name="Sprite" type="Sprite" parent="Node2D/ParallaxBackground/ParallaxLayer"]
-position = Vector2( 0, -47 )
-scale = Vector2( 2.58984, 1.54102 )
-texture = ExtResource( 11 )
-centered = false
-
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 59.0
-margin_top = 41.0
-margin_right = 649.0
-margin_bottom = 217.0
-grow_horizontal = 0
-size_flags_horizontal = 3
-color = Color( 0.01, 0.02, 0.005, 0 )
-script = ExtResource( 9 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-dialogPath = "C:\\Users\\prcd2\\Documents\\JOGO.CHOICE\\dialogominigame.json"
-
-[node name="Text" type="RichTextLabel" parent="ColorRect"]
-margin_left = 117.0
-margin_top = 41.0
-margin_right = 547.0
-margin_bottom = 202.0
-rect_scale = Vector2( 1.5, 1.5 )
-custom_colors/default_color = Color( 0.0431373, 0.0392157, 0.0392157, 1 )
-custom_colors/selection_color = Color( 0.8, 0.25098, 0.25098, 1 )
-custom_colors/font_color_selected = Color( 0.74902, 0.239216, 0.239216, 1 )
-custom_constants/table_hseparation = 0
-custom_fonts/bold_font = SubResource( 13 )
-bbcode_enabled = true
-tab_size = 22
-custom_effects = [ null, null ]
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Timer" type="Timer" parent="ColorRect"]
-
-[connection signal="timeout" from="Node2D/SetaTimer" to="Node2D/Robozinho" method="_on_SetaTimer_timeout"]
