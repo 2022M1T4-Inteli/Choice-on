@@ -50,6 +50,9 @@ __meta__ = {
 [node name="Ceu" parent="Cenario" instance=ExtResource( 13 )]
 position = Vector2( 920, 1682 )
 
+[node name="oraculo" parent="." instance=ExtResource( 10 )]
+position = Vector2( 15230, 3951 )
+
 [node name="SolidTile" type="TileMap" parent="."]
 position = Vector2( 60, 2720 )
 tile_set = ExtResource( 1 )
@@ -112,7 +115,7 @@ position = Vector2( 5156, 2363 )
 position = Vector2( 5083, 2363 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4316, 3280 )
+position = Vector2( 228, 3049 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -153,9 +156,6 @@ limit_left = 0
 limit_top = 315
 limit_right = 17600
 limit_bottom = 6095
-
-[node name="oraculo" parent="." instance=ExtResource( 10 )]
-position = Vector2( 15230, 3951 )
 
 [node name="Artefatos" type="Node2D" parent="."]
 __meta__ = {
