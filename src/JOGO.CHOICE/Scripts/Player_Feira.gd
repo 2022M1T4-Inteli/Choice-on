@@ -30,8 +30,12 @@ func _physics_process(delta):
 	motion.y = lerp(motion.y,0,0.5)
 
 	if Input.is_action_pressed("ui_accept") && onTenda == true:
+		print('alo')
 		#get_tree().change_scene("res://TSCN/professor.tscn")
 		get_tree().change_scene("res://Cenas/professor.tscn")
 
 func onTenda():
 	onTenda = true
+	
+func offTenda():
+	onTenda = false

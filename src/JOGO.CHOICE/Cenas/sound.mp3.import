@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sound.mp3-877dbc10427d92469aa27734148a4010.mp3str"
+
+[deps]
+
+source_file="res://Cenas/sound.mp3"
+dest_files=[ "res://.import/sound.mp3-877dbc10427d92469aa27734148a4010.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

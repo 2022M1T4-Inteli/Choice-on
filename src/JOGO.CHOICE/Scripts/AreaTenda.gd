@@ -9,5 +9,6 @@ func _on_AreaTenda_body_entered(body):
 	$TextEdit.visible = true
 
 func _on_AreaTenda_body_exited(body):
+	body.offTenda()
 	$TextEdit.visible = false
 	pass # Replace with function body.

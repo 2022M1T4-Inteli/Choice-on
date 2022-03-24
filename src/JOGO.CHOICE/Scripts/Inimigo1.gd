@@ -1,9 +1,8 @@
 extends KinematicBody2D
 
 const GRAVITY = 25
-const SPEED = 60
+const SPEED = 70
 
-var lifes = 10
 var motion = Vector2(0,0)
 var up = Vector2(0,-1)
 export var direction = -1
@@ -39,7 +38,5 @@ func _on_Top_Check_body_entered(body):
 	$Sides_Check.set_collision_mask_bit(0,false) 
 
 func _on_Sides_Check_body_entered(body):
-	lifes -= 1
-	print (lifes)
-	if lifes <= 0:
-		get_tree().change_scene("res://Cenas/Cena1.tscn")
+	Classglobal.lives -= 1
+	print (Classglobal.lives)

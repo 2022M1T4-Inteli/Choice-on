@@ -6,4 +6,4 @@ func _ready():
 	
 func _process(delta):
 	if Input.is_key_pressed(KEY_E) && Classglobal.Scene == "professor":
-		get_tree().change_scene('res://Cenas/Cena1.tscn')
+		get_tree().change_scene("res://Cenas/Tutorial_minigame.tscn")
