@@ -50,9 +50,6 @@ __meta__ = {
 [node name="Ceu" parent="Cenario" instance=ExtResource( 13 )]
 position = Vector2( 920, 1682 )
 
-[node name="oraculo" parent="." instance=ExtResource( 10 )]
-position = Vector2( 15230, 3951 )
-
 [node name="SolidTile" type="TileMap" parent="."]
 position = Vector2( 60, 2720 )
 tile_set = ExtResource( 1 )
@@ -65,49 +62,6 @@ __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
 }
-
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 13849, 3356 )
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-current = true
-zoom = Vector2( 2.2, 2.2 )
-drag_margin_h_enabled = true
-drag_margin_left = 0.0
-drag_margin_top = 0.0
-drag_margin_right = 0.0
-drag_margin_bottom = 0.0
-
-[node name="Control" type="Control" parent="Player"]
-margin_left = -1002.0
-margin_top = 396.0
-margin_right = 997.0
-margin_bottom = 568.0
-__meta__ = {
-"_edit_group_": true,
-"_edit_use_anchors_": false
-}
-
-[node name="TextEdit" type="TextEdit" parent="Player/Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_fonts/font = SubResource( 3 )
-custom_styles/normal = SubResource( 4 )
-readonly = true
-wrap_enabled = true
-script = ExtResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( 3995, 2120 )
-scale = Vector2( 2222.95, -77.3916 )
-zoom = Vector2( 10, 10 )
-limit_left = 0
-limit_top = 315
-limit_right = 17600
-limit_bottom = 6095
 
 [node name="Inimigos" type="Node2D" parent="."]
 
@@ -157,8 +111,6 @@ position = Vector2( 5156, 2363 )
 [node name="MobSpawner_One5" parent="Inimigos" instance=ExtResource( 11 )]
 position = Vector2( 5083, 2363 )
 
-<<<<<<< HEAD
-=======
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 4316, 3280 )
 
@@ -194,7 +146,7 @@ __meta__ = {
 }
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( 3845, 2120 )
+position = Vector2( 3995, 2120 )
 scale = Vector2( 2222.95, -77.3916 )
 zoom = Vector2( 10, 10 )
 limit_left = 0
@@ -205,7 +157,6 @@ limit_bottom = 6095
 [node name="oraculo" parent="." instance=ExtResource( 10 )]
 position = Vector2( 15230, 3951 )
 
->>>>>>> c971cbe9b4550a57eab567cd71a8d96cd1909f2b
 [node name="Artefatos" type="Node2D" parent="."]
 __meta__ = {
 "_edit_lock_": true
@@ -227,24 +178,6 @@ position = Vector2( 9050, 1665 )
 
 [node name="Artefato_I" parent="Artefatos" instance=ExtResource( 5 )]
 position = Vector2( 1887, 2476 )
-
-[node name="Sprites" type="Node2D" parent="."]
-visible = false
-
-[node name="Circle_I" parent="Sprites" instance=ExtResource( 12 )]
-position = Vector2( 1888, 2448 )
-
-[node name="Circle_N" parent="Sprites" instance=ExtResource( 12 )]
-position = Vector2( 4024, 3616 )
-
-[node name="Circle_I2" parent="Sprites" instance=ExtResource( 12 )]
-position = Vector2( 13620, 2411 )
-
-[node name="Circle_E" parent="Sprites" instance=ExtResource( 12 )]
-position = Vector2( 9052, 1660 )
-
-[node name="Circle_T" parent="Sprites" instance=ExtResource( 12 )]
-position = Vector2( 6797, 2398 )
 
 [node name="Fallzones" type="Node2D" parent="."]
 visible = false
@@ -295,6 +228,24 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fallzones/StaticBody2D"]
 position = Vector2( -20, 55 )
 shape = SubResource( 6 )
+
+[node name="Sprites" type="Node2D" parent="."]
+visible = false
+
+[node name="Circle_I" parent="Sprites" instance=ExtResource( 12 )]
+position = Vector2( 1888, 2448 )
+
+[node name="Circle_N" parent="Sprites" instance=ExtResource( 12 )]
+position = Vector2( 4024, 3616 )
+
+[node name="Circle_I2" parent="Sprites" instance=ExtResource( 12 )]
+position = Vector2( 13620, 2411 )
+
+[node name="Circle_E" parent="Sprites" instance=ExtResource( 12 )]
+position = Vector2( 9052, 1660 )
+
+[node name="Circle_T" parent="Sprites" instance=ExtResource( 12 )]
+position = Vector2( 6797, 2398 )
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
