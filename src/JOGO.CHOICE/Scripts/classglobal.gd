@@ -4,6 +4,8 @@ var frozen = true
 
 var Scene 
 
-var lives = 10
+var lives = 5
 
 var artefato 
+
+var coins = 0

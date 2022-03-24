@@ -70,6 +70,7 @@ minimapa={
 2d_physics/layer_7="Fallzone 2"
 2d_physics/layer_8="Enemies Top"
 2d_physics/layer_9="Enemies Side"
+2d_physics/layer_10="coin"
 
 [physics]
 
