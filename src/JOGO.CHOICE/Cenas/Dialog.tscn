@@ -1,17 +1,20 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://sprites/dialog.png" type="Texture" id=1]
 [ext_resource path="res://VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Cenas/Dialog.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Dialog.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
 font_data = ExtResource( 2 )
 
-[sub_resource type="StyleBoxFlat" id=2]
-border_width_left = 30
-border_width_top = 5
-border_width_right = 30
-border_width_bottom = 5
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 1230, 370 )
+margin_left = 40.0
+margin_right = 40.0
+margin_top = 22.0
+margin_bottom = 22.0
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
