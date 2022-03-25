@@ -7,8 +7,7 @@
 [ext_resource path="res://Cenas/Artefato.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Cenas/MobSpawner.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Cena1.gd" type="Script" id=7]
-[ext_resource path="res://Scripts/TextEditFase1.gd" type="Script" id=8]
-[ext_resource path="res://HelvetiPixel.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://sprites/dialog.png" type="Texture" id=8]
 [ext_resource path="res://Cenas/oraculo.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Cenas/MobSpawner_One.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=12]
@@ -18,13 +17,19 @@
 [ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=16]
 [ext_resource path="res://sprites/heart.png" type="Texture" id=17]
 [ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Cenas/RichTextLabelFase1.gd" type="Script" id=19]
 
-[sub_resource type="DynamicFont" id=3]
-size = 90
-font_data = ExtResource( 9 )
+[sub_resource type="DynamicFont" id=9]
+size = 50
+font_data = ExtResource( 15 )
 
-[sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 0.847059, 0.415686, 0.415686, 1 )
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 1230, 370 )
+margin_left = 50.0
+margin_right = 50.0
+margin_top = 25.0
+margin_bottom = 25.0
 
 [sub_resource type="DynamicFont" id=8]
 size = 55
@@ -184,20 +189,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextEdit" type="TextEdit" parent="Player/Control"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Player/Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/font = SubResource( 3 )
-custom_styles/normal = SubResource( 4 )
-readonly = true
-wrap_enabled = true
-script = ExtResource( 8 )
+margin_top = -25.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+text = "aaaaaaaaaaaa"
+script = ExtResource( 19 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( 3995, 2120 )
+position = Vector2( 3790, 2120 )
 scale = Vector2( 2222.95, -77.3916 )
 zoom = Vector2( 10, 10 )
 limit_left = 0
