@@ -122,7 +122,7 @@ __meta__ = {
 }
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( 3995, 2120 )
+position = Vector2( 3870, 2120 )
 scale = Vector2( 2222.95, -77.3916 )
 zoom = Vector2( 10, 9.5 )
 limit_left = 0
@@ -285,18 +285,6 @@ autostart = true
 wait_time = 5.0
 autostart = true
 
-[node name="coin1" parent="." instance=ExtResource( 13 )]
-position = Vector2( 2276, 1054 )
-
-[node name="coin2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 3191, 5159 )
-
-[node name="coin3" parent="." instance=ExtResource( 13 )]
-position = Vector2( 2882, 2462 )
-
-[node name="coin4" parent="." instance=ExtResource( 13 )]
-position = Vector2( 449, 2678 )
-
 [node name="Moedas" type="Node2D" parent="."]
 
 [node name="coin8" parent="Moedas" instance=ExtResource( 13 )]
@@ -310,6 +298,18 @@ position = Vector2( 889, 4555 )
 
 [node name="coin6" parent="Moedas" instance=ExtResource( 13 )]
 position = Vector2( 629, 5130 )
+
+[node name="coin1" parent="Moedas" instance=ExtResource( 13 )]
+position = Vector2( 2276, 1054 )
+
+[node name="coin3" parent="Moedas" instance=ExtResource( 13 )]
+position = Vector2( 2882, 2462 )
+
+[node name="coin4" parent="Moedas" instance=ExtResource( 13 )]
+position = Vector2( 449, 2678 )
+
+[node name="coin2" parent="Moedas" instance=ExtResource( 13 )]
+position = Vector2( 3191, 5159 )
 
 [connection signal="body_entered" from="Artefatos/Artefato_N" to="Player" method="_on_Artefato_N_body_entered"]
 [connection signal="body_entered" from="Artefatos/Artefato_I2" to="Player" method="_on_Artefato_I2_body_entered"]
