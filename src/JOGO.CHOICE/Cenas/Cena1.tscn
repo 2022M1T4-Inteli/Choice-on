@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://player/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -13,6 +13,10 @@
 [ext_resource path="res://Cenas/MobSpawner_One.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Cenas/Ceu.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Cenas/coin.tscn" type="PackedScene" id=14]
+[ext_resource path="res://VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=16]
+[ext_resource path="res://sprites/heart.png" type="Texture" id=17]
 
 [sub_resource type="DynamicFont" id=3]
 size = 90
@@ -20,6 +24,14 @@ font_data = ExtResource( 9 )
 
 [sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 0.847059, 0.415686, 0.415686, 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 55
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 55
+font_data = ExtResource( 15 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 8772.5, 327.75 )
@@ -154,6 +166,38 @@ limit_top = 315
 limit_right = 17600
 limit_bottom = 6095
 
+[node name="moeda" type="Label" parent="Player"]
+margin_left = -819.0
+margin_top = -596.0
+margin_right = -703.0
+margin_bottom = -536.0
+custom_fonts/font = SubResource( 8 )
+text = "aa"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vida" type="Label" parent="Player"]
+margin_left = -1026.0
+margin_top = -597.0
+margin_right = -896.0
+margin_bottom = -537.0
+custom_fonts/font = SubResource( 7 )
+text = "aa"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite3" type="Sprite" parent="Player"]
+position = Vector2( -863, -569 )
+scale = Vector2( 0.523369, 0.523369 )
+texture = ExtResource( 16 )
+
+[node name="Sprite4" type="Sprite" parent="Player"]
+position = Vector2( -1064.7, -570.301 )
+scale = Vector2( 0.0938109, 0.0938109 )
+texture = ExtResource( 17 )
+
 [node name="oraculo" parent="." instance=ExtResource( 10 )]
 position = Vector2( 15230, 3951 )
 
@@ -253,6 +297,23 @@ autostart = true
 [node name="Timer2" type="Timer" parent="."]
 wait_time = 5.0
 autostart = true
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="coin" parent="Coins" instance=ExtResource( 14 )]
+position = Vector2( 1195, 3495 )
+
+[node name="coin2" parent="Coins" instance=ExtResource( 14 )]
+position = Vector2( 766, 2831 )
+
+[node name="coin3" parent="Coins" instance=ExtResource( 14 )]
+position = Vector2( 3570, 2865 )
+
+[node name="coin4" parent="Coins" instance=ExtResource( 14 )]
+position = Vector2( 2591, 2465 )
+
+[node name="coin5" parent="Coins" instance=ExtResource( 14 )]
+position = Vector2( 1219, 2457 )
 
 [connection signal="body_entered" from="Artefatos/Artefato_N" to="Player" method="_on_Artefato_N_body_entered"]
 [connection signal="body_entered" from="Artefatos/Artefato_I2" to="Player" method="_on_Artefato_I2_body_entered"]
