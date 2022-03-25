@@ -1,6 +1,7 @@
 extends Node2D
 
 var zoom = false
+var inventario = false
 
 func _ready():
 	Classglobal.Scene = "Cena 1"
@@ -9,7 +10,7 @@ func _ready():
 
 func _process(delta):
 	if Classglobal.Scene == "Cena 1":
-		if Input.is_action_just_pressed("minimapa") and zoom == false:
+		if Input.is_action_just_pressed("minimapa") and zoom == false and !inventario:
 			zoom = true
 			$Player/Camera2D2.current = true
 			$Player/Sprite.visible = true
@@ -23,6 +24,12 @@ func _process(delta):
 			$Player/Sprite.visible = false
 			$Player/Sprite2.visible = false
 			$Sprites.visible = false
+		elif Input.is_action_just_pressed("inventairo") && !inventario and !zoom:
+			$Player/inventario.visible = true
+			inventario = true
+		elif Input.is_action_just_pressed("inventairo") && inventario and !zoom:
+			$Player/inventario.visible = false
+			inventario = false
 		
 		if Classglobal.artefato == "I":
 			$Sprites/Circle_I.visible = false

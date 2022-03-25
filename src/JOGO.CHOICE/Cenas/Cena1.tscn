@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=28 format=2]
+=======
+[gd_scene load_steps=21 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://player/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -12,6 +16,7 @@
 [ext_resource path="res://Cenas/oraculo.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Cenas/MobSpawner_One.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=12]
+<<<<<<< Updated upstream
 [ext_resource path="res://Cenas/coin.tscn" type="PackedScene" id=13]
 [ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=14]
 [ext_resource path="res://sprites/bomba.png" type="Texture" id=15]
@@ -43,6 +48,17 @@ font_path = "res://VCR_OSD_MONO_1.001.ttf"
 [sub_resource type="DynamicFont" id=10]
 size = 70
 font_data = SubResource( 9 )
+=======
+[ext_resource path="res://Cenas/Ceu.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=14]
+
+[sub_resource type="DynamicFont" id=3]
+size = 90
+font_data = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.847059, 0.415686, 0.415686, 1 )
+>>>>>>> Stashed changes
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 8772.5, 327.75 )
@@ -130,6 +146,7 @@ limit_top = 315
 limit_right = 17600
 limit_bottom = 6095
 
+<<<<<<< Updated upstream
 [node name="moeda" type="Sprite" parent="Player"]
 position = Vector2( -1078, -583 )
 scale = Vector2( 0.7, 0.7 )
@@ -161,6 +178,12 @@ __meta__ = {
 position = Vector2( -1079, -495 )
 scale = Vector2( 0.124487, 0.12043 )
 texture = ExtResource( 15 )
+=======
+[node name="inventario" parent="Player" instance=ExtResource( 14 )]
+visible = false
+position = Vector2( -355, -439 )
+scale = Vector2( 0.8, 0.8 )
+>>>>>>> Stashed changes
 
 [node name="Artefatos" type="Node2D" parent="."]
 __meta__ = {
