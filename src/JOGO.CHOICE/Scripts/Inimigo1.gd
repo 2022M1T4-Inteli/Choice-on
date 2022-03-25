@@ -28,7 +28,7 @@ func _physics_process(delta):
 	motion = move_and_slide(motion, up)
 
 func _on_FallzoneMob_body_entered(body):
-	print("morri")
+	#print("morri")
 	body.queue_free()
 
 func _on_Top_Check_body_entered(body):

@@ -39,3 +39,6 @@ func onTenda():
 	
 func offTenda():
 	onTenda = false
+	
+func _on_coin_body_entered(body):
+	get_tree().change_scene("res://Cenas/Feira.tscn")
