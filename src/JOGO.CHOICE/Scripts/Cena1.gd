@@ -4,7 +4,7 @@ var zoom = false
 
 func _ready():
 	Classglobal.Scene = "Cena 1"
-	Classglobal.lives = 10
+	Classglobal.lives = 5
 	pass 
 
 func _process(delta):
