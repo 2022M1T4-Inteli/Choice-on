@@ -57,9 +57,11 @@ func _physics_process(delta):
 	motion.x = lerp(motion.x,0,0.5) # Lerp permite a nice gliding stop |||
 	
 	
-	$moeda.text = str(Classglobal.coins)
+	$moeda.text = str(Classglobal.coins) + '/x'
 	
 	$vida.text = str(Classglobal.lives) + '/5'
+	
+	$n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
 	
 
 func a_gravity():
@@ -74,9 +76,11 @@ func a_gravity():
 
 func _on_Fallzone1_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn") 
+	Classglobal.coins = 0
 #
 func _on_Fallzone2_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn")
+	Classglobal.coins = 0
 
 
 func _on_Artefato_E_body_entered(body):

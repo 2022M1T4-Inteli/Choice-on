@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://player/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Cenas/MobSpawner.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Cena1.gd" type="Script" id=7]
 [ext_resource path="res://sprites/dialog.png" type="Texture" id=8]
+[ext_resource path="res://sprites/Artefato.png" type="Texture" id=9]
 [ext_resource path="res://Cenas/oraculo.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Cenas/MobSpawner_One.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=12]
@@ -33,10 +34,14 @@ margin_bottom = 25.0
 
 [sub_resource type="DynamicFont" id=8]
 size = 55
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 15 )
 
 [sub_resource type="DynamicFont" id=7]
 size = 55
+outline_size = 3
+outline_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
 font_data = ExtResource( 15 )
 
 [sub_resource type="RectangleShape2D" id=5]
@@ -242,6 +247,22 @@ texture = ExtResource( 16 )
 position = Vector2( -1064.7, -570.301 )
 scale = Vector2( 0.0938109, 0.0938109 )
 texture = ExtResource( 17 )
+
+[node name="n_artefatos" type="Label" parent="Player"]
+margin_left = -601.0
+margin_top = -597.0
+margin_right = -485.0
+margin_bottom = -537.0
+custom_fonts/font = SubResource( 8 )
+text = "aa"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_artefatos" type="Sprite" parent="Player"]
+position = Vector2( -647, -563 )
+scale = Vector2( 0.205128, 0.206897 )
+texture = ExtResource( 9 )
 
 [node name="inventario" parent="Player" instance=ExtResource( 18 )]
 visible = false
