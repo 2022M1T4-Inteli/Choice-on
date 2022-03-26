@@ -91,7 +91,7 @@ func _on_Artefato_N_body_entered(body):
 
 func _on_Artefato_T_body_entered(body):
 	$Control/RichTextLabel.load_Artefatos()
-	Classglobal.artefato += "T"
+	Classglobal.artefato = "T"
 
 
 func _on_Artefato_I2_body_entered(body):
