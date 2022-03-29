@@ -57,7 +57,7 @@ func _physics_process(delta):
 	motion.x = lerp(motion.x,0,0.5) # Lerp permite a nice gliding stop |||
 	
 	
-	$moeda.text = str(Classglobal.coins) + '/x'
+	$moeda.text = str(Classglobal.coins) 
 	
 	$vida.text = str(Classglobal.lives) + '/5'
 	
