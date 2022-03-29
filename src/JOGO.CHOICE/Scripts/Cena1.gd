@@ -25,7 +25,7 @@ func _process(delta):
 			$Player/Sprite2.visible = true
 			$Sprites.visible = true
 			if $Player.position.x >= 7850:
-				$Player/Camera2D2.limit_bottom = 4700
+				$Player/Camera2D2.limit_bottom = 5600
 		elif Input.is_action_just_pressed("minimapa") and zoom == true:
 			zoom = false
 			$Player/Sprite3.visible = true
@@ -57,8 +57,6 @@ func _process(delta):
 			$Sprites/Circle_T.visible = false
 		
 		if Classglobal.lives <= 0:
-			Classglobal.coins = 0
-			Classglobal.n_artefatos = 0
 			get_tree().change_scene("res://Cenas/Cena1.tscn")
 			
 		
