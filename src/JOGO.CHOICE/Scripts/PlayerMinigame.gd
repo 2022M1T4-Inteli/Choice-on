@@ -60,11 +60,11 @@ func _physics_process(delta):
 	motion.x = lerp(motion.x,0,0.5) # Lerp permite a nice gliding stop |||
 	
 	
-	$moeda.text = str(Classglobal.coins) 
+	$player_assets/moeda.text = str(Classglobal.coins) 
 	
-	$vida.text = str(Classglobal.lives) + '/5'
+	$player_assets/vida.text = str(Classglobal.lives) + '/5'
 	
-	$n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
+	$player_assets/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
 	
 
 func a_gravity():
@@ -86,27 +86,27 @@ func _on_Fallzone2_body_entered(body):
 
 
 func _on_Artefato_E_body_entered(body):
-	$Control/RichTextLabel.load_Artefatos()
+	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "E"
 
 
 func _on_Artefato_N_body_entered(body):
-	$Control/RichTextLabel.load_Artefatos()
+	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "N"
 
 
 func _on_Artefato_T_body_entered(body):
-	$Control/RichTextLabel.load_Artefatos()
+	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "T"
 
 
 func _on_Artefato_I2_body_entered(body):
-	$Control/RichTextLabel.load_Artefatos()
+	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "I2"
 
 
 func _on_Artefato_I_body_entered(body):
-	$Control/RichTextLabel.load_Artefatos()
+	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "I"
 
 

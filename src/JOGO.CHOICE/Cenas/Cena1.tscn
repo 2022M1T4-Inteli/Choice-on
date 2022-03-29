@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://player/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -20,6 +20,18 @@
 [ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Cenas/RichTextLabelFase1.gd" type="Script" id=19]
 
+[sub_resource type="DynamicFont" id=8]
+size = 55
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 55
+outline_size = 3
+outline_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+font_data = ExtResource( 15 )
+
 [sub_resource type="DynamicFont" id=9]
 size = 50
 font_data = ExtResource( 15 )
@@ -32,16 +44,10 @@ margin_right = 50.0
 margin_top = 25.0
 margin_bottom = 25.0
 
-[sub_resource type="DynamicFont" id=8]
-size = 55
+[sub_resource type="DynamicFont" id=11]
+size = 50
 outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 15 )
-
-[sub_resource type="DynamicFont" id=7]
-size = 55
-outline_size = 3
-outline_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+extra_spacing_char = 1
 font_data = ExtResource( 15 )
 
 [sub_resource type="RectangleShape2D" id=5]
@@ -198,7 +204,7 @@ position = Vector2( 3163, 1999 )
 position = Vector2( 2654, 1723 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 13211, 2440 )
+position = Vector2( 13213, 2391 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -209,7 +215,71 @@ drag_margin_top = 0.0
 drag_margin_right = 0.0
 drag_margin_bottom = 0.0
 
-[node name="Control" type="Control" parent="Player"]
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+position = Vector2( 3790, 2120 )
+scale = Vector2( 2222.95, -77.3916 )
+zoom = Vector2( 10, 10 )
+limit_left = 0
+limit_top = 315
+limit_right = 17600
+limit_bottom = 6095
+
+[node name="player_assets" type="Node2D" parent="Player"]
+
+[node name="inventario" parent="Player/player_assets" instance=ExtResource( 18 )]
+visible = false
+position = Vector2( -526, -574 )
+scale = Vector2( 1, 0.879998 )
+
+[node name="sprite_artefatos" type="Sprite" parent="Player/player_assets"]
+position = Vector2( -647, -563 )
+scale = Vector2( 0.205128, 0.206897 )
+texture = ExtResource( 9 )
+
+[node name="n_artefatos" type="Label" parent="Player/player_assets"]
+margin_left = -601.0
+margin_top = -597.0
+margin_right = -485.0
+margin_bottom = -537.0
+custom_fonts/font = SubResource( 8 )
+text = "aa"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_heart" type="Sprite" parent="Player/player_assets"]
+position = Vector2( -1064.7, -570.301 )
+scale = Vector2( 0.0938109, 0.0938109 )
+texture = ExtResource( 17 )
+
+[node name="vida" type="Label" parent="Player/player_assets"]
+margin_left = -1026.0
+margin_top = -597.0
+margin_right = -896.0
+margin_bottom = -537.0
+custom_fonts/font = SubResource( 7 )
+text = "aa"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_coin" type="Sprite" parent="Player/player_assets"]
+position = Vector2( -863, -569 )
+scale = Vector2( 0.523369, 0.523369 )
+texture = ExtResource( 16 )
+
+[node name="moeda" type="Label" parent="Player/player_assets"]
+margin_left = -819.0
+margin_top = -596.0
+margin_right = -703.0
+margin_bottom = -536.0
+custom_fonts/font = SubResource( 8 )
+text = "aa"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="Player/player_assets"]
 margin_left = -1002.0
 margin_top = 396.0
 margin_right = 997.0
@@ -218,7 +288,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Player/Control"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Player/player_assets/Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -25.0
@@ -231,67 +301,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( 3790, 2120 )
-scale = Vector2( 2222.95, -77.3916 )
-zoom = Vector2( 10, 10 )
-limit_left = 0
-limit_top = 315
-limit_right = 17600
-limit_bottom = 6095
-
-[node name="moeda" type="Label" parent="Player"]
-margin_left = -819.0
-margin_top = -596.0
-margin_right = -703.0
-margin_bottom = -536.0
-custom_fonts/font = SubResource( 8 )
-text = "aa"
+[node name="instrucoes" type="Label" parent="Player/player_assets"]
+margin_left = 639.0
+margin_top = -579.0
+margin_right = 1059.0
+margin_bottom = -425.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 11 )
+text = "I = Inventário
+M = Mapa
+E = Diálogos"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="vida" type="Label" parent="Player"]
-margin_left = -1026.0
-margin_top = -597.0
-margin_right = -896.0
-margin_bottom = -537.0
-custom_fonts/font = SubResource( 7 )
-text = "aa"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Sprite3" type="Sprite" parent="Player"]
-position = Vector2( -863, -569 )
-scale = Vector2( 0.523369, 0.523369 )
-texture = ExtResource( 16 )
-
-[node name="Sprite4" type="Sprite" parent="Player"]
-position = Vector2( -1064.7, -570.301 )
-scale = Vector2( 0.0938109, 0.0938109 )
-texture = ExtResource( 17 )
-
-[node name="n_artefatos" type="Label" parent="Player"]
-margin_left = -601.0
-margin_top = -597.0
-margin_right = -485.0
-margin_bottom = -537.0
-custom_fonts/font = SubResource( 8 )
-text = "aa"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="sprite_artefatos" type="Sprite" parent="Player"]
-position = Vector2( -647, -563 )
-scale = Vector2( 0.205128, 0.206897 )
-texture = ExtResource( 9 )
-
-[node name="inventario" parent="Player" instance=ExtResource( 18 )]
-visible = false
-position = Vector2( -526, -574 )
-scale = Vector2( 1, 0.879998 )
 
 [node name="Fallzones" type="Node2D" parent="."]
 visible = false
