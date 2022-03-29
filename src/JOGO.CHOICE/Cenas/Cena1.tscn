@@ -73,6 +73,9 @@ __meta__ = {
 [node name="Ceu" parent="Cenario" instance=ExtResource( 13 )]
 position = Vector2( 920, 1682 )
 
+[node name="oraculo" parent="." instance=ExtResource( 10 )]
+position = Vector2( 15230, 3951 )
+
 [node name="SolidTile" type="TileMap" parent="."]
 position = Vector2( 60, 2720 )
 tile_set = ExtResource( 1 )
@@ -268,9 +271,6 @@ texture = ExtResource( 9 )
 visible = false
 position = Vector2( -526, -574 )
 scale = Vector2( 1, 0.879998 )
-
-[node name="oraculo" parent="." instance=ExtResource( 10 )]
-position = Vector2( 15230, 3951 )
 
 [node name="Fallzones" type="Node2D" parent="."]
 visible = false
