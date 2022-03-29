@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/inventario.gd" type="Script" id=1]
 [ext_resource path="res://HelvetiPixel.ttf" type="DynamicFontData" id=2]
@@ -7,6 +7,8 @@
 size = 62
 font_data = ExtResource( 2 )
 
+[sub_resource type="StyleBoxFlat" id=2]
+
 [node name="inventario" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -14,6 +16,7 @@ script = ExtResource( 1 )
 margin_right = 1020.0
 margin_bottom = 200.0
 custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
 readonly = true
 wrap_enabled = true
 __meta__ = {
@@ -26,6 +29,7 @@ margin_top = 736.0
 margin_right = 1024.0
 margin_bottom = 936.0
 custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
 readonly = true
 wrap_enabled = true
 __meta__ = {
@@ -38,6 +42,7 @@ margin_top = 984.0
 margin_right = 1025.0
 margin_bottom = 1184.0
 custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
 readonly = true
 wrap_enabled = true
 __meta__ = {
@@ -49,6 +54,7 @@ margin_top = 490.0
 margin_right = 1020.0
 margin_bottom = 690.0
 custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
 readonly = true
 wrap_enabled = true
 __meta__ = {
@@ -60,6 +66,7 @@ margin_top = 250.0
 margin_right = 1020.0
 margin_bottom = 450.0
 custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
 readonly = true
 wrap_enabled = true
 __meta__ = {

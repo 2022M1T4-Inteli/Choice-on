@@ -7,7 +7,7 @@ var side = "zero"
 var wall = false
 
 const SPEED = 460
-const JUMPFORCE = 670
+const JUMPFORCE = 705
 const GRAVITY = 25
 const WALL_SLIDE_ACC = 15
 const MAX_WALL_SLIDE_SPEED = 120
@@ -27,6 +27,9 @@ func _physics_process(delta):
 		$AnimatedSprite.flip_h = true
 	else:
 		$AnimatedSprite.play("idle")
+		
+	if not is_on_floor() and motion.y > 25:
+		$AnimatedSprite.play("air")
 
 	if Input.is_action_just_pressed("ui_accept"): #funçao para pular, e pular nas paredes
 		if countJump < 2:
@@ -69,8 +72,6 @@ func a_gravity():
 		countJump = 0
 		motion.y = 0
 		side = "zero"
-		$AnimatedSprite.play("idle")
-
 	else:
 		motion.y += GRAVITY
 #		$AnimatedSprite.play("air")

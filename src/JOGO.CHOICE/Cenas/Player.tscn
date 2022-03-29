@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://player/player_spriteframes.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://Scripts/PlayerMinigame.gd" type="Script" id=2]
-[ext_resource path="res://sprites/yellow.png" type="Texture" id=3]
-[ext_resource path="res://sprites/yelow.png" type="Texture" id=4]
+[ext_resource path="res://sprites/—Pngtree—blue watercolor dashed circle creative_5054096.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 28.5, 35.5 )
@@ -23,15 +22,20 @@ frames = ExtResource( 1 )
 animation = "walk"
 
 [node name="Sprite" type="Sprite" parent="."]
-visible = false
-modulate = Color( 0.0588235, 0.670588, 0.0235294, 1 )
-position = Vector2( 1, 11 )
-scale = Vector2( 0.39961, 0.39961 )
+modulate = Color( 0.0784314, 1, 0, 1 )
+position = Vector2( 10, -15 )
+rotation = -2.72085
+scale = Vector2( 0.493365, 0.493365 )
 texture = ExtResource( 3 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-visible = false
-modulate = Color( 0.25098, 1, 0, 1 )
 position = Vector2( 2, 11 )
+rotation = -0.386217
 scale = Vector2( 0.269175, 0.269175 )
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 3, -9 )
+rotation = -0.728594
+scale = Vector2( 0.730414, 0.730414 )
+texture = ExtResource( 3 )

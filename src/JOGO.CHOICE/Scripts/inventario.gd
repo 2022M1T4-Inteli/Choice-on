@@ -6,7 +6,7 @@ func _process(delta):
 	if Classglobal.Scene == "Cena 1" and Classglobal.artefato == "E":
 		$Text_E.text = "O engenheiro de computacao e capaz de fazer o projeto e a programacao de um hardware"
 	if Classglobal.Scene == "Cena 1" and Classglobal.artefato == "I2":
-		$Text_I2.text = "O engenheiro de computacao estuda tanto a parte de hardware como a de software."
+		$Text_i2.text = "O engenheiro de computacao estuda tanto a parte de hardware como a de software."
 	if Classglobal.Scene == "Cena 1" and Classglobal.artefato == "T":
 		$Text_T.text = "Dentre os quatro cursos de tecnologia, o engenheiro de computacao e aquele que, ao final da graduacao, tera o melhor preparo para trabalhar com robotica."
 	if Classglobal.Scene == "Cena 1" and Classglobal.artefato == "N":
