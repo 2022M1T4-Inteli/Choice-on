@@ -6,6 +6,8 @@ var inventario = false
 func _ready():
 	Classglobal.Scene = "Cena 1"
 	Classglobal.lives = 5
+	Classglobal.n_artefatos = 0
+	Classglobal.coins = 0
 	pass 
 
 func _process(delta):
