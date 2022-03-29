@@ -77,10 +77,12 @@ func a_gravity():
 func _on_Fallzone1_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn") 
 	Classglobal.coins = 0
+	Classglobal.n_artefatos = 0
 #
 func _on_Fallzone2_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn")
 	Classglobal.coins = 0
+	Classglobal.n_artefatos = 0
 
 
 func _on_Artefato_E_body_entered(body):

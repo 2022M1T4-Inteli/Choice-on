@@ -109,9 +109,6 @@ __meta__ = {
 margin_top = 526.0
 margin_right = 673.0
 margin_bottom = 596.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Resposta4" type="Label" parent="Button4"]
 margin_right = 673.0
@@ -139,9 +136,6 @@ text = "awdsawdsawd"
 align = 1
 valign = 1
 autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Button5" type="Button" parent="."]
 margin_left = 677.0

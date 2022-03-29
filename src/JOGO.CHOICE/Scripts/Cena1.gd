@@ -56,6 +56,7 @@ func _process(delta):
 		
 		if Classglobal.lives <= 0:
 			Classglobal.coins = 0
+			Classglobal.n_artefatos = 0
 			get_tree().change_scene("res://Cenas/Cena1.tscn")
 			
 		

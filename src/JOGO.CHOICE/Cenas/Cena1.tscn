@@ -174,7 +174,7 @@ position = Vector2( 2591, 2465 )
 position = Vector2( 1219, 2457 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 200, 3109 )
+position = Vector2( 1731, 2510 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -266,7 +266,7 @@ texture = ExtResource( 9 )
 
 [node name="inventario" parent="Player" instance=ExtResource( 18 )]
 visible = false
-position = Vector2( -526, -579 )
+position = Vector2( -526, -574 )
 scale = Vector2( 1, 0.879998 )
 
 [node name="oraculo" parent="." instance=ExtResource( 10 )]

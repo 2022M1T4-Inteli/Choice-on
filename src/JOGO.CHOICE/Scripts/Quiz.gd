@@ -8,9 +8,15 @@ func _ready():
 	$Button3/Resposta3.text = 'Terceira'
 	$Button4/Resposta4.text = 'Quarta'
 
+
 func _on_Button_pressed():
-	#get_tree().change_scene(Proxima Cena)
-	pass
+	Classglobal.passarfase = true
+	$ColorRect/Label.text = 'Va ate o portal, voce passou de fase!'
+	$Button.visible = false
+	$Button2.visible = false
+	$Button3.visible = false
+	$Button4.visible = false
+	$Button5.visible = false
 
 
 func _on_Button2_pressed():
@@ -26,5 +32,8 @@ func _on_Button4_pressed():
 
 
 func _on_Button5_pressed():
-	$Button3/Resposta3.text = ' '
-	$Button4/Resposta4.text = ' '
+	if Classglobal.coins == 5:
+		$Button3/Resposta3.text = ' '
+		$Button4/Resposta4.text = ' '
+	else:
+		pass
