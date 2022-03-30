@@ -18,7 +18,7 @@
 [ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=16]
 [ext_resource path="res://sprites/heart.png" type="Texture" id=17]
 [ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=18]
-[ext_resource path="res://RichTextLabelFase1.gd" type="Script" id=19]
+[ext_resource path="res://Scripts/RichTextLabelFase1.gd" type="Script" id=19]
 
 [sub_resource type="DynamicFont" id=8]
 size = 55
