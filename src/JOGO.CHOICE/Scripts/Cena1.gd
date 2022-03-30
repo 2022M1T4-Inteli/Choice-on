@@ -8,7 +8,7 @@ func _ready():
 	Classglobal.lives = 5
 	Classglobal.n_artefatos = 0
 	Classglobal.coins = 0
-	pass 
+ 
 
 func _process(delta):
 	if Classglobal.Scene == "Cena 1":

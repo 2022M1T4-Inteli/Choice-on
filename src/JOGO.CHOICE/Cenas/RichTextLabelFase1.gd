@@ -29,12 +29,14 @@ func _process(delta):
 			
 func load_Artefatos():
 	self.visible = true
+	Classglobal.frozen = true
 	if Classglobal.Scene == "Cena 1":
 		if dialogNumber_A_2 < 4 && dialogNumber_A < 5:
 			self.text = dialogArtefatos_1[dialogNumber_A][dialogNumber_A_2]
 			dialogNumber_A_2 += 1
 		else:
 			self.visible = false
+			Classglobal.frozen = false
 			dialogNumber_A_2 = 0
 			dialogNumber_A += 1
 	if Classglobal.Scene == "Cena 2":
