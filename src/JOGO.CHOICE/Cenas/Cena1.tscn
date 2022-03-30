@@ -33,7 +33,7 @@ outline_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
 font_data = ExtResource( 15 )
 
 [sub_resource type="DynamicFont" id=9]
-size = 50
+size = 46
 font_data = ExtResource( 15 )
 
 [sub_resource type="StyleBoxTexture" id=10]
@@ -118,7 +118,7 @@ position = Vector2( 474, 2744 )
 detect_cliff = true
 
 [node name="Inimigo3" parent="Inimigos" instance=ExtResource( 4 )]
-position = Vector2( 2483, 2466 )
+position = Vector2( 3712, 3065 )
 detect_cliff = true
 
 [node name="Inimigo4" parent="Inimigos" instance=ExtResource( 4 )]
@@ -204,7 +204,7 @@ position = Vector2( 3163, 1999 )
 position = Vector2( 2654, 1723 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 221, 3079 )
+position = Vector2( 3491, 3040 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true

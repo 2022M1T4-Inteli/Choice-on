@@ -28,7 +28,7 @@ func _physics_process(delta):
 	else:
 		$AnimatedSprite.play("idle")
 		
-	if not is_on_floor() and motion.y > 25:
+	if not is_on_floor() and (motion.y > 25 or motion.y < 0):
 		$AnimatedSprite.play("air")
 
 	if Input.is_action_just_pressed("ui_accept"): #funçao para pular, e pular nas paredes
@@ -76,37 +76,38 @@ func a_gravity():
 		motion.y += GRAVITY
 #		$AnimatedSprite.play("air")
 
+func bounce():
+	motion.y = - 500
+
+func ouch():
+	set_modulate(Color(1.5,0.3,0.3,0.4))
+	$Timer.start()
 
 func _on_Fallzone1_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn") 
 
-
 func _on_Fallzone2_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn")
-
 
 func _on_Artefato_E_body_entered(body):
 	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "E"
 
-
 func _on_Artefato_N_body_entered(body):
 	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "N"
-
 
 func _on_Artefato_T_body_entered(body):
 	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "T"
 
-
 func _on_Artefato_I2_body_entered(body):
 	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "I2"
-
 
 func _on_Artefato_I_body_entered(body):
 	$player_assets/Control/RichTextLabel.load_Artefatos()
 	Classglobal.artefato = "I"
 
-
+func _on_Timer_timeout():
+	set_modulate(Color(1,1,1,1))
