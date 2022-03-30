@@ -36,9 +36,17 @@ func _on_Top_Check_body_entered(body):
 	set_collision_layer_bit(2,false) #deixa de colidir com a plataforma
 	$Sides_Check.set_collision_layer_bit(8,false) 
 	$Sides_Check.set_collision_mask_bit(0,false) 
-	body.bounce()
+	if body.get_collision_layer() == 1:
+		body.bounce()
+	else:
+		body.queue_free()
+		queue_free()
+	
 
 func _on_Sides_Check_body_entered(body):
-	Classglobal.lives -= 1
-	print (Classglobal.lives)
-	body.ouch()
+	if body.get_collision_layer() == 1:
+		Classglobal.lives -= 1
+		body.ouch()
+	else:
+		body.queue_free()
+		queue_free()

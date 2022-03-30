@@ -11,6 +11,7 @@ const JUMPFORCE = 705
 const GRAVITY = 25
 const WALL_SLIDE_ACC = 15
 const MAX_WALL_SLIDE_SPEED = 120
+const FIREBALL = preload("res://Cenas/Fireball.tscn")
 
 var countJump = 0
 
@@ -61,7 +62,7 @@ func _physics_process(delta):
 
 	motion = move_and_slide(motion, up) #move and slide para executar a movimentação
 	a_gravity()
-
+	fire()
 				#	esse estilo de código deixa o personagem sem freio |||
 
 	motion.x = lerp(motion.x,0,0.5) # Lerp permite a nice gliding stop |||
@@ -73,6 +74,14 @@ func _physics_process(delta):
 	
 	$player_assets/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
 	
+func fire():
+	var direction = 1 if not $AnimatedSprite.flip_h else -1
+	if Input.is_action_just_pressed("fireball"):
+		var tiro = FIREBALL.instance()
+		tiro.direction = direction
+		get_parent().add_child(tiro)
+		tiro.position.x = position.x + 25
+		tiro.position.y = position.y
 
 func a_gravity():
 	if is_on_floor():
