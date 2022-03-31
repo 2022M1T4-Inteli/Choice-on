@@ -10,6 +10,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("cena") && oraculo == true:
 		$Quizz.visible = true
 		Classglobal.frozen = true
+		Classglobal.quiz = true
 
 
 func _on_Area2D_body_entered(body):

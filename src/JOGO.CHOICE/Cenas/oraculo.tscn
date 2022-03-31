@@ -68,10 +68,10 @@ position = Vector2( 19.4745, -12.3974 )
 shape = SubResource( 3 )
 
 [node name="Quizz" parent="." instance=ExtResource( 3 )]
-margin_left = -244.0
-margin_top = -84.0
-margin_right = -244.0
-margin_bottom = -84.0
+margin_left = -975.0
+margin_top = 0.0
+margin_right = -975.0
+margin_bottom = 0.0
 rect_scale = Vector2( 0.735, 0.813 )
 
 [connection signal="body_entered" from="Sprite/Area2D" to="." method="_on_Area2D_body_entered"]
