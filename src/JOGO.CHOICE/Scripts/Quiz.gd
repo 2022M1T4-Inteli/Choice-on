@@ -1,6 +1,6 @@
 extends Control
 
-var perguntas = ["oi", "ola"]
+var perguntas = ["PRIMEIRPEGUNTA", "ola"]
 
 var respostas = [["oi", "oi", "oi", "oi"],
 				 ["ola", "ola", "ola", "ola"]]
