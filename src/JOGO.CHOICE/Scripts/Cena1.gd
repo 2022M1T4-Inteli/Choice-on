@@ -33,7 +33,12 @@ func _process(delta):
 		elif Input.is_action_just_pressed("inventairo") && inventario and !zoom:
 			$Player/player_assets/inventario.visible = false
 			inventario = false
-		
+
+		if Classglobal.oraculo == true:
+			$Player/player_assets.visible = false
+		else:
+			$Player/player_assets.visible = true
+
 		if Classglobal.artefato == "I":
 			$Sprites/Circle_I.visible = false
 		if Classglobal.artefato == "N":

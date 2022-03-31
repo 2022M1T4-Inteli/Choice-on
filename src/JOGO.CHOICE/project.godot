@@ -71,6 +71,8 @@ fireball={
 2d_render/layer_7="Fallzone 2"
 2d_render/layer_8="Enemies Top"
 2d_render/layer_9="Enemies Side"
+2d_render/layer_10="Coin"
+2d_render/layer_11="Oraculo"
 2d_physics/layer_1="Player"
 2d_physics/layer_2="Plataforma"
 2d_physics/layer_3="Enemies"
@@ -80,7 +82,8 @@ fireball={
 2d_physics/layer_7="Fallzone 2"
 2d_physics/layer_8="Enemies Top"
 2d_physics/layer_9="Enemies Side"
-2d_physics/layer_10="coin"
+2d_physics/layer_10="Coin"
+2d_physics/layer_11="Oraculo"
 
 [physics]
 

@@ -16,3 +16,5 @@ var coins = 0
 
 var passarfase = false
 
+var oraculo = false
+

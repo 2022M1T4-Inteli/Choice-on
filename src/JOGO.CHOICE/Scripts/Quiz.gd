@@ -4,13 +4,13 @@ var perguntas = ["Essa é uma lista dos projetos recém feitos pelos professores
 "Como você viu, essas gosmas verdes ficam surgindo a todo instante aqui no Jardim Flutuante do Inteli… Ninguém mais aguenta elas. Estava precisando de um canhão inteligente que mire automaticamente e exploda esses bichinhos insuportáveis. O engenheiro que está em minha equipe está um pouco confuso em relação a como implementar isso. Qual o melhor modo para implementar essa função?"]
 
 var respostas = [["a) Um engenheiro de computação pode atuar na construção de um veículo terrestre autônomo, pois envolve hardware (o veículo) e software (a inteligência do veículo).", 
-"b) Um engenheiro de computação poderia atuar em todos os projetos citados, pois todos envolvem hardware, software, ou os dois combinados. ", 
-"c) O engenheiro de computação só conseguiria fazer com 100% de eficiência o veículo terrestre autônomo, pois é o único dos projetos que, além de software, envolve hardware.", 
-"d)  Não é ideal que um engenheiro desenvolva um aplicativo para celular, já que esse projeto não envolve nada de hardware, apenas software."],
+				  "b) Um engenheiro de computação poderia atuar em todos os projetos citados, pois todos envolvem hardware, software, ou os dois combinados. ", 
+				  "c) O engenheiro de computação só conseguiria fazer com 100% de eficiência o veículo terrestre autônomo, pois é o único dos projetos que, além de software, envolve hardware.", 
+				  "d)  Não é ideal que um engenheiro desenvolva um aplicativo para celular, já que esse projeto não envolve nada de hardware, apenas software."],
 				 ["a) Utilizando sistemas embarcados, que são sistemas físicos desenvolvidos para uma função específica que possuem um computador anexado a eles.", 
-				"b) Utilizar IoT (Internet das coisas) para detectar aparelhos nas gosmas e fazer a mira seguir esse sinal", 
-				"c) Por meio de sistemas embarcados, que são sistemas físicos com propósito geral que possuem um software associado a eles. ", 
-				"d) Criar um software e transmiti-lo via bluetooth para o canhão"]]
+				  "b) Utilizar IoT (Internet das coisas) para detectar aparelhos nas gosmas e fazer a mira seguir esse sinal", 
+				  "c) Por meio de sistemas embarcados, que são sistemas físicos com propósito geral que possuem um software associado a eles. ", 
+				  "d) Criar um software e transmiti-lo via bluetooth para o canhão"]]
 
 var pergIndex = 0
 

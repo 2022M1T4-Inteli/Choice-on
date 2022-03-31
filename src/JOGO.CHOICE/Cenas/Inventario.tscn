@@ -34,6 +34,8 @@ expand_margin_top = 35.0
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
 [node name="inventario" type="Node2D"]
@@ -55,6 +57,7 @@ __meta__ = {
 }
 
 [node name="Artefato_1" type="Tabs" parent="TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
@@ -66,8 +69,8 @@ scrolling_enabled = false
 [node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Artefato_1"]
 margin_left = 14.0
 margin_top = 3.0
-margin_right = 1134.0
-margin_bottom = 1052.0
+margin_right = 1284.0
+margin_bottom = 1154.0
 custom_fonts/normal_font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -78,7 +81,7 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
-margin_top = 24.0
+margin_top = 69.0
 margin_right = -4.0
 margin_bottom = -4.0
 scrolling_enabled = false
@@ -86,8 +89,8 @@ scrolling_enabled = false
 [node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Artefato_2"]
 margin_left = 14.0
 margin_top = 3.0
-margin_right = 1132.0
-margin_bottom = 1049.0
+margin_right = 1294.0
+margin_bottom = 1157.0
 custom_fonts/normal_font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -98,7 +101,7 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
-margin_top = 24.0
+margin_top = 69.0
 margin_right = -4.0
 margin_bottom = -4.0
 scrolling_enabled = false
@@ -106,8 +109,8 @@ scrolling_enabled = false
 [node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Artefato_3"]
 margin_left = 14.0
 margin_top = 3.0
-margin_right = 1139.0
-margin_bottom = 1056.0
+margin_right = 1291.0
+margin_bottom = 1157.0
 custom_fonts/normal_font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -118,7 +121,7 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
-margin_top = 87.0
+margin_top = 69.0
 margin_right = -4.0
 margin_bottom = -4.0
 scrolling_enabled = false
@@ -126,19 +129,18 @@ scrolling_enabled = false
 [node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Artefato_4"]
 margin_left = 14.0
 margin_top = 3.0
-margin_right = 1139.0
-margin_bottom = 1056.0
+margin_right = 1279.0
+margin_bottom = 1154.0
 custom_fonts/normal_font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Artefato_5" type="Tabs" parent="TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
-margin_top = 87.0
+margin_top = 69.0
 margin_right = -4.0
 margin_bottom = -4.0
 scrolling_enabled = false
@@ -146,8 +148,8 @@ scrolling_enabled = false
 [node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Artefato_5"]
 margin_left = 14.0
 margin_top = 3.0
-margin_right = 1139.0
-margin_bottom = 1056.0
+margin_right = 1277.0
+margin_bottom = 1150.0
 custom_fonts/normal_font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
