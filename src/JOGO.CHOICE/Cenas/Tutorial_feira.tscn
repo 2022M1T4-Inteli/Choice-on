@@ -28,9 +28,6 @@ font_data = ExtResource( 3 )
 [node name="Tutorial_feira" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -86,6 +83,7 @@ shape = SubResource( 26 )
 
 [node name="Player" parent="Node2D" instance=ExtResource( 11 )]
 position = Vector2( 124, 462 )
+scene_to_go = "res://Cenas/Feira.tscn"
 
 [node name="coin" parent="Node2D" instance=ExtResource( 1 )]
 position = Vector2( 920, 395 )

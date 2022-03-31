@@ -26,11 +26,6 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "climb",
@@ -45,6 +40,11 @@ animations = [ {
 "loop": true,
 "name": "air",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=12]
@@ -53,9 +53,6 @@ extents = Vector2( 22.5, 27.5001 )
 [node name="Tutorial_minigame" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -121,3 +118,4 @@ tile_data = PoolIntArray( -131066, 0, 0, -65536, 0, 0, -65530, 0, 0, 65532, 0, 0
 
 [node name="artefato2" parent="Node2D" instance=ExtResource( 8 )]
 position = Vector2( 866, 430 )
+scene_to_go = "res://Cenas/Cena1.tscn"

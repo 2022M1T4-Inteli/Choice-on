@@ -4,6 +4,8 @@ const SPEED = 130
 
 var motion = Vector2(0,0)
 
+export var scene_to_go = ''
+
 var onTenda = false
 
 func _physics_process(delta):
@@ -32,7 +34,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_accept") && onTenda == true:
 		print('alo')
 		#get_tree().change_scene("res://TSCN/professor.tscn")
-		get_tree().change_scene("res://Cenas/professor.tscn")
+		Transition.fade_into(scene_to_go)
 
 func onTenda():
 	onTenda = true
@@ -41,4 +43,4 @@ func offTenda():
 	onTenda = false
 	
 func _on_coin_body_entered(body):
-	get_tree().change_scene("res://Cenas/Feira.tscn")
+	Transition.fade_into(scene_to_go)

@@ -8,7 +8,7 @@ func _ready():
 	Classglobal.lives = 5
 	Classglobal.n_artefatos = 0
 	Classglobal.coins = 0
-
+	Classglobal.passarfase = true
  
 
 func _process(delta):
