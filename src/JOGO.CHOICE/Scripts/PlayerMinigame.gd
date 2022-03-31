@@ -20,13 +20,13 @@ func _physics_process(delta):
 	if !Classglobal.frozen:
 		if Input.is_action_pressed("ui_right"): #Leitor de Input, analisa e age no eixo x do player
 			motion.x = SPEED
-			$AnimatedSprite.play("walk") #relaciona o sprite certo ao movimento do player
-			$AnimatedSprite.flip_h = false
+			$Sprite_Player.play("walk") #relaciona o sprite certo ao movimento do player
+			$Sprite_Player.flip_h = false
 
 		elif Input.is_action_pressed("ui_left"):
 			motion.x = -SPEED
-			$AnimatedSprite.play("walk") #relaciona o sprite certo ao movimento do player
-			$AnimatedSprite.flip_h = true
+			$Sprite_Player.play("walk") #relaciona o sprite certo ao movimento do player
+			$Sprite_Player.flip_h = true
 
 		if Input.is_action_just_pressed("ui_accept"): #funçao para pular, e pular nas paredes
 			if countJump < 2:
@@ -50,9 +50,9 @@ func _physics_process(delta):
 				motion.y = min(motion.y + WALL_SLIDE_ACC, MAX_WALL_SLIDE_SPEED)
 			
 		if not is_on_floor() and (motion.y > 25 or motion.y < 0):
-			$AnimatedSprite.play("air")
+			$Sprite_Player.play("air")
 		else:
-			$AnimatedSprite.play("idle")
+			$Sprite_Player.play("idle")
 
 	motion = move_and_slide(motion, up) #move and slide para executar a movimentação
 	a_gravity()
@@ -69,7 +69,7 @@ func _physics_process(delta):
 	$player_assets/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
 	
 func fire():
-	var direction = 1 if not $AnimatedSprite.flip_h else -1
+	var direction = 1 if not $Sprite_Player.flip_h else -1
 	if Input.is_action_just_pressed("fireball"):
 		var tiro = FIREBALL.instance()
 		tiro.direction = direction
