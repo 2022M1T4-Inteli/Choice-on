@@ -13,7 +13,7 @@ func _physics_process(delta):
 
 
 func _on_Area2D_body_entered(body):
-#	if Classglobal.n_artefatos == 5:
+	if Classglobal.n_artefatos == 5:
 		oraculo = true
 
 
