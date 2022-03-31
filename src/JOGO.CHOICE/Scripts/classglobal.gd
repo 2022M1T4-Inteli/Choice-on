@@ -13,3 +13,4 @@ var n_artefatos = 0
 var coins = 0
 
 var passarfase = false
+

@@ -10,6 +10,7 @@ func _ready():
 
 
 func _on_Button_pressed():
+	Classglobal.frozen = false
 	Classglobal.passarfase = true
 	$ColorRect/Label.text = 'Va ate o portal, voce passou de fase!'
 	$Button.visible = false
@@ -17,6 +18,7 @@ func _on_Button_pressed():
 	$Button3.visible = false
 	$Button4.visible = false
 	$Button5.visible = false
+	
 
 
 func _on_Button2_pressed():
@@ -35,5 +37,4 @@ func _on_Button5_pressed():
 	if Classglobal.coins == 5:
 		$Button3/Resposta3.text = ' '
 		$Button4/Resposta4.text = ' '
-	else:
-		pass
+

@@ -53,6 +53,7 @@ func _physics_process(delta):
 			side = "right"
 			if motion.y >= 0:
 				motion.y = min(motion.y + WALL_SLIDE_ACC, MAX_WALL_SLIDE_SPEED)
+			
 		
 	else:
 		if not is_on_floor() and (motion.y > 25 or motion.y < 0):

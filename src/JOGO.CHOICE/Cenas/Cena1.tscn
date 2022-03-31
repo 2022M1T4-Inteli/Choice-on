@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://player/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://sprites/heart.png" type="Texture" id=17]
 [ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Scripts/RichTextLabelFase1.gd" type="Script" id=19]
+[ext_resource path="res://Cenas/portal.tscn" type="PackedScene" id=20]
 
 [sub_resource type="DynamicFont" id=8]
 size = 55
@@ -80,6 +81,9 @@ __meta__ = {
 
 [node name="Ceu" parent="Cenario" instance=ExtResource( 13 )]
 position = Vector2( 455, 1422 )
+
+[node name="Area2D" parent="." instance=ExtResource( 20 )]
+position = Vector2( 16765, 3350 )
 
 [node name="oraculo" parent="." instance=ExtResource( 10 )]
 position = Vector2( 15230, 3951 )
@@ -206,7 +210,7 @@ position = Vector2( 3163, 1999 )
 position = Vector2( 2654, 1723 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 3491, 3040 )
+position = Vector2( 12319, 2994 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
