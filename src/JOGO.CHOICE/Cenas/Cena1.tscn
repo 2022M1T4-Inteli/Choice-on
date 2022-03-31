@@ -232,11 +232,6 @@ limit_bottom = 6095
 
 [node name="player_assets" type="Node2D" parent="Player"]
 
-[node name="inventario" parent="Player/player_assets" instance=ExtResource( 18 )]
-visible = false
-position = Vector2( -526, -574 )
-scale = Vector2( 1, 0.879998 )
-
 [node name="sprite_artefatos" type="Sprite" parent="Player/player_assets"]
 position = Vector2( -647, -563 )
 scale = Vector2( 0.205128, 0.206897 )
@@ -320,6 +315,10 @@ F = Fireball"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="inventario" parent="Player/player_assets" instance=ExtResource( 18 )]
+position = Vector2( -619, -528 )
+scale = Vector2( 1, 0.879998 )
 
 [node name="Fallzones" type="Node2D" parent="."]
 visible = false
