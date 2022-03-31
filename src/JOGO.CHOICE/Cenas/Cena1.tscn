@@ -82,7 +82,7 @@ __meta__ = {
 [node name="Ceu" parent="Cenario" instance=ExtResource( 13 )]
 position = Vector2( 455, 1422 )
 
-[node name="Area2D" parent="." instance=ExtResource( 20 )]
+[node name="Portal" parent="." instance=ExtResource( 20 )]
 position = Vector2( 16765, 3350 )
 
 [node name="oraculo" parent="." instance=ExtResource( 10 )]
@@ -210,7 +210,7 @@ position = Vector2( 3163, 1999 )
 position = Vector2( 2654, 1723 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 210, 3023 )
+position = Vector2( 15106, 4063 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
