@@ -308,14 +308,15 @@ __meta__ = {
 margin_left = 639.0
 margin_top = -579.0
 margin_right = 1059.0
-margin_bottom = -425.0
+margin_bottom = -383.0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 11 )
 text = "I = Inventário
 M = Mapa
-E = Diálogos"
+E = Diálogos
+F = Fireball"
 __meta__ = {
 "_edit_use_anchors_": false
 }
