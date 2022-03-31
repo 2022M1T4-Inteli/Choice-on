@@ -84,7 +84,6 @@ position = Vector2( 455, 1422 )
 
 [node name="Area2D" parent="." instance=ExtResource( 20 )]
 position = Vector2( 16765, 3350 )
-scene_to_go = "res://Cenas/Cena2.tscn"
 
 [node name="oraculo" parent="." instance=ExtResource( 10 )]
 position = Vector2( 15230, 3951 )

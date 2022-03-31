@@ -1,14 +1,14 @@
 extends Area2D
 
 func _ready():
-	$TextEdit.visible = false
+	$RichTextLabel.visible = false
 	pass 
 	
 func _on_AreaTenda_body_entered(body):
 	body.onTenda()
-	$TextEdit.visible = true
+	$RichTextLabel.visible = true
 
 func _on_AreaTenda_body_exited(body):
 	body.offTenda()
-	$TextEdit.visible = false
+	$RichTextLabel.visible = false
 	pass # Replace with function body.

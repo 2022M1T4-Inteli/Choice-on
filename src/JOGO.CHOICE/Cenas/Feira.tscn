@@ -50,40 +50,45 @@ grow_horizontal = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="Diretor" type="Sprite" parent="."]
+position = Vector2( -52, -14 )
+scale = Vector2( 0.352778, 0.338776 )
+texture = ExtResource( 3 )
+
+[node name="colisions" type="Node2D" parent="."]
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="colisions"]
+position = Vector2( 1283, 38 )
+collision_layer = 2
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="colisions/StaticBody2D4"]
+position = Vector2( -456, 5 )
+rotation = 1.57017
+shape = SubResource( 1 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="colisions"]
+collision_layer = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="colisions/StaticBody2D3"]
+position = Vector2( 16, -453 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="colisions"]
+collision_layer = 2
+
+[node name="CollisionShape2D1" type="CollisionShape2D" parent="colisions/StaticBody2D2"]
+pause_mode = 1
+position = Vector2( -820, 58 )
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="colisions"]
 position = Vector2( 4, 445 )
 collision_layer = 2
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="colisions/StaticBody2D"]
 position = Vector2( 2, 15.2875 )
 shape = SubResource( 1 )
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D1" type="CollisionShape2D" parent="StaticBody2D2"]
-pause_mode = 1
-position = Vector2( -820, 58 )
-rotation = 1.5708
-shape = SubResource( 1 )
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 16, -453 )
-shape = SubResource( 1 )
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
-position = Vector2( 1283, 38 )
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D4"]
-position = Vector2( -456, 5 )
-rotation = 1.57017
-shape = SubResource( 1 )
-
-[node name="Diretor" type="Sprite" parent="."]
-position = Vector2( -50, -1.25002 )
-scale = Vector2( 0.316667, 0.304098 )
-texture = ExtResource( 3 )

@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=2]
+
+[ext_resource path="res://sprites/player/walk/3.png" type="Texture" id=1]
+[ext_resource path="res://sprites/player/walk/1.png" type="Texture" id=2]
+[ext_resource path="res://sprites/player/walk/2.png" type="Texture" id=3]
+[ext_resource path="res://sprites/player/walk/4.png" type="Texture" id=4]
+[ext_resource path="res://sprites/player/jump/1.png" type="Texture" id=5]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "air",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "andar",
+"speed": 8.0
+} ]

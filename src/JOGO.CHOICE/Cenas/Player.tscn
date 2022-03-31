@@ -1,26 +1,30 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Cenas/player_spriteframes.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Cenas/Player.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://Scripts/PlayerMinigame.gd" type="Script" id=2]
 [ext_resource path="res://sprites/yelow.png" type="Texture" id=3]
 [ext_resource path="res://sprites/yellow.png" type="Texture" id=4]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 28.5, 35.5 )
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 23.5
+height = 53.0
 
 [node name="Player" type="KinematicBody2D"]
 collision_mask = 14
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, 14.5 )
+position = Vector2( 3, 1 )
 shape = SubResource( 1 )
 
 [node name="Sprite_Player" type="AnimatedSprite" parent="."]
-position = Vector2( -1, -1 )
-scale = Vector2( 1.0625, 1.0625 )
+scale = Vector2( 0.133824, 0.13395 )
 frames = ExtResource( 1 )
-animation = "walk"
+animation = "andar"
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="circles" type="Node2D" parent="."]
 visible = false

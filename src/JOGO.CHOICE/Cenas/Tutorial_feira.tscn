@@ -44,6 +44,7 @@ position = Vector2( 840, 124 )
 scale = Vector2( 3.83858, 3.51389 )
 frames = SubResource( 5 )
 animation = "setas"
+frame = 3
 playing = true
 script = ExtResource( 12 )
 
@@ -85,6 +86,7 @@ shape = SubResource( 26 )
 
 [node name="Player" parent="Node2D" instance=ExtResource( 11 )]
 position = Vector2( 124, 462 )
+scale = Vector2( 0.94, 0.94 )
 scene_to_go = "res://Cenas/Feira.tscn"
 
 [node name="coin" parent="Node2D" instance=ExtResource( 1 )]

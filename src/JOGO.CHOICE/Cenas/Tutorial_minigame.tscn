@@ -1,10 +1,9 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=46 format=2]
 
-[ext_resource path="res://Cenas/player_spriteframes.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/WorldTiles/tileYellow_04.png" type="Texture" id=7]
 [ext_resource path="res://Cenas/artefato1.tscn" type="PackedScene" id=8]
 [ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=9]
-[ext_resource path="res://Scripts/robozin.gd" type="Script" id=10]
 [ext_resource path="res://sprites/céu.jpg" type="Texture" id=11]
 [ext_resource path="res://sprites/WorldTiles/1.png" type="Texture" id=12]
 [ext_resource path="res://sprites/WorldTiles/tileYellow_20.png" type="Texture" id=13]
@@ -32,9 +31,6 @@ extents = Vector2( 26, 212.5 )
 [sub_resource type="DynamicFont" id=13]
 size = 37
 font_data = ExtResource( 9 )
-
-[sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 22.5, 27.5001 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -536,30 +532,13 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 13 )
 text = "Use as setas para se mover para a direita e esquerda.
 O espaço para pulo e pulo duplo.
-O \"I\" para acessar seu inventário, \"M\" para o mapa e \"F\" para tacar uma bolinha de fogo e \"E\" para passar os diálogos"
+\"I\" para acessar seu inventário.
+\"M\" para o mapa.
+\"F\" para tacar uma bolinha de fogo.
+\"E\" para passar os diálogos."
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Robozinho" type="KinematicBody2D" parent="Node2D"]
-position = Vector2( 2, 31 )
-scale = Vector2( 1, 0.999997 )
-script = ExtResource( 10 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Node2D/Robozinho"]
-position = Vector2( 161.715, 408.001 )
-scale = Vector2( 0.818436, 0.854169 )
-frames = ExtResource( 1 )
-animation = "idle"
-playing = true
-flip_h = true
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="Node2D/Robozinho"]
-position = Vector2( 162.5, 420.501 )
-shape = SubResource( 12 )
 
 [node name="TileMap" type="TileMap" parent="Node2D"]
 position = Vector2( 241, 478.5 )
@@ -570,3 +549,6 @@ tile_data = PoolIntArray( -131066, 0, 0, -65536, 0, 0, -65530, 0, 0, 65532, 0, 0
 [node name="artefato2" parent="Node2D" instance=ExtResource( 8 )]
 position = Vector2( 866, 430 )
 scene_to_go = "res://Cenas/Cena1.tscn"
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 142, 399 )

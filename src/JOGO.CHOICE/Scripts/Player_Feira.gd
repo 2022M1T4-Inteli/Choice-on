@@ -13,10 +13,12 @@ func _physics_process(delta):
 	if !Classglobal.frozen:
 		if Input.is_action_pressed("ui_right"): #Leitor de Input, analisa e age no eixo x do player
 			motion.x += 1
+			$AnimatedSprite.flip_h = false
 			$AnimatedSprite.play("walk right")
 		elif Input.is_action_pressed("ui_left"):
 			motion.x -= 1
-			$AnimatedSprite.play("walk left")
+			$AnimatedSprite.flip_h = true
+			$AnimatedSprite.play("walk right")
 		elif Input.is_action_pressed("ui_up"): #Leitor de Input, analisa e age no eixo x do player
 			motion.y -= 1
 			$AnimatedSprite.play("walk up")

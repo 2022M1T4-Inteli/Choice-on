@@ -20,13 +20,14 @@ func _physics_process(delta):
 	if !Classglobal.frozen:
 		if Input.is_action_pressed("ui_right"): #Leitor de Input, analisa e age no eixo x do player
 			motion.x = SPEED
-			$Sprite_Player.play("walk") #relaciona o sprite certo ao movimento do player
+			$Sprite_Player.play("andar") #relaciona o sprite certo ao movimento do player
 			$Sprite_Player.flip_h = false
-
 		elif Input.is_action_pressed("ui_left"):
 			motion.x = -SPEED
-			$Sprite_Player.play("walk") #relaciona o sprite certo ao movimento do player
+			$Sprite_Player.play("andar") #relaciona o sprite certo ao movimento do player
 			$Sprite_Player.flip_h = true
+		else:
+			$Sprite_Player.play("idle")
 
 		if Input.is_action_just_pressed("ui_accept"): #funçao para pular, e pular nas paredes
 			if countJump < 2:
@@ -51,8 +52,6 @@ func _physics_process(delta):
 			
 		if not is_on_floor() and (motion.y > 25 or motion.y < 0):
 			$Sprite_Player.play("air")
-		else:
-			$Sprite_Player.play("idle")
 
 	motion = move_and_slide(motion, up) #move and slide para executar a movimentação
 	a_gravity()
@@ -61,12 +60,12 @@ func _physics_process(delta):
 
 	motion.x = lerp(motion.x,0,0.5) # Lerp permite a nice gliding stop |||
 	
-	
-	$player_assets/moeda.text = str(Classglobal.coins) 
-	
-	$player_assets/vida.text = str(Classglobal.lives) + '/5'
-	
-	$player_assets/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
+	if Classglobal.Scene == "Cena 1":
+		$player_assets/moeda.text = str(Classglobal.coins) 
+		
+		$player_assets/vida.text = str(Classglobal.lives) + '/5'
+		
+		$player_assets/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
 	
 func fire():
 	var direction = 1 if not $Sprite_Player.flip_h else -1

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/3.png-3ebbfd3b82b3f0a4b10726411b18332a.stex"
+path="res://.import/01.png-5122866cb9a96ee1c65fe78b942e13a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/players/player/walk/3.png"
-dest_files=[ "res://.import/3.png-3ebbfd3b82b3f0a4b10726411b18332a.stex" ]
+source_file="res://sprites/player/left/01.png"
+dest_files=[ "res://.import/01.png-5122866cb9a96ee1c65fe78b942e13a6.stex" ]
 
 [params]
 
