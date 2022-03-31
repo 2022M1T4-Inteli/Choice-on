@@ -1,57 +1,17 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Cenas/WorldCena1.tres" type="TileSet" id=1]
-[ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://sprites/ceuu.jpg" type="Texture" id=3]
 [ext_resource path="res://Cenas/Inimigo.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Cenas/Artefato.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Cenas/MobSpawner.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Cena1.gd" type="Script" id=7]
-[ext_resource path="res://sprites/dialog.png" type="Texture" id=8]
-[ext_resource path="res://sprites/Artefato.png" type="Texture" id=9]
 [ext_resource path="res://Cenas/oraculo.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Cenas/MobSpawner_One.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Cenas/Ceu.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Cenas/coin.tscn" type="PackedScene" id=14]
-[ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=15]
-[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=16]
-[ext_resource path="res://sprites/heart.png" type="Texture" id=17]
-[ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Scripts/RichTextLabelFase1.gd" type="Script" id=19]
 [ext_resource path="res://Cenas/portal.tscn" type="PackedScene" id=20]
-
-[sub_resource type="DynamicFont" id=8]
-size = 55
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 15 )
-
-[sub_resource type="DynamicFont" id=7]
-size = 55
-outline_size = 3
-outline_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
-font_data = ExtResource( 15 )
-
-[sub_resource type="DynamicFont" id=9]
-size = 50
-extra_spacing_char = 2
-extra_spacing_space = 1
-font_data = ExtResource( 15 )
-
-[sub_resource type="StyleBoxTexture" id=10]
-texture = ExtResource( 8 )
-region_rect = Rect2( 0, 0, 1230, 370 )
-margin_left = 57.0
-margin_right = 57.0
-margin_top = 35.0
-margin_bottom = 35.0
-
-[sub_resource type="DynamicFont" id=11]
-size = 50
-outline_size = 3
-extra_spacing_char = 1
-font_data = ExtResource( 15 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 8772.5, 327.75 )
@@ -209,118 +169,6 @@ position = Vector2( 3163, 1999 )
 [node name="coin5" parent="Coins" instance=ExtResource( 14 )]
 position = Vector2( 2654, 1723 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 16023, 4460 )
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-current = true
-zoom = Vector2( 2.2, 2.2 )
-drag_margin_h_enabled = true
-drag_margin_left = 0.0
-drag_margin_top = 0.0
-drag_margin_right = 0.0
-drag_margin_bottom = 0.0
-
-[node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( 3790, 2120 )
-scale = Vector2( 2222.95, -77.3916 )
-zoom = Vector2( 10, 10 )
-limit_left = 0
-limit_top = 315
-limit_right = 17600
-limit_bottom = 6095
-
-[node name="player_assets" type="Node2D" parent="Player"]
-
-[node name="inventario" parent="Player/player_assets" instance=ExtResource( 18 )]
-visible = false
-position = Vector2( -526, -574 )
-scale = Vector2( 1, 0.879998 )
-
-[node name="sprite_artefatos" type="Sprite" parent="Player/player_assets"]
-position = Vector2( -647, -563 )
-scale = Vector2( 0.205128, 0.206897 )
-texture = ExtResource( 9 )
-
-[node name="n_artefatos" type="Label" parent="Player/player_assets"]
-margin_left = -601.0
-margin_top = -597.0
-margin_right = -485.0
-margin_bottom = -537.0
-custom_fonts/font = SubResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="sprite_heart" type="Sprite" parent="Player/player_assets"]
-position = Vector2( -1064.7, -570.301 )
-scale = Vector2( 0.0938109, 0.0938109 )
-texture = ExtResource( 17 )
-
-[node name="vida" type="Label" parent="Player/player_assets"]
-margin_left = -1026.0
-margin_top = -597.0
-margin_right = -896.0
-margin_bottom = -537.0
-custom_fonts/font = SubResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="sprite_coin" type="Sprite" parent="Player/player_assets"]
-position = Vector2( -863, -569 )
-scale = Vector2( 0.523369, 0.523369 )
-texture = ExtResource( 16 )
-
-[node name="moeda" type="Label" parent="Player/player_assets"]
-margin_left = -819.0
-margin_top = -596.0
-margin_right = -703.0
-margin_bottom = -536.0
-custom_fonts/font = SubResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Control" type="Control" parent="Player/player_assets"]
-margin_left = -1002.0
-margin_top = 306.0
-margin_right = 997.0
-margin_bottom = 568.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Player/player_assets/Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = -25.0
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-custom_fonts/normal_font = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
-text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-script = ExtResource( 19 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="instrucoes" type="Label" parent="Player/player_assets"]
-margin_left = 639.0
-margin_top = -579.0
-margin_right = 1059.0
-margin_bottom = -383.0
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 11 )
-text = "I = Inventário
-M = Mapa
-E = Diálogos
-F = Fireball"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Fallzones" type="Node2D" parent="."]
 visible = false
 __meta__ = {
@@ -397,14 +245,7 @@ autostart = true
 wait_time = 5.0
 autostart = true
 
-[connection signal="body_entered" from="Artefatos/Artefato_N" to="Player" method="_on_Artefato_N_body_entered"]
-[connection signal="body_entered" from="Artefatos/Artefato_I2" to="Player" method="_on_Artefato_I2_body_entered"]
-[connection signal="body_entered" from="Artefatos/Artefato_T" to="Player" method="_on_Artefato_T_body_entered"]
-[connection signal="body_entered" from="Artefatos/Artefato_E" to="Player" method="_on_Artefato_E_body_entered"]
-[connection signal="body_entered" from="Artefatos/Artefato_I" to="Player" method="_on_Artefato_I_body_entered"]
 [connection signal="body_entered" from="Fallzones/FallzoneMob" to="Inimigos/Inimigo" method="_on_FallzoneMob_body_entered"]
-[connection signal="body_entered" from="Fallzones/Fallzone2" to="Player" method="_on_Fallzone2_body_entered"]
-[connection signal="body_entered" from="Fallzones/Fallzone1" to="Player" method="_on_Fallzone1_body_entered"]
 [connection signal="timeout" from="Timer" to="Inimigos/MobSpawner" method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer2" to="Inimigos/MobSpawner_One" method="_on_Timer2_timeout"]
 [connection signal="timeout" from="Timer2" to="Inimigos/MobSpawner_One2" method="_on_Timer2_timeout"]
