@@ -1,23 +1,25 @@
 extends Control
 
 var dialogProfessor = [
-	" Bem vindo a tenda de Engenharia da Computacao!",
-	" Eu, professor do Inteli, te desafio a se tornar um mestre da computacao, e ser reconhecido pelo Nosso Oraculo",
-	" Te proponho uma aventura e aprendizados relacionadas ao curso que voce esta interessado.",
-	" Faremos o seguinte: voce entrara dentro do computador, num minigame de plataforma e voce encontrara 5 artefatos perdidos!",
-	' Cada um com informacoes sobre o curso de Engenharia da Computacao, para que consiga responder o Oraculo e prosseguir nesta jornada', 
-	' caso responda corretamente, Ele o permitirá passar de fase... e caso erre...',
-	' Bom, voce nao ira querer saber, entao preste atencao nas informacoes e colete as moedas para te ajudar nos desafios! Aperte E para comecar'
+	" Arggg... Que droga! Não acredito que isso aconteceu... Ainda bem que você veio. ",
+	" Desculpe o estresse, é que estou meio encrencado. Há meses venho trabalhando em um projeto gigante de engenharia de computação, algo que mudará o mundo.",
+	" Mas ontem aconteceu algo que atrapalhou todo o andamento desse plano...",
+	" Estava de passagem pelo Jardim Flutuante do Inteli e acabei perdendo algumas peças importantíssimas para o projeto. Agora, preciso urgentemente de sua ajuda para recuperá-las.",
+	' Toda vez que você coletar uma peça, te ensinarei algo novo sobre o curso de engenharia da computação.', 
+	' Mas precisamos combinar uma coisa: preste muita atenção a tudo o que será dito, pois ao fim do Jardim, você precisará responder corretamente a algumas perguntas do Oráculo Inteliano para passar de fase.',
+	' Aprenda, se divirta, mas tenha muito cuidado, em alguns momentos o caminho é perigoso.'
 
 ]
 
 #var dialogArtefatos = [["artefato", "Esse é o artefato 1"], ["artefato", "Esse é o artefato 2"], ["artefato", "Esse é o artefato 3"]]
  
 var dialogDiretor = [
-	' Bem vindo a feira de profissoes do Inteli! Eu sou o diretor da faculdade e estou muito feliz em recebe-lo aqui.',
-	' Tenha certeza que nao vai se arrepender de ter vindo! A feira esta acontecendo justamente para voce',
-	' conhecer a faculdade e os cursos que ela proporciona, para quem sabe um dia voce possa se juntar a nos!', 
-	' Comece indo para a tenda onde o professor se encontra.',
+	' Olha só,  você por aqui! É um prazer enorme recebê-lo na feira de profissões do Inteli.',
+	' A feira está acontecendo faz 5 dias, mas hoje é o dia mais agitado. Muitas coisas estão acontecendo... ',
+	' inovações surgindo, empresas sendo criadas e muita animação pairando pelo ar. Então porque você não aproveita para explorar o ambiente e, principalmente, para conversar com algum dos nossos professores.', 
+	' Se você possuir interesse e vontade de aprender, quem sabe ele não entrega uma tarefa para você resolver?',
+	'Se eu fosse você, começaria indo para a tenda do professor Merlock... Volte e meia ele aparece com uns desafios bem curiosos e recheados de conhecimento.',
+	'Ela fica bem ali em cima, à esquerda. Aproveite muito essa jornada e... muita atenção (a tudo). Boa sorte!'
 ]
 
 #onready var label = get_node("Dialog/TextEdit")
@@ -56,6 +58,7 @@ func load_dialog():
 			$RichTextLabel.bbcode_text = dialogProfessor[dialogNumber_P]
 			dialogNumber_P += 1
 		else:
+			self.visible = false
 			Classglobal.frozen = false
 
 #func load_Artefatos():
