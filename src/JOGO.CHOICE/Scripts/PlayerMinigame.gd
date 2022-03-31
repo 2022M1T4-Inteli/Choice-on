@@ -27,11 +27,6 @@ func _physics_process(delta):
 			motion.x = -SPEED
 			$AnimatedSprite.play("walk") #relaciona o sprite certo ao movimento do player
 			$AnimatedSprite.flip_h = true
-		else:
-			$AnimatedSprite.play("idle")
-			
-		if not is_on_floor() and (motion.y > 25 or motion.y < 0):
-			$AnimatedSprite.play("air")
 
 		if Input.is_action_just_pressed("ui_accept"): #funçao para pular, e pular nas paredes
 			if countJump < 2:
@@ -54,8 +49,6 @@ func _physics_process(delta):
 			if motion.y >= 0:
 				motion.y = min(motion.y + WALL_SLIDE_ACC, MAX_WALL_SLIDE_SPEED)
 			
-		
-	else:
 		if not is_on_floor() and (motion.y > 25 or motion.y < 0):
 			$AnimatedSprite.play("air")
 		else:

@@ -1,6 +1,6 @@
 [gd_scene load_steps=30 format=2]
 
-[ext_resource path="res://player/WorldCena1.tres" type="TileSet" id=1]
+[ext_resource path="res://Cenas/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://sprites/ceuu.jpg" type="Texture" id=3]
 [ext_resource path="res://Cenas/Inimigo.tscn" type="PackedScene" id=4]
@@ -14,7 +14,7 @@
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Cenas/Ceu.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Cenas/coin.tscn" type="PackedScene" id=14]
-[ext_resource path="res://VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=16]
 [ext_resource path="res://sprites/heart.png" type="Texture" id=17]
 [ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=18]
@@ -211,7 +211,7 @@ position = Vector2( 3163, 1999 )
 position = Vector2( 2654, 1723 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 16581, 3432 )
+position = Vector2( 210, 3023 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true

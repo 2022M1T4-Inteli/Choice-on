@@ -25,6 +25,9 @@ func _physics_process(delta):
 		motion.x = -SPEED
 		$AnimatedSprite.play("walk") #relaciona o sprite certo ao movimento do player
 		$AnimatedSprite.flip_h = true
+
+	if not is_on_floor() and (motion.y > 25 or motion.y < 0):
+		$AnimatedSprite.play("air")
 	else:
 		$AnimatedSprite.play("idle")
 
