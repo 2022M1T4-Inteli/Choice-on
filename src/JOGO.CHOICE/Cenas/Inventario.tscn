@@ -87,8 +87,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 32.0
-margin_right = 36.0
-margin_bottom = 20.0
+margin_right = -4.0
+margin_bottom = -4.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Tabs"]
 margin_left = 10.0
@@ -99,17 +99,19 @@ __meta__ = {
 }
 
 [node name="Tabs2" type="Tabs" parent="TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 32.0
-margin_right = -1173.0
-margin_bottom = -796.0
+margin_right = -4.0
+margin_bottom = -4.0
 
 [node name="Tabs3" type="Tabs" parent="TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 32.0
-margin_right = -1173.0
-margin_bottom = -796.0
+margin_right = -4.0
+margin_bottom = -4.0
