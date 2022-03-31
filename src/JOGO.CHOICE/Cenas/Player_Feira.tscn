@@ -26,14 +26,14 @@ animations = [ {
 "name": "walk right",
 "speed": 8.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 10 ) ],
-"loop": true,
-"name": "walk down",
-"speed": 8.0
-}, {
 "frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "walk up",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "walk down",
 "speed": 8.0
 } ]
 

@@ -3,4 +3,9 @@ extends Node2D
 func _ready():
 	Classglobal.Scene = "feira"
 	Classglobal.frozen = true
-	pass 
+	
+	
+func _process(delta):
+	if Input.is_action_just_pressed("ui_accept"):
+		$Player/RichTextLabel2.visible = false
+	

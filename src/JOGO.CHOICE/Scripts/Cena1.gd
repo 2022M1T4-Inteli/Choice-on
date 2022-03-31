@@ -9,7 +9,6 @@ func _ready():
 	Classglobal.n_artefatos = 0
 	Classglobal.coins = 0
 	Classglobal.passarfase = true
-	Classglobal.frozen = false
  
 
 func _process(delta):
