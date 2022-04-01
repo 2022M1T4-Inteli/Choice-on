@@ -7,13 +7,13 @@ var dialogArtefatos_1 = [
 	["Ciências humanas na Engenharia?", "Um engenheiro, mais do que outros profissinais da computação, precisa diariamente lidar com questões éticas e morais.", "Esse profissional na maioria das vezes está envolvido com problemas do dia a dia, que impactam diretamente ou indiretamente a sociedade. Desse modo, um engenheiro da computação têm de ter como base a ética e a moral para tomar decisões", "Essas decisoes podem causar grandes impactos no mundo, mas ao longo da jornada obterá base para tomar-las da maneira correta."], 
 	[" Como é o mercado de trabalho para essa profissão? Essa parte é bem atrativa.", "É fato que a sociedade se aprofunda dia após dia no mundo digital, e um dos atores que possibilitam isso são os engenheiros da computação.","Por isso, esse é um profissional cada vez mais requisitado, em todos os setores que englobam a sociedade, desde a área de telecomunicações até a indústria automobilística e aeronáutica", "Se você pensa em seguir nessa área, oportunidades não irão faltar!"]]
  
-var dialogArtefatos_2 = [
-	[" Artefato 1", "Engenharia de Computacao esta na interseccao entre Ciencia da Computacao e Engenharia Eletrica."], 
-	[" Artefato 2", "O engenheiro de computacao e capaz de fazer o projeto e a programacao de um hardware."], 
-	[" Artefato 3", "O engenheiro de computacao estuda tanto a parte de hardware como a de software."], 
-	[" Artefato 4", "Dentre os quatro cursos de tecnologia, o engenheiro de computacao e aquele que, ao final da graduacao, tera o melhor preparo para trabalhar com robotica."], 
-	[" Artefato 5", "Sistemas embarcados sao uma combinacao de hardware e software que sao designados para cumprir funcoes especificas. Um sistema embarcado pode ser entendido como um computador projetado especificamente para cumprir uma determinada funcao. Exemplos de sistemas embarcados sao o microchip de controle do ar condicionado, o piloto automatico de um carro e os computadores de bordo de aeronaves e de satelites."]]
-	
+#var dialogArtefatos_2 = [
+#	[" Artefato 1", "Engenharia de Computacao esta na interseccao entre Ciencia da Computacao e Engenharia Eletrica."], 
+#	[" Artefato 2", "O engenheiro de computacao e capaz de fazer o projeto e a programacao de um hardware."], 
+#	[" Artefato 3", "O engenheiro de computacao estuda tanto a parte de hardware como a de software."], 
+#	[" Artefato 4", "Dentre os quatro cursos de tecnologia, o engenheiro de computacao e aquele que, ao final da graduacao, tera o melhor preparo para trabalhar com robotica."], 
+#	[" Artefato 5", "Sistemas embarcados sao uma combinacao de hardware e software que sao designados para cumprir funcoes especificas. Um sistema embarcado pode ser entendido como um computador projetado especificamente para cumprir uma determinada funcao. Exemplos de sistemas embarcados sao o microchip de controle do ar condicionado, o piloto automatico de um carro e os computadores de bordo de aeronaves e de satelites."]]
+#
 var dialogNumber_A = 0
 var dialogNumber_A_2 = 0
 
@@ -23,7 +23,7 @@ func _ready():
 	pass 
 	
 func _process(delta):
-	if (Classglobal.Scene == "Cena 1" || Classglobal.Scene == "Cena 2") && dialogNumber_A_2 > 0:
+	if (Classglobal.Scene == "Cena 1" || Classglobal.Scene == "Cena 2") && dialogNumber_A_2 > 0: 
 		if Input.is_action_just_pressed("cena"):
 			load_Artefatos()
 			
@@ -39,11 +39,11 @@ func load_Artefatos():
 			Classglobal.frozen = false
 			dialogNumber_A_2 = 0
 			dialogNumber_A += 1
-	if Classglobal.Scene == "Cena 2":
-		if dialogNumber_A_2 < 2 && dialogNumber_A < 5:
-			self.text = dialogArtefatos_2[dialogNumber_A][dialogNumber_A_2]
-			dialogNumber_A_2 += 1
-		else:
-			self.visible = false
-			dialogNumber_A_2 = 0
-			dialogNumber_A += 1
+#	if Classglobal.Scene == "Cena 2":
+#		if dialogNumber_A_2 < 2 && dialogNumber_A < 5:
+#			self.text = dialogArtefatos_2[dialogNumber_A][dialogNumber_A_2]
+#			dialogNumber_A_2 += 1
+#		else:
+#			self.visible = false
+#			dialogNumber_A_2 = 0
+#			dialogNumber_A += 1
