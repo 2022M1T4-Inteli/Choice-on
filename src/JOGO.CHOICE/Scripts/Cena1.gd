@@ -42,11 +42,11 @@ func _process(delta):
 		if Classglobal.n_artefatos == 2:
 			$Sprites/Circle_N.visible = false
 		if Classglobal.n_artefatos == 3:
-			$Sprites/Circle_I2.visible = false
+			$Sprites/Circle_T.visible = false
 		if Classglobal.n_artefatos == 4:
 			$Sprites/Circle_E.visible = false
 		if Classglobal.n_artefatos == 5:
-			$Sprites/Circle_T.visible = false
+			$Sprites/Circle_I2.visible = false
 			
 #		if Classglobal.quiz == true:
 #			$Player/Control2.visible = false
