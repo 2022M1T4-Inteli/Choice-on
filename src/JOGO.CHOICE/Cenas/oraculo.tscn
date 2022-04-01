@@ -85,7 +85,6 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Area2D"]
 position = Vector2( 1.65811, -12.3974 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="Quizz" parent="." instance=ExtResource( 3 )]

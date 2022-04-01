@@ -17,25 +17,27 @@ func _process(delta):
 			zoom = true
 			$Player/Camera2D2.current = true
 			$Player/circles.visible = true
+			$Player/Control2.visible = false
 			$Sprites.visible = true
 			if $Player.position.x >= 7850:
 				$Player/Camera2D2.limit_bottom = 5500
 		elif Input.is_action_just_pressed("minimapa") and zoom == true:
 			zoom = false
+			$Player/Control2.visible = true
 			$Player/Camera2D.current = true
 			$Player/circles.visible = false
 			$Sprites.visible = false
 		elif Input.is_action_just_pressed("inventairo") && !inventario and !zoom:
-			$Player/player_assets/inventario.visible = true
+			$Player/Control2/inventario.visible = true
 			inventario = true
 		elif Input.is_action_just_pressed("inventairo") && inventario and !zoom:
-			$Player/player_assets/inventario.visible = false
+			$Player/Control2/inventario.visible = false
 			inventario = false
 
 		if Classglobal.oraculo == true:
-			$Player/player_assets.visible = false
+			$Player/Control2.visible = false
 		else:
-			$Player/player_assets.visible = true
+			$Player/Control2.visible = true
 
 		if Classglobal.n_artefatos == 1:
 			$Sprites/Circle_I.visible = false
