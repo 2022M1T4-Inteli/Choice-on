@@ -8,7 +8,7 @@ func _ready():
 	Classglobal.lives = 5
 	Classglobal.n_artefatos = 0
 	Classglobal.coins = 0
-	Classglobal.passarfase = true
+	Classglobal.passarfase = false
  
 
 func _process(delta):
@@ -16,15 +16,13 @@ func _process(delta):
 		if Input.is_action_just_pressed("minimapa") and zoom == false and !inventario:
 			zoom = true
 			$Player/Camera2D2.current = true
-			$Player/player_assets.visible = false
 			$Player/circles.visible = true
 			$Sprites.visible = true
 			if $Player.position.x >= 7850:
-				$Player/Camera2D2.limit_bottom = 5600
+				$Player/Camera2D2.limit_bottom = 5500
 		elif Input.is_action_just_pressed("minimapa") and zoom == true:
 			zoom = false
 			$Player/Camera2D.current = true
-			$Player/player_assets.visible = true
 			$Player/circles.visible = false
 			$Sprites.visible = false
 		elif Input.is_action_just_pressed("inventairo") && !inventario and !zoom:
@@ -39,15 +37,15 @@ func _process(delta):
 		else:
 			$Player/player_assets.visible = true
 
-		if Classglobal.artefato == "I":
+		if Classglobal.n_artefatos == 1:
 			$Sprites/Circle_I.visible = false
-		if Classglobal.artefato == "N":
+		if Classglobal.n_artefatos == 2:
 			$Sprites/Circle_N.visible = false
-		if Classglobal.artefato == "I2":
+		if Classglobal.n_artefatos == 3:
 			$Sprites/Circle_I2.visible = false
-		if Classglobal.artefato == "E":
+		if Classglobal.n_artefatos == 4:
 			$Sprites/Circle_E.visible = false
-		if Classglobal.artefato == "T":
+		if Classglobal.n_artefatos == 5:
 			$Sprites/Circle_T.visible = false
 		
 		if Classglobal.lives <= 0:
