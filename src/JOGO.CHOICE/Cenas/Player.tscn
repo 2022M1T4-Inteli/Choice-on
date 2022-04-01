@@ -1,13 +1,52 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Cenas/Player.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://Scripts/PlayerMinigame.gd" type="Script" id=2]
 [ext_resource path="res://sprites/yelow.png" type="Texture" id=3]
 [ext_resource path="res://sprites/yellow.png" type="Texture" id=4]
+[ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Scripts/RichTextLabelFase1.gd" type="Script" id=7]
+[ext_resource path="res://sprites/heart.png" type="Texture" id=8]
+[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=9]
+[ext_resource path="res://sprites/dialog.png" type="Texture" id=10]
+[ext_resource path="res://sprites/Artefato.png" type="Texture" id=11]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 23.5
 height = 53.0
+
+[sub_resource type="DynamicFont" id=2]
+size = 55
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 55
+outline_size = 3
+outline_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 50
+extra_spacing_char = 2
+extra_spacing_space = 1
+font_data = ExtResource( 6 )
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 10 )
+region_rect = Rect2( 0, 0, 1230, 370 )
+margin_left = 57.0
+margin_right = 57.0
+margin_top = 35.0
+margin_bottom = 35.0
+
+[sub_resource type="DynamicFont" id=6]
+size = 50
+outline_size = 3
+extra_spacing_char = 1
+font_data = ExtResource( 6 )
 
 [node name="Player" type="KinematicBody2D"]
 collision_mask = 14
@@ -51,5 +90,96 @@ texture = ExtResource( 4 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.7
 one_shot = true
+
+[node name="Control2" type="Node2D" parent="."]
+
+[node name="sprite_artefatos" type="Sprite" parent="Control2"]
+position = Vector2( -645, -567 )
+scale = Vector2( 0.205128, 0.206897 )
+texture = ExtResource( 11 )
+
+[node name="n_artefatos" type="Label" parent="Control2"]
+margin_left = -599.0
+margin_top = -601.0
+margin_right = -483.0
+margin_bottom = -541.0
+custom_fonts/font = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_heart" type="Sprite" parent="Control2"]
+position = Vector2( -1062.7, -574.301 )
+scale = Vector2( 0.0938109, 0.0938109 )
+texture = ExtResource( 8 )
+
+[node name="vida" type="Label" parent="Control2"]
+margin_left = -1024.0
+margin_top = -601.0
+margin_right = -894.0
+margin_bottom = -541.0
+custom_fonts/font = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprite_coin" type="Sprite" parent="Control2"]
+position = Vector2( -861, -573 )
+scale = Vector2( 0.523369, 0.523369 )
+texture = ExtResource( 9 )
+
+[node name="moeda" type="Label" parent="Control2"]
+margin_left = -817.0
+margin_top = -600.0
+margin_right = -701.0
+margin_bottom = -540.0
+custom_fonts/font = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="Control2"]
+margin_left = -1000.0
+margin_top = 302.0
+margin_right = 999.0
+margin_bottom = 564.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control2/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -25.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="instrucoes" type="Label" parent="Control2"]
+margin_left = 641.0
+margin_top = -583.0
+margin_right = 1061.0
+margin_bottom = -387.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "I = Inventário
+M = Mapa
+E = Diálogos
+F = Fireball"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="inventario" parent="Control2" instance=ExtResource( 5 )]
+visible = false
+position = Vector2( -628, -532 )
+scale = Vector2( 1, 0.879998 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -55,6 +55,7 @@ func _on_Button4_pressed():
 		$Buttons.visible = false
 		Classglobal.frozen = false
 		Classglobal.passarfase = true
+		Classglobal.quiz = false
 
 
 func _on_Button5_pressed():

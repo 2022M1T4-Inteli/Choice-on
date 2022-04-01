@@ -9,6 +9,9 @@ func _ready():
 	Classglobal.n_artefatos = 0
 	Classglobal.coins = 0
 	Classglobal.passarfase = false
+	Classglobal.frozen = false
+	
+
  
 
 func _process(delta):
@@ -34,11 +37,6 @@ func _process(delta):
 			$Player/Control2/inventario.visible = false
 			inventario = false
 
-		if Classglobal.oraculo == true:
-			$Player/Control2.visible = false
-		else:
-			$Player/Control2.visible = true
-
 		if Classglobal.n_artefatos == 1:
 			$Sprites/Circle_I.visible = false
 		if Classglobal.n_artefatos == 2:
@@ -49,7 +47,11 @@ func _process(delta):
 			$Sprites/Circle_E.visible = false
 		if Classglobal.n_artefatos == 5:
 			$Sprites/Circle_T.visible = false
-		
+			
+		if Classglobal.quiz == true:
+			$Player/Control2.visible = false
+		else:
+			$Player/Control2.visible = true
 		if Classglobal.lives <= 0:
 			get_tree().change_scene("res://Cenas/Cena1.tscn")
 			

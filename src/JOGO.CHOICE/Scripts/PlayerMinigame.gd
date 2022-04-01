@@ -99,23 +99,23 @@ func _on_Fallzone2_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn")
 
 func _on_Artefato_E_body_entered(body):
-	$player_assets/Control/RichTextLabel.load_Artefatos()
+	$Control2/Control/RichTextLabel.load_Artefatos()
 
 
 func _on_Artefato_N_body_entered(body):
-	$player_assets/Control/RichTextLabel.load_Artefatos()
+	$Control2/Control/RichTextLabel.load_Artefatos()
 	
 
 func _on_Artefato_T_body_entered(body):
-	$player_assets/Control/RichTextLabel.load_Artefatos()
+	$Control2/Control/RichTextLabel.load_Artefatos()
 	
 
 func _on_Artefato_I2_body_entered(body):
-	$player_assets/Control/RichTextLabel.load_Artefatos()
+	$Control2/Control/RichTextLabel.load_Artefatos()
 	
 
 func _on_Artefato_I_body_entered(body):
-	$player_assets/Control/RichTextLabel.load_Artefatos()
+	$Control2/Control/RichTextLabel.load_Artefatos()
 	
 
 func _on_Timer_timeout():
