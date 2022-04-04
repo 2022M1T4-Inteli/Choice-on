@@ -19,19 +19,20 @@ var respIndex_2 = 0
 
 var respondeu = 0
 
-func _ready():
-	$RichTextLabel.text = perguntas[pergIndex]
-	$Buttons/Button/Resposta1.text = respostas[respIndex][respIndex_2]
-	$Buttons/Button2/Resposta2.text = respostas[respIndex][respIndex_2 + 1]
-	$Buttons/Button3/Resposta3.text = respostas[respIndex][respIndex_2 + 2]
-	$Buttons/Button4/Resposta4.text = respostas[respIndex][respIndex_2 + 3]
+func _physics_process(delta):
+	if Classglobal.quiz == true: 
+		self.visible = true
+		$RichTextLabel.text = perguntas[pergIndex]
+		$Buttons/Button/Resposta1.text = respostas[respIndex][respIndex_2]
+		$Buttons/Button2/Resposta2.text = respostas[respIndex][respIndex_2 + 1]
+		$Buttons/Button3/Resposta3.text = respostas[respIndex][respIndex_2 + 2]
+		$Buttons/Button4/Resposta4.text = respostas[respIndex][respIndex_2 + 3]
 
 func _on_Button_pressed():
 	if respondeu == 0:
 		respondeu += 1
 		pergIndex += 1
 		respIndex += 1
-		_ready()
 	elif respondeu == 1:
 		get_tree().change_scene("res://Cenas/Cena1.tscn")
 

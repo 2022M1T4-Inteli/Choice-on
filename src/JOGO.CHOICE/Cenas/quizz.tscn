@@ -54,10 +54,11 @@ border_width_bottom = 5
 border_color = Color( 0.615686, 0.368627, 0.811765, 1 )
 
 [node name="Quizz" type="Control"]
-margin_left = -1200.0
-margin_top = -750.0
-margin_right = -1200.0
-margin_bottom = -750.0
+margin_left = -1229.0
+margin_top = -774.0
+margin_right = -1229.0
+margin_bottom = -774.0
+rect_scale = Vector2( 1, 1.2 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -65,19 +66,18 @@ __meta__ = {
 
 [node name="Buttons" type="Control" parent="."]
 margin_left = -315.0
-margin_top = -255.0
+margin_top = -208.0
 margin_right = 1156.0
-margin_bottom = 473.0
+margin_bottom = 520.0
 __meta__ = {
-"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="Button5" type="Button" parent="Buttons"]
-margin_left = 1358.0
-margin_top = 603.0
-margin_right = 1837.0
-margin_bottom = 1143.0
+margin_left = -100.0
+margin_top = 638.0
+margin_right = 379.0
+margin_bottom = 1178.0
 rect_scale = Vector2( 0.15, 0.15 )
 custom_fonts/font = SubResource( 16 )
 icon = ExtResource( 3 )
@@ -171,9 +171,9 @@ __meta__ = {
 }
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = -1128.0
+margin_left = -1130.0
 margin_top = -175.0
-margin_right = -336.0
+margin_right = -338.0
 margin_bottom = 406.0
 custom_fonts/normal_font = SubResource( 11 )
 custom_styles/normal = SubResource( 15 )

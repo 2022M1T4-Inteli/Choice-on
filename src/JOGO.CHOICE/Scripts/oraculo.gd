@@ -1,14 +1,12 @@
 extends Node2D
 
 func _ready():
-	$Quizz.visible = false
 	$Sprite/AnimationPlayer.play("Robo")
 
 func _physics_process(delta):
 	if Input.is_action_just_pressed("cena") && Classglobal.oraculo == true:
 		Classglobal.frozen = true
 		$RichTextLabel.visible = false
-		$Quizz.visible = true
 		Classglobal.quiz = true
 
 
