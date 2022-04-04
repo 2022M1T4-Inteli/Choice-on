@@ -24,7 +24,7 @@ func _ready():
 	
 func _process(delta):
 	if (Classglobal.Scene == "Cena 1" || Classglobal.Scene == "Cena 2") && dialogNumber_A_2 > 0: 
-		if Input.is_action_just_pressed("cena"):
+		if Input.is_action_just_pressed("ui_accept"):
 			load_Artefatos()
 			
 func load_Artefatos():
