@@ -42,7 +42,7 @@ margin_top = 35.0
 margin_bottom = 35.0
 
 [sub_resource type="DynamicFont" id=6]
-size = 50
+size = 45
 outline_size = 3
 extra_spacing_char = 1
 font_data = ExtResource( 6 )
@@ -160,17 +160,17 @@ __meta__ = {
 
 [node name="instrucoes" type="Label" parent="Control2"]
 margin_left = 641.0
-margin_top = -583.0
-margin_right = 1061.0
-margin_bottom = -387.0
+margin_top = -595.0
+margin_right = 1100.0
+margin_bottom = -399.0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 text = "I = Inventário
 M = Mapa
-E = Diálogos
-F = Fireball"
+F = Fireball
+Espaço = Diálogos"
 __meta__ = {
 "_edit_use_anchors_": false
 }

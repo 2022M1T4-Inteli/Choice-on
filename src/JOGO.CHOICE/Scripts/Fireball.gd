@@ -4,7 +4,7 @@ var motion = Vector2()
 var direction = 1
 var bounces = 0
 
-const SPEED = 500
+const SPEED = 700
 const GRAVITY = 25
 const BOUNCE = -360
 
