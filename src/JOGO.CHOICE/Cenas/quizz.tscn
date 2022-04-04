@@ -1,17 +1,17 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scripts/Quiz.gd" type="Script" id=1]
 [ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://sprites/bomba.png" type="Texture" id=3]
 
-[sub_resource type="DynamicFontData" id=8]
-font_path = "res://VCR_OSD_MONO_1.001.ttf"
+[sub_resource type="DynamicFont" id=16]
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=9]
 size = 43
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 8 )
+font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxEmpty" id=14]
 content_margin_left = 25.0
@@ -19,32 +19,23 @@ content_margin_right = 25.0
 content_margin_top = 10.0
 content_margin_bottom = 10.0
 
-[sub_resource type="DynamicFontData" id=10]
-font_path = "res://VCR_OSD_MONO_1.001.ttf"
-
 [sub_resource type="DynamicFont" id=7]
 size = 43
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 10 )
-
-[sub_resource type="DynamicFontData" id=12]
-font_path = "res://VCR_OSD_MONO_1.001.ttf"
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=13]
 size = 43
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 12 )
-
-[sub_resource type="DynamicFontData" id=1]
-font_path = "res://VCR_OSD_MONO_1.001.ttf"
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 43
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 1 )
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=11]
 size = 40
@@ -73,30 +64,32 @@ __meta__ = {
 }
 
 [node name="Buttons" type="Control" parent="."]
-margin_left = 10.0
-margin_top = 129.0
-margin_right = 50.0
-margin_bottom = 169.0
+margin_left = -315.0
+margin_top = -255.0
+margin_right = 1156.0
+margin_bottom = 473.0
 __meta__ = {
+"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="Button5" type="Button" parent="Buttons"]
-margin_left = 1035.0
-margin_top = 295.0
-margin_right = 1514.0
-margin_bottom = 835.0
+margin_left = 1358.0
+margin_top = 603.0
+margin_right = 1837.0
+margin_bottom = 1143.0
 rect_scale = Vector2( 0.15, 0.15 )
+custom_fonts/font = SubResource( 16 )
 icon = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button4" type="Button" parent="Buttons"]
-margin_left = -321.0
-margin_top = 245.0
-margin_right = 1017.0
-margin_bottom = 412.0
+margin_left = 2.0
+margin_top = 553.0
+margin_right = 1340.0
+margin_bottom = 720.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -114,10 +107,10 @@ __meta__ = {
 }
 
 [node name="Button3" type="Button" parent="Buttons"]
-margin_left = -322.0
-margin_top = 63.0
-margin_right = 1019.0
-margin_bottom = 234.0
+margin_left = 1.0
+margin_top = 371.0
+margin_right = 1342.0
+margin_bottom = 542.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -136,10 +129,10 @@ __meta__ = {
 }
 
 [node name="Button2" type="Button" parent="Buttons"]
-margin_left = -322.0
-margin_top = -119.0
-margin_right = 1019.0
-margin_bottom = 54.0
+margin_left = 1.0
+margin_top = 189.0
+margin_right = 1342.0
+margin_bottom = 362.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -157,10 +150,10 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Buttons"]
-margin_left = -325.0
-margin_top = -309.0
-margin_right = 1018.0
-margin_bottom = -128.0
+margin_left = -2.0
+margin_top = -1.0
+margin_right = 1341.0
+margin_bottom = 180.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
