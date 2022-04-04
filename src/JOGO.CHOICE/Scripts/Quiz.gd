@@ -61,6 +61,6 @@ func _on_Button4_pressed():
 func _on_Button5_pressed():
 	if Classglobal.coins >= 20:
 		Classglobal.coins -= 20
-		$Button3/Resposta2.text = ' '
-		$Button4/Resposta3.text = ' '
+		$Buttons/Button4/Resposta4.text = ' '
+		$Buttons/Button3/Resposta3.text = ' '
 

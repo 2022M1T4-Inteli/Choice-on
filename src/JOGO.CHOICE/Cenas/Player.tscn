@@ -1,9 +1,8 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Cenas/Player.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://Scripts/PlayerMinigame.gd" type="Script" id=2]
-[ext_resource path="res://sprites/yelow.png" type="Texture" id=3]
-[ext_resource path="res://sprites/yellow.png" type="Texture" id=4]
+[ext_resource path="res://sprites/red.png" type="Texture" id=3]
 [ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=5]
 [ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Scripts/RichTextLabelFase1.gd" type="Script" id=7]
@@ -60,7 +59,7 @@ shape = SubResource( 1 )
 scale = Vector2( 0.133824, 0.13395 )
 frames = ExtResource( 1 )
 animation = "andar"
-frame = 2
+frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -84,8 +83,8 @@ texture = ExtResource( 3 )
 [node name="Sprite" type="Sprite" parent="circles"]
 position = Vector2( 4, 17 )
 rotation = -2.72085
-scale = Vector2( 0.493365, 0.493365 )
-texture = ExtResource( 4 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.7
