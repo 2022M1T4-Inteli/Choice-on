@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Cenas/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Cenas/MobSpawner.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Cena1.gd" type="Script" id=7]
 [ext_resource path="res://Cenas/quizz.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Cenas/checkpoint.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Cenas/oraculo.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Cenas/MobSpawner_One.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=12]
@@ -153,6 +154,9 @@ position = Vector2( 9050, 1665 )
 [node name="Artefato_I" parent="Artefatos" instance=ExtResource( 5 )]
 position = Vector2( 1887, 2476 )
 
+[node name="checkpoint" parent="Artefatos" instance=ExtResource( 9 )]
+position = Vector2( 7072, 2641 )
+
 [node name="Coins" type="Node2D" parent="."]
 position = Vector2( 422, 959 )
 
@@ -232,7 +236,7 @@ position = Vector2( 13199, 1680 )
 position = Vector2( 14254, 3394 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 186, 3135 )
+position = Vector2( 198, 3169 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( 0, -16 )

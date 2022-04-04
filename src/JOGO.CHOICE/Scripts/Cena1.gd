@@ -12,6 +12,11 @@ func _ready():
 	Classglobal.frozen = false
 	
 
+
+func _enter_tree():
+	if Classglobal.checkpoint:
+		$Player.global_position = Classglobal.checkpoint
+
  
 
 func _process(delta):
@@ -56,6 +61,5 @@ func _process(delta):
 		if Classglobal.lives <= 0:
 			get_tree().change_scene("res://Cenas/Cena1.tscn")
 			
-		
 
 

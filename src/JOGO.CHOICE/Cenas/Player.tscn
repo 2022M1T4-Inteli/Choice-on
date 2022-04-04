@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Cenas/Player.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://Scripts/PlayerMinigame.gd" type="Script" id=2]
@@ -46,6 +46,15 @@ size = 45
 outline_size = 3
 extra_spacing_char = 1
 font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://sprites/VCR_OSD_MONO_1.001.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 300
+outline_size = 10
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 7 )
 
 [node name="Player" type="KinematicBody2D"]
 collision_mask = 14
@@ -179,5 +188,17 @@ __meta__ = {
 visible = false
 position = Vector2( -628, -532 )
 scale = Vector2( 1, 0.879998 )
+
+[node name="M para sair" type="Label" parent="."]
+margin_left = 6490.0
+margin_top = -2657.0
+margin_right = 10018.0
+margin_bottom = -2356.0
+custom_fonts/font = SubResource( 8 )
+text = "APERTE 'M' PARA SAIR"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -18,3 +18,5 @@ var passarfase = false
 
 var oraculo = false
 
+var checkpoint = null
+
