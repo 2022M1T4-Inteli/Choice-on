@@ -53,10 +53,8 @@ func _process(delta):
 		if Classglobal.n_artefatos == 5:
 			$Sprites/Circle_I2.visible = false
 			
-#		if Classglobal.quiz == true:
-#			$Player/Control2.visible = false
-#		else:
-#			$Player/Control2.visible = true
+		if Classglobal.quiz == true:
+			$Player/Control2.visible = false
 
 		if Classglobal.lives <= 0:
 			Classglobal.n_artefatos = 0
