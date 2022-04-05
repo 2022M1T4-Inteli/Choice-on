@@ -6,6 +6,7 @@ var inventario = false
 func _ready():
 	Classglobal.Scene = "Cena 1"
 	if Classglobal.n_artefatos >= 3:
+		Classglobal.n_artefatos = 3
 		$Artefatos/Artefato_I/Sprite.visible = false
 		$Artefatos/Artefato_I.monitoring = false
 		$Artefatos/Artefato_N/Sprite.visible = false
