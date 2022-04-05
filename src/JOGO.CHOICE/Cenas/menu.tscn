@@ -26,8 +26,8 @@ scene_to_go = "res://Cenas/Tutorial_feira.tscn"
 
 [node name="BackgroundMenu" type="Sprite" parent="."]
 modulate = Color( 0.290196, 0.2, 0.2, 1 )
-position = Vector2( -9, 5 )
-scale = Vector2( 1.43324, 1.47037 )
+position = Vector2( -5.47761, 5 )
+scale = Vector2( 1.44058, 1.47037 )
 texture = ExtResource( 2 )
 
 [node name="Logo" type="Sprite" parent="."]

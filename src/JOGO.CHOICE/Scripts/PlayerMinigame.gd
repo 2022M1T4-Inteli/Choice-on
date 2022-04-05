@@ -38,13 +38,13 @@ func _physics_process(delta):
 					motion.x = +SPEED
 			countJump += 1
 			
-		if is_on_wall() && Input.is_action_pressed("ui_left") && side != "left":
+		if is_on_wall() && Input.is_action_pressed("ui_left") && side != "left": #condicao que permiteo personagem agarrar nas paredes
 			countJump = 1
 			side = "left"
 			if motion.y >= 0:
 				motion.y = min(motion.y + WALL_SLIDE_ACC, MAX_WALL_SLIDE_SPEED)
 
-		if is_on_wall() && Input.is_action_pressed("ui_right") && side != "right":
+		if is_on_wall() && Input.is_action_pressed("ui_right") && side != "right": #condicao que permiteo personagem agarrar nas paredes
 			countJump = 1
 			side = "right"
 			if motion.y >= 0:

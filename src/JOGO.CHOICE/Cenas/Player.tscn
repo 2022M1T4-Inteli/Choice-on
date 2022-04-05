@@ -60,7 +60,6 @@ shape = SubResource( 1 )
 scale = Vector2( 0.133824, 0.13395 )
 frames = ExtResource( 1 )
 animation = "andar"
-frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true

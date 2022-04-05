@@ -10,7 +10,7 @@ var onTenda = false
 
 func _physics_process(delta):
 	
-	if !Classglobal.frozen:
+	if !Classglobal.frozen: #Para podermos controlar os momentos que o personagem anda, variável booliana
 		if Input.is_action_pressed("ui_right"): #Leitor de Input, analisa e age no eixo x do player
 			motion.x += 1
 			$AnimatedSprite.flip_h = false
@@ -19,7 +19,7 @@ func _physics_process(delta):
 			motion.x -= 1
 			$AnimatedSprite.flip_h = true
 			$AnimatedSprite.play("walk right")
-		elif Input.is_action_pressed("ui_up"): #Leitor de Input, analisa e age no eixo x do player
+		elif Input.is_action_pressed("ui_up"): #Leitor de Input, analisa e age no eixo y do player
 			motion.y -= 1
 			$AnimatedSprite.play("walk up")
 		elif Input.is_action_pressed("ui_down"):
@@ -34,7 +34,7 @@ func _physics_process(delta):
 	motion.y = lerp(motion.y,0,0.5)
 
 	if Input.is_action_pressed("ui_accept") && onTenda == true:
-		print('alo')
+#		print('alo')
 		#get_tree().change_scene("res://TSCN/professor.tscn")
 		Transition.fade_into(scene_to_go)
 
