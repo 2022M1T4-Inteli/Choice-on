@@ -10,6 +10,7 @@
 [ext_resource path="res://Scripts/seta.gd" type="Script" id=12]
 [ext_resource path="res://sprites/tutorial_feira/caminhozin.tres" type="TileSet" id=14]
 
+
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 5 ) ],

@@ -9,6 +9,7 @@
 [ext_resource path="res://Scripts/Feira.gd" type="Script" id=7]
 [ext_resource path="res://Cenas/Dialog.tscn" type="PackedScene" id=8]
 
+
 [sub_resource type="DynamicFont" id=2]
 size = 100
 outline_size = 3

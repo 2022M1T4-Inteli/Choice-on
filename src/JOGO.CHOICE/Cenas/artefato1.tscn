@@ -3,6 +3,7 @@
 [ext_resource path="res://sprites/Artefato.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/artefato.1.gd" type="Script" id=2]
 
+
 [sub_resource type="Animation" id=3]
 length = 0.001
 

@@ -5,20 +5,19 @@ var inventario = false
 
 func _ready():
 	Classglobal.Scene = "Cena 1"
-	Classglobal.lives = 5
-	Classglobal.n_artefatos = 0
-	Classglobal.coins = 0
+	if Classglobal.n_artefatos >= 3:
+		$Artefatos/Artefato_I/Sprite.visible = false
+		$Artefatos/Artefato_I.monitoring = false
+		$Artefatos/Artefato_N/Sprite.visible = false
+		$Artefatos/Artefato_N.monitoring = false
+		$Artefatos/Artefato_T/Sprite.visible = false
+		$Artefatos/Artefato_T.monitoring = false
+		if Classglobal.checkpoint:
+			$Player.global_position = Classglobal.checkpoint
 	Classglobal.passarfase = false
 	Classglobal.frozen = false
-	
-
-
-func _enter_tree():
-	if Classglobal.checkpoint:
-		$Player.global_position = Classglobal.checkpoint
 
  
-
 func _process(delta):
 	if Classglobal.Scene == "Cena 1":
 		if Input.is_action_just_pressed("minimapa") and zoom == false and !inventario:
@@ -42,11 +41,11 @@ func _process(delta):
 			$Player/Control2/inventario.visible = false
 			inventario = false
 
-		if Classglobal.n_artefatos == 1:
+		if Classglobal.n_artefatos >= 1:
 			$Sprites/Circle_I.visible = false
-		if Classglobal.n_artefatos == 2:
+		if Classglobal.n_artefatos >= 2:
 			$Sprites/Circle_N.visible = false
-		if Classglobal.n_artefatos == 3:
+		if Classglobal.n_artefatos >= 3:
 			$Sprites/Circle_T.visible = false
 		if Classglobal.n_artefatos == 4:
 			$Sprites/Circle_E.visible = false
@@ -59,7 +58,9 @@ func _process(delta):
 #			$Player/Control2.visible = true
 
 		if Classglobal.lives <= 0:
+			Classglobal.n_artefatos = 0
+			Classglobal.lives = 5
 			get_tree().change_scene("res://Cenas/Cena1.tscn")
-			
+			Classglobal.coins = 0
 
 

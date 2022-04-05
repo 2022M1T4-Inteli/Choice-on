@@ -5,6 +5,7 @@
 [ext_resource path="res://sprites/enemies/slimeBlue.png" type="Texture" id=3]
 [ext_resource path="res://sprites/enemies/slimeBlue_squashed.png" type="Texture" id=4]
 
+
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ) ],

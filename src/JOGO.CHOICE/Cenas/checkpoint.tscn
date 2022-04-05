@@ -2,6 +2,7 @@
 
 [ext_resource path="res://Scripts/checkpoint.gd" type="Script" id=1]
 
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 629.25, 17.5 )
 

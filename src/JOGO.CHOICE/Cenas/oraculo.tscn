@@ -4,6 +4,7 @@
 [ext_resource path="res://Scripts/oraculo.gd" type="Script" id=2]
 [ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=4]
 
+
 [sub_resource type="Animation" id=1]
 length = 0.001
 tracks/0/type = "value"

@@ -34,23 +34,35 @@ func _on_Button_pressed():
 		pergIndex += 1
 		respIndex += 1
 	elif respondeu == 1:
-		get_tree().change_scene("res://Cenas/Cena1.tscn")
+		Classglobal.lives = 0
+		$Buttons.visible = false
+		Classglobal.quiz = false
 
 func _on_Button2_pressed():
 	if respondeu == 0:
-			get_tree().change_scene("res://Cenas/Cena1.tscn")
+			Classglobal.lives = 0
+			$Buttons.visible = false
+			Classglobal.quiz = false
 	elif respondeu == 1:
-			get_tree().change_scene("res://Cenas/Cena1.tscn")
+			Classglobal.lives = 0
+			$Buttons.visible = false
+			Classglobal.quiz = false
 
 func _on_Button3_pressed():
 	if respondeu == 0:
-		get_tree().change_scene("res://Cenas/Cena1.tscn")
+		Classglobal.lives = 0
+		$Buttons.visible = false
+		Classglobal.quiz = false
 	elif respondeu == 1:
-		get_tree().change_scene("res://Cenas/Cena1.tscn")
+		Classglobal.lives = 0
+		$Buttons.visible = false
+		Classglobal.quiz = false
 
 func _on_Button4_pressed():
 	if respondeu == 0:
-		get_tree().change_scene("res://Cenas/Cena1.tscn")
+		Classglobal.lives = 0
+		$Buttons.visible = false
+		Classglobal.quiz = false
 	elif respondeu == 1:
 		$RichTextLabel.text = "Você Acertou!!, passe pelo portal!"
 		$Buttons.visible = false

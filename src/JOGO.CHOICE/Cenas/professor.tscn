@@ -6,6 +6,7 @@
 [ext_resource path="res://Scripts/professor.gd" type="Script" id=4]
 [ext_resource path="res://Cenas/Dialog.tscn" type="PackedScene" id=5]
 
+
 [sub_resource type="DynamicFont" id=1]
 size = 100
 outline_size = 3
