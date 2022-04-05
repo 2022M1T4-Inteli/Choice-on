@@ -21,8 +21,9 @@ Transition="*res://Cenas/transition.tscn"
 
 [display]
 
-window/size/height=565
-window/size/resizable=false
+window/size/width=1920
+window/size/height=1080
+window/size/fullscreen=true
 
 [editor_plugins]
 

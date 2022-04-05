@@ -26,7 +26,8 @@ scene_to_go = "res://Cenas/Tutorial_feira.tscn"
 
 [node name="BackgroundMenu" type="Sprite" parent="."]
 modulate = Color( 0.290196, 0.2, 0.2, 1 )
-scale = Vector2( 1.08125, 1.10926 )
+position = Vector2( -9, 5 )
+scale = Vector2( 1.43324, 1.47037 )
 texture = ExtResource( 2 )
 
 [node name="Logo" type="Sprite" parent="."]
@@ -38,10 +39,10 @@ texture = ExtResource( 1 )
 current = true
 
 [node name="Start" type="Button" parent="."]
-margin_left = -110.0
-margin_top = 80.0
-margin_right = 110.0
-margin_bottom = 130.0
+margin_left = -113.0
+margin_top = 81.0
+margin_right = 107.0
+margin_bottom = 131.0
 icon = SubResource( 1 )
 __meta__ = {
 "_edit_group_": true,
@@ -62,10 +63,10 @@ __meta__ = {
 }
 
 [node name="Sair" type="Button" parent="."]
-margin_left = -110.0
-margin_top = 180.0
-margin_right = 110.0
-margin_bottom = 230.0
+margin_left = -111.0
+margin_top = 183.0
+margin_right = 109.0
+margin_bottom = 233.0
 custom_fonts/font = SubResource( 3 )
 __meta__ = {
 "_edit_group_": true,
@@ -86,10 +87,10 @@ __meta__ = {
 }
 
 [node name="CheckButton" type="CheckButton" parent="."]
-margin_left = -498.0
-margin_top = -304.0
-margin_right = -379.0
-margin_bottom = -209.0
+margin_left = -605.0
+margin_top = -363.0
+margin_right = -486.0
+margin_bottom = -268.0
 text = "Sound"
 __meta__ = {
 "_edit_use_anchors_": false

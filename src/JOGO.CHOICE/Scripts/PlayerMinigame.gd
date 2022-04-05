@@ -61,11 +61,11 @@ func _physics_process(delta):
 	motion.x = lerp(motion.x,0,0.5) # Lerp permite a nice gliding stop |||
 	
 	if Classglobal.Scene == "Cena 1":
-		$Control2/moeda.text = str(Classglobal.coins) 
+		$Control2/vida_moeda/moeda.text = str(Classglobal.coins) 
 		
-		$Control2/vida.text = str(Classglobal.lives) + '/5'
+		$Control2/vida_moeda/vida.text = str(Classglobal.lives) + '/5'
 		
-		$Control2/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
+		$Control2/vida_moeda/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
 	
 func fire():
 	var direction = 1 if not $Sprite_Player.flip_h else -1
