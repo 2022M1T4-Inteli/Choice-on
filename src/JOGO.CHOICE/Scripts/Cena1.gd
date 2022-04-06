@@ -61,5 +61,3 @@ func _process(delta):
 			Classglobal.lives = 5
 			get_tree().change_scene("res://Cenas/Cena1.tscn")
 			Classglobal.coins = 0
-
-
