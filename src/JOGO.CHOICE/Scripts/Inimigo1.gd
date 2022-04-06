@@ -45,7 +45,6 @@ func _on_Top_Check_body_entered(body):
 
 func _on_Sides_Check_body_entered(body):
 	if body.get_collision_layer() == 1:
-		Classglobal.lives -= 1
 		body.ouch()
 	else:
 		body.queue_free()

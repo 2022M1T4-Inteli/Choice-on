@@ -89,6 +89,8 @@ func bounce():
 	motion.y = - 500
 
 func ouch():
+	if Classglobal.Scene == "Cena 1":
+		Classglobal.lives -= 1
 	set_modulate(Color(1.5,0.3,0.3,0.4))
 	$Timer.start()
 
@@ -103,22 +105,17 @@ func _on_Fallzone2_body_entered(body):
 func _on_Artefato_E_body_entered(body):
 	$Control2/Control/RichTextLabel.load_Artefatos()
 
-
 func _on_Artefato_N_body_entered(body):
 	$Control2/Control/RichTextLabel.load_Artefatos()
-	
 
 func _on_Artefato_T_body_entered(body):
 	$Control2/Control/RichTextLabel.load_Artefatos()
-	
 
 func _on_Artefato_I2_body_entered(body):
 	$Control2/Control/RichTextLabel.load_Artefatos()
-	
 
 func _on_Artefato_I_body_entered(body):
 	$Control2/Control/RichTextLabel.load_Artefatos()
-	
 
 func _on_Timer_timeout():
 	set_modulate(Color(1,1,1,1))

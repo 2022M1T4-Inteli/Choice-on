@@ -5,20 +5,9 @@ var inventario = false
 
 func _ready():
 	Classglobal.Scene = "Cena 1"
-	if Classglobal.n_artefatos >= 3:
-		#Classglobal.dialogNumber_A_2 = 2
-		Classglobal.dialogNumber_A = 2
-		Classglobal.n_artefatos = 3
-		$Artefatos/Artefato_I/Sprite.visible = false
-		$Artefatos/Artefato_I.monitoring = false
-		$Artefatos/Artefato_N/Sprite.visible = false
-		$Artefatos/Artefato_N.monitoring = false
-		$Artefatos/Artefato_T/Sprite.visible = false
-		$Artefatos/Artefato_T.monitoring = false
-		if Classglobal.checkpoint:
-			$Player.global_position = Classglobal.checkpoint
 	Classglobal.passarfase = false
 	Classglobal.frozen = false
+	checkpoint()
 
  
 func _process(delta):
@@ -75,3 +64,20 @@ func morte():
 func quiz():
 	if Classglobal.quiz == true:
 		$Player/Control2.visible = false
+
+func checkpoint():
+	if Classglobal.n_artefatos >= 3:
+		Classglobal.dialogNumber_A = 2
+		Classglobal.n_artefatos = 3
+		$Artefatos/Artefato_I/Sprite.visible = false
+		$Artefatos/Artefato_I.monitoring = false
+		$Artefatos/Artefato_N/Sprite.visible = false
+		$Artefatos/Artefato_N.monitoring = false
+		$Artefatos/Artefato_T/Sprite.visible = false
+		$Artefatos/Artefato_T.monitoring = false
+	if Classglobal.checkpoint:
+		$Player.global_position = Classglobal.checkpoint
+	else:
+		Classglobal.n_artefatos = 0
+		Classglobal.coins = 0
+
