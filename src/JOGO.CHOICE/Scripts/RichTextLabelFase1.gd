@@ -13,9 +13,7 @@ var dialogArtefatos_1 = [
 #	[" Artefato 3", "O engenheiro de computacao estuda tanto a parte de hardware como a de software."], 
 #	[" Artefato 4", "Dentre os quatro cursos de tecnologia, o engenheiro de computacao e aquele que, ao final da graduacao, tera o melhor preparo para trabalhar com robotica."], 
 #	[" Artefato 5", "Sistemas embarcados sao uma combinacao de hardware e software que sao designados para cumprir funcoes especificas. Um sistema embarcado pode ser entendido como um computador projetado especificamente para cumprir uma determinada funcao. Exemplos de sistemas embarcados sao o microchip de controle do ar condicionado, o piloto automatico de um carro e os computadores de bordo de aeronaves e de satelites."]]
-#
-var dialogNumber_A = 0
-var dialogNumber_A_2 = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,7 +21,7 @@ func _ready():
 	pass 
 	
 func _process(delta):
-	if (Classglobal.Scene == "Cena 1" || Classglobal.Scene == "Cena 2") && dialogNumber_A_2 > 0: 
+	if (Classglobal.Scene == "Cena 1" || Classglobal.Scene == "Cena 2") && Classglobal.dialogNumber_A_2 > 0: 
 		if Input.is_action_just_pressed("ui_accept"):
 			load_Artefatos()
 			
@@ -31,14 +29,14 @@ func load_Artefatos():
 	self.visible = true
 	Classglobal.frozen = true
 	if Classglobal.Scene == "Cena 1":
-		if dialogNumber_A_2 < 4 && dialogNumber_A < 5:
-			self.text = dialogArtefatos_1[dialogNumber_A][dialogNumber_A_2]
-			dialogNumber_A_2 += 1
+		if Classglobal.dialogNumber_A_2 < 4 && Classglobal.dialogNumber_A < 5:
+			self.text = dialogArtefatos_1[Classglobal.dialogNumber_A][Classglobal.dialogNumber_A_2]
+			Classglobal.dialogNumber_A_2 += 1
 		else:
 			self.visible = false
 			Classglobal.frozen = false
-			dialogNumber_A_2 = 0
-			dialogNumber_A += 1
+			Classglobal.dialogNumber_A_2 = 0
+			Classglobal.dialogNumber_A += 1
 #	if Classglobal.Scene == "Cena 2":
 #		if dialogNumber_A_2 < 2 && dialogNumber_A < 5:
 #			self.text = dialogArtefatos_2[dialogNumber_A][dialogNumber_A_2]

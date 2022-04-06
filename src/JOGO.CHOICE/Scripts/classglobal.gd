@@ -20,3 +20,7 @@ var oraculo = false
 
 var checkpoint = null
 
+var dialogNumber_A = 0
+
+var dialogNumber_A_2 = 0
+

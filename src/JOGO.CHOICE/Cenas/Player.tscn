@@ -11,7 +11,6 @@
 [ext_resource path="res://sprites/dialog.png" type="Texture" id=10]
 [ext_resource path="res://sprites/Artefato.png" type="Texture" id=11]
 
-
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 23.5
 height = 53.0
@@ -60,6 +59,7 @@ shape = SubResource( 1 )
 scale = Vector2( 0.133824, 0.13395 )
 frames = ExtResource( 1 )
 animation = "andar"
+frame = 2
 playing = true
 __meta__ = {
 "_edit_lock_": true
