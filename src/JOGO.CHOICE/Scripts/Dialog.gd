@@ -8,10 +8,7 @@ var dialogProfessor = [
 	' Toda vez que você coletar uma peça, te ensinarei algo novo sobre o curso de engenharia da computação.', 
 	' Mas precisamos combinar uma coisa: preste muita atenção a tudo o que será dito, pois ao fim do Jardim, você precisará responder corretamente a algumas perguntas do Oráculo Inteliano para passar de fase.',
 	' Aprenda, se divirta, mas tenha muito cuidado, em alguns momentos o caminho é perigoso.'
-
 ]
-
-#var dialogArtefatos = [["artefato", "Esse é o artefato 1"], ["artefato", "Esse é o artefato 2"], ["artefato", "Esse é o artefato 3"]]
  
 var dialogDiretor = [
 	' Olha só,  você por aqui! É um prazer enorme recebê-lo na feira de profissões do Inteli.',
@@ -22,10 +19,7 @@ var dialogDiretor = [
 	'Ela fica bem ali em cima, à esquerda. Aproveite muito essa jornada e... muita atenção (a tudo). Boa sorte!'
 ]
 
-#onready var label = get_node("Dialog/TextEdit")
 
-#var dialogNumber_A = 0
-#var dialogNumber_A_2 = 0
 var dialogNumber_P = 0
 var dialogNumber_D = 0
 
@@ -38,10 +32,7 @@ func _process(delta):
 	if Classglobal.Scene == "feira" or Classglobal.Scene == "professor":
 		if Input.is_action_just_pressed("ui_accept"):
 			load_dialog()
-#	elif Artefato.PLAYER:
-#		if Input.is_action_just_pressedK("ui_accept"):
-#			load_Artefatos()
-		
+
 func load_dialog():
 	self.visible = true
 	Classglobal.frozen = true
@@ -61,14 +52,3 @@ func load_dialog():
 			self.visible = false
 			Classglobal.frozen = false
 
-#func load_Artefatos():
-#	self.visible = true
-#	if Classglobal.Scene == "Cena 1":
-#		if dialogNumber_A_2 < 2:
-#			self.text = dialogArtefatos[dialogNumber_A][dialogNumber_A_2]
-#			dialogNumber_A_2 += 1
-#		else:
-#			self.visible = false
-#			Classglobal.frozen == false
-#			dialogNumber_A_2 = 0
-#			dialogNumber_A += 1

@@ -9,7 +9,6 @@ func _ready():
 	Classglobal.frozen = false
 	checkpoint()
 
- 
 func _process(delta):
 	if Classglobal.Scene == "Cena 1":
 		mapa()
@@ -17,7 +16,7 @@ func _process(delta):
 		circles()
 		morte()
 		quiz()
-			
+
 func inventario():
 	if Input.is_action_just_pressed("inventairo") && !inventario and !zoom:
 		$Player/Control2/inventario.visible = true
@@ -49,9 +48,9 @@ func circles():
 		$Sprites/Circle_N.visible = false
 	if Classglobal.n_artefatos >= 3:
 		$Sprites/Circle_T.visible = false
-	if Classglobal.n_artefatos == 4:
+	if Classglobal.n_artefatos >= 4:
 		$Sprites/Circle_E.visible = false
-	if Classglobal.n_artefatos == 5:
+	if Classglobal.n_artefatos >= 5:
 		$Sprites/Circle_I2.visible = false
 
 func morte():
@@ -60,7 +59,7 @@ func morte():
 		Classglobal.lives = 5
 		get_tree().change_scene("res://Cenas/Cena1.tscn")
 		Classglobal.coins = 0
-		
+
 func quiz():
 	if Classglobal.quiz == true:
 		$Player/Control2.visible = false

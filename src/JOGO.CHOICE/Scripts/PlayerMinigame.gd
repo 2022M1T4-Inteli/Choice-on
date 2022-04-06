@@ -38,13 +38,13 @@ func _physics_process(delta):
 					motion.x = +SPEED
 			countJump += 1
 			
-		if is_on_wall() && Input.is_action_pressed("ui_left") && side != "left": #condicao que permiteo personagem agarrar nas paredes
+		if is_on_wall() && Input.is_action_pressed("ui_left") && side != "left": #condicao que permite o personagem agarrar nas paredes
 			countJump = 1
 			side = "left"
 			if motion.y >= 0:
 				motion.y = min(motion.y + WALL_SLIDE_ACC, MAX_WALL_SLIDE_SPEED)
 
-		if is_on_wall() && Input.is_action_pressed("ui_right") && side != "right": #condicao que permiteo personagem agarrar nas paredes
+		if is_on_wall() && Input.is_action_pressed("ui_right") && side != "right": #condicao que permite o personagem agarrar nas paredes
 			countJump = 1
 			side = "right"
 			if motion.y >= 0:
@@ -56,17 +56,11 @@ func _physics_process(delta):
 	motion = move_and_slide(motion, up) #move and slide para executar a movimentação
 	a_gravity()
 	fire()
+	assets()
 				#	esse estilo de código deixa o personagem sem freio |||
 
 	motion.x = lerp(motion.x,0,0.5) # Lerp permite a nice gliding stop |||
-	
-	if Classglobal.Scene == "Cena 1":
-		$Control2/vida_moeda/moeda.text = str(Classglobal.coins) 
-		
-		$Control2/vida_moeda/vida.text = str(Classglobal.lives) + '/5'
-		
-		$Control2/vida_moeda/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
-	
+
 func fire():
 	var direction = 1 if not $Sprite_Player.flip_h else -1
 	if Input.is_action_just_pressed("fireball"):
@@ -83,7 +77,6 @@ func a_gravity():
 		side = "zero"
 	else:
 		motion.y += GRAVITY
-#		$AnimatedSprite.play("air")
 
 func bounce():
 	motion.y = - 500
@@ -93,6 +86,14 @@ func ouch():
 		Classglobal.lives -= 1
 	set_modulate(Color(1.5,0.3,0.3,0.4))
 	$Timer.start()
+
+func assets():
+	if Classglobal.Scene == "Cena 1":
+		$Control2/vida_moeda/moeda.text = str(Classglobal.coins) 
+		
+		$Control2/vida_moeda/vida.text = str(Classglobal.lives) + '/5'
+		
+		$Control2/vida_moeda/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
 
 func _on_Fallzone1_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn") 

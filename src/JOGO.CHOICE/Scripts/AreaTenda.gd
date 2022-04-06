@@ -11,4 +11,3 @@ func _on_AreaTenda_body_entered(body):
 func _on_AreaTenda_body_exited(body):
 	body.offTenda() # Chama a funcao do body offTenda()
 	$RichTextLabel.visible = false
-	pass # Replace with function body.
