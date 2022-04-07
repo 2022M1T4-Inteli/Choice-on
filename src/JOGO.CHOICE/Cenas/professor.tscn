@@ -30,7 +30,7 @@ script = ExtResource( 4 )
 scene_to_go = "res://Cenas/Tutorial_minigame.tscn"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 804, 403 )
+position = Vector2( 804, 390 )
 current = true
 zoom = Vector2( 1.5, 1.5 )
 
@@ -40,27 +40,28 @@ scale = Vector2( 1.92503, 0.668693 )
 texture = ExtResource( 6 )
 
 [node name="Tenda" type="Sprite" parent="."]
-position = Vector2( 760, 385 )
-scale = Vector2( 1.72506, 1.65297 )
+position = Vector2( 731, 281.959 )
+scale = Vector2( 2.53898, 2.48674 )
 texture = ExtResource( 1 )
 
 [node name="Professor" type="Sprite" parent="."]
-position = Vector2( 316.059, 512.455 )
-scale = Vector2( 1.62611, 1.65554 )
+position = Vector2( 309, 511 )
+scale = Vector2( 2.26027, 2.30118 )
 texture = ExtResource( 2 )
 
 [node name="Control" parent="." instance=ExtResource( 5 )]
-margin_left = 191.0
-margin_top = 118.0
-margin_right = 191.0
-margin_bottom = 118.0
-rect_scale = Vector2( 1.2, 1.2 )
+margin_left = -180.0
+margin_top = 56.0
+margin_right = -180.0
+margin_bottom = 56.0
+rect_scale = Vector2( 1.64, 1.4 )
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-margin_left = 399.0
-margin_top = 615.0
-margin_right = 1220.0
-margin_bottom = 722.0
+margin_left = 43.0
+margin_top = 645.0
+margin_right = 864.0
+margin_bottom = 752.0
+rect_scale = Vector2( 1.74371, 1.99124 )
 custom_fonts/normal_font = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
 text = "APERTE ESPAÇO"

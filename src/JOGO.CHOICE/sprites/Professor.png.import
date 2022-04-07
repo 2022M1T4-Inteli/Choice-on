@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/professor.png-7b233b7ea659eca6024b0bca389d4dcc.stex"
+path="res://.import/Professor.png-7c0dba783d49d8fe2c42f4a63fd5187f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/professor.png"
-dest_files=[ "res://.import/professor.png-7b233b7ea659eca6024b0bca389d4dcc.stex" ]
+source_file="res://sprites/Professor.png"
+dest_files=[ "res://.import/Professor.png-7c0dba783d49d8fe2c42f4a63fd5187f.stex" ]
 
 [params]
 

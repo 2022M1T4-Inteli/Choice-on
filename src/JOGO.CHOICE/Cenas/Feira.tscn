@@ -54,10 +54,9 @@ collision_mask = 31
 scene_to_go = "res://Cenas/professor.tscn"
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2( 1.14441e-05, -26.25 )
+position = Vector2( 5, -27.5 )
 scale = Vector2( 2, 2 )
 current = true
-zoom = Vector2( 1.2, 1.2 )
 limit_right = 1000000
 limit_bottom = 1000000000
 
@@ -67,20 +66,21 @@ margin_top = -195.0
 margin_right = -448.75
 margin_bottom = -195.0
 grow_horizontal = 0
+rect_scale = Vector2( 1.05, 1.05 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Mairapixel" type="Sprite" parent="Player/Control"]
-position = Vector2( -216.25, 468.75 )
-scale = Vector2( 0.436833, 0.436833 )
+position = Vector2( -215.774, 490.488 )
+scale = Vector2( 0.494057, 0.494057 )
 texture = ExtResource( 6 )
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Player"]
-margin_left = -360.0
-margin_top = 216.25
-margin_right = 461.0
-margin_bottom = 323.25
-rect_scale = Vector2( 0.9, 1 )
+margin_left = -481.25
+margin_top = 225.0
+margin_right = 339.75
+margin_bottom = 332.0
+rect_scale = Vector2( 1.2, 1.33333 )
 custom_fonts/normal_font = SubResource( 2 )
 custom_styles/normal = SubResource( 3 )
 text = "APERTE ESPAÇO"
