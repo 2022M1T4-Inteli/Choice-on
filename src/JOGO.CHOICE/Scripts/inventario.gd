@@ -1,6 +1,6 @@
 extends Node2D
 
-func _process(delta):
+func _process(delta): #cndicoes para preeencher o inventario de acordo com o número de peças
 	if Classglobal.Scene == "Cena 1" and Classglobal.n_artefatos >= 1:
 		$TabContainer/Artefato_1/RichTextLabel.text = 'Duas principais áreas que englobam a engenharia de computação. Logo de início, é importante ressaltar que a Engenharia de Computação é um curso muito extenso e abrangente, o que permite diferentes atuações. Esse bacharelado oferece uma formação muito completa, que engloba duas principais áreas: a ciência da computação e a engenharia elétrica, que representam predominantemente, o desenvolvimento de software (programas, aplivativos) e de hardware (sistemas físicos), respectivamente.'
 	if Classglobal.Scene == "Cena 1" and Classglobal.n_artefatos >= 2:

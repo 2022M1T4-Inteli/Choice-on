@@ -30,7 +30,7 @@ func _physics_process(delta):
 
 	move_and_slide(motion * SPEED)
 	
-	motion.x = lerp(motion.x,0,0.5)
+	motion.x = lerp(motion.x,0,0.5) #da uma sensacao de desaceleracao na movimentacao do player
 	motion.y = lerp(motion.y,0,0.5)
 
 	if Input.is_action_pressed("ui_accept") && onTenda == true:

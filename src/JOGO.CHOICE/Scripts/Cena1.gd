@@ -55,6 +55,7 @@ func circles():
 
 func morte():
 	if Classglobal.lives <= 0:
+		Classglobal.dialogNumber_A = 0
 		Classglobal.n_artefatos = 0
 		Classglobal.lives = 5
 		get_tree().change_scene("res://Cenas/Cena1.tscn")
