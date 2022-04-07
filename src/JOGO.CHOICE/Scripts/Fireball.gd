@@ -17,17 +17,17 @@ func _physics_process(delta):
 	
 	motion.y += GRAVITY
 		
-	if is_on_wall():
+	if is_on_wall(): #se colidir com uma parede ela deixa de existir
 		queue_free()
 
-	if is_on_floor():
+	if is_on_floor(): #permite a bolinha quicar 5 vezes
 		if bounces < 5:
 			motion.y = BOUNCE
 			bounces += 1
 		else:
 			queue_free()
 		
-	motion = move_and_slide(motion, Vector2.UP)
+	motion = move_and_slide(motion, Vector2.UP) #aplica movimentacao nos vetores
 	
 #func kill():
 	
