@@ -49,7 +49,7 @@ border_width_bottom = 6
 border_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="DynamicFont" id=16]
-size = 34
+size = 41
 font_data = ExtResource( 9 )
 
 [sub_resource type="StyleBoxFlat" id=19]
@@ -153,10 +153,10 @@ __meta__ = {
 }
 
 [node name="RichTextLabel4" type="RichTextLabel" parent="Node2D"]
-margin_left = -1472.0
-margin_top = 133.0
-margin_right = -840.0
-margin_bottom = 253.0
+margin_left = -1546.0
+margin_top = 102.0
+margin_right = -798.0
+margin_bottom = 244.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 16 )
 custom_styles/normal = SubResource( 19 )
@@ -180,10 +180,10 @@ __meta__ = {
 }
 
 [node name="RichTextLabel6" type="RichTextLabel" parent="Node2D"]
-margin_left = -1165.0
-margin_top = 330.0
-margin_right = -644.0
-margin_bottom = 431.0
+margin_left = -1067.0
+margin_top = 309.0
+margin_right = -546.0
+margin_bottom = 410.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 21 )
 text = "Use as setas para se mover!
@@ -194,10 +194,10 @@ __meta__ = {
 }
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="Node2D"]
-margin_left = -772.0
-margin_top = -984.0
-margin_right = 1097.0
-margin_bottom = -843.0
+margin_left = -893.0
+margin_top = -1022.0
+margin_right = 976.0
+margin_bottom = -881.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 22 )
 text = "Aperte \"M\" para sair do mapa!"

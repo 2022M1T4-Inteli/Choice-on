@@ -26,10 +26,10 @@ __meta__ = {
 }
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = -19.0
-margin_top = 389.0
-margin_right = 1057.0
-margin_bottom = 548.0
+margin_left = 6.0
+margin_top = 396.0
+margin_right = 1160.0
+margin_bottom = 596.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )

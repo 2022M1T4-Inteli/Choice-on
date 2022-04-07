@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slimeBlue_squashed.png-dde6d6d33035d771b6e148c465be3626.stex"
+path="res://.import/maira.png-a4de950222dfe7e278e3c7604abdcef3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/enemies/slimeBlue_squashed.png"
-dest_files=[ "res://.import/slimeBlue_squashed.png-dde6d6d33035d771b6e148c465be3626.stex" ]
+source_file="res://sprites/maira.png"
+dest_files=[ "res://.import/maira.png-a4de950222dfe7e278e3c7604abdcef3.stex" ]
 
 [params]
 

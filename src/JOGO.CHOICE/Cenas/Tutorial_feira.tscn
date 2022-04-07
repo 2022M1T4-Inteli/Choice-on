@@ -10,7 +10,6 @@
 [ext_resource path="res://Scripts/seta.gd" type="Script" id=12]
 [ext_resource path="res://sprites/tutorial_feira/caminhozin.tres" type="TileSet" id=14]
 
-
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 5 ) ],
@@ -36,8 +35,8 @@ __meta__ = {
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Background" type="Sprite" parent="Node2D"]
-position = Vector2( 643.5, 382 )
-scale = Vector2( 1.00703, 1.07222 )
+position = Vector2( 637.5, 382 )
+scale = Vector2( 0.982031, 1.07222 )
 texture = ExtResource( 6 )
 
 [node name="setas" type="AnimatedSprite" parent="Node2D"]
@@ -45,7 +44,6 @@ position = Vector2( 840, 124 )
 scale = Vector2( 3.83858, 3.51389 )
 frames = SubResource( 5 )
 animation = "setas"
-frame = 1
 playing = true
 script = ExtResource( 12 )
 
@@ -63,7 +61,7 @@ tile_data = PoolIntArray( -458737, 0, 0, -65534, 1, 0, -65533, 1, 0, -65532, 1, 
 position = Vector2( -697, 570 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/collisions"]
-position = Vector2( 696.779, 229.117 )
+position = Vector2( 678, 222 )
 rotation = -3.14159
 scale = Vector2( 1, 100 )
 shape = SubResource( 26 )

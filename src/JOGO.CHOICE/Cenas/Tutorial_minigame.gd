@@ -18,6 +18,8 @@ func inventario():
 	
 	$Player/Control2/inventario.scale.x = 0.5
 	$Player/Control2/inventario.scale.y = 0.5
+	$Player/Control2/inventario.position.y = -170
+	
 	
 	if Input.is_action_just_pressed("inventairo") && !inventario:
 		$Player/Control2/inventario.visible = true

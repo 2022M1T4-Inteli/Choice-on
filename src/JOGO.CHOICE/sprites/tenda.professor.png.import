@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex"
+path="res://.import/tenda.professor.png-1e5c0ec90cc90e9e1b40a2b4df60e584.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Logo.png"
-dest_files=[ "res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex" ]
+source_file="res://sprites/tenda.professor.png"
+dest_files=[ "res://.import/tenda.professor.png-1e5c0ec90cc90e9e1b40a2b4df60e584.stex" ]
 
 [params]
 

@@ -1,9 +1,10 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://sprites/enemies/slimeBlue_blue.png" type="Texture" id=1]
+[ext_resource path="res://sprites/tutorial_feira/enemies/slimeBlue_blue.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Inimigo1.gd" type="Script" id=2]
-[ext_resource path="res://sprites/enemies/slimeBlue.png" type="Texture" id=3]
-[ext_resource path="res://sprites/enemies/slimeBlue_squashed.png" type="Texture" id=4]
+[ext_resource path="res://sprites/tutorial_feira/enemies/slimeBlue.png" type="Texture" id=3]
+[ext_resource path="res://sprites/tutorial_feira/enemies/slimeBlue_squashed.png" type="Texture" id=4]
+
 
 
 [sub_resource type="SpriteFrames" id=2]

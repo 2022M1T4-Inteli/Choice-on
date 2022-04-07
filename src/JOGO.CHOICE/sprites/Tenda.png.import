@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tenda.png-f1cd2e708cc6794cdcaf39080b6c2cdf.stex"
+path="res://.import/tenda.png-887e63d3d581942a4c3bc95891c5c261.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Tenda.png"
-dest_files=[ "res://.import/Tenda.png-f1cd2e708cc6794cdcaf39080b6c2cdf.stex" ]
+source_file="res://sprites/tenda.png"
+dest_files=[ "res://.import/tenda.png-887e63d3d581942a4c3bc95891c5c261.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
