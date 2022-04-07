@@ -74,8 +74,8 @@ func checkpoint():
 		$Artefatos/Artefato_N.monitoring = false
 		$Artefatos/Artefato_T/Sprite.visible = false
 		$Artefatos/Artefato_T.monitoring = false
-	if Classglobal.checkpoint:
-		$Player.global_position = Classglobal.checkpoint
+		if Classglobal.checkpoint:
+			$Player.global_position = Classglobal.checkpoint
 	else:
 		Classglobal.n_artefatos = 0
 		Classglobal.coins = 0
