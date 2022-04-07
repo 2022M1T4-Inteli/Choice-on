@@ -132,7 +132,7 @@ __meta__ = {
 
 [node name="inventario" parent="Control2" instance=ExtResource( 5 )]
 visible = false
-position = Vector2( -628, -532 )
+position = Vector2( -7, -51 )
 scale = Vector2( 1, 0.879998 )
 
 [node name="vida_moeda" type="Node2D" parent="Control2"]

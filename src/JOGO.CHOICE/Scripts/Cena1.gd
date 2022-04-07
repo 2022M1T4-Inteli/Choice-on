@@ -18,6 +18,8 @@ func _process(delta):
 		quiz()
 
 func inventario():
+	$Player/Control2/inventario.scale.x = 1.2
+	$Player/Control2/inventario.scale.y = 1.2
 	if Input.is_action_just_pressed("inventairo") && !inventario and !zoom:
 		$Player/Control2/inventario.visible = true
 		inventario = true
