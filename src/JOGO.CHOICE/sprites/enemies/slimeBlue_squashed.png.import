@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tile000.png-5b56f9c1cc1ffa97dcbfc3fab3a4806b.stex"
+path="res://.import/slimeBlue_squashed.png-dde6d6d33035d771b6e148c465be3626.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/moedas/spriteboy/spritegaroto/tile000.png"
-dest_files=[ "res://.import/tile000.png-5b56f9c1cc1ffa97dcbfc3fab3a4806b.stex" ]
+source_file="res://sprites/enemies/slimeBlue_squashed.png"
+dest_files=[ "res://.import/slimeBlue_squashed.png-dde6d6d33035d771b6e148c465be3626.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

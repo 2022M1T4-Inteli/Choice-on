@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slimeBlue.png-eb44a5e7fe7c273ea915fc9c659f6760.stex"
+path="res://.import/maxresdefault.jpg-92e7b01cb6357bcdb1c52d1c765cde94.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/tutorial_feira/enemies/slimeBlue.png"
-dest_files=[ "res://.import/slimeBlue.png-eb44a5e7fe7c273ea915fc9c659f6760.stex" ]
+source_file="res://sprites/maxresdefault.jpg"
+dest_files=[ "res://.import/maxresdefault.jpg-92e7b01cb6357bcdb1c52d1c765cde94.stex" ]
 
 [params]
 

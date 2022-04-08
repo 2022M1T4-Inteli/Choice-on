@@ -4,7 +4,7 @@
 [ext_resource path="res://sprites/setas/seta11.png" type="Texture" id=2]
 [ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://sprites/setas/seta22.png" type="Texture" id=5]
-[ext_resource path="res://sprites/moedas/spriteboy/maxresdefault.jpg" type="Texture" id=6]
+[ext_resource path="res://sprites/maxresdefault.jpg" type="Texture" id=6]
 [ext_resource path="res://sprites/setas/seta33.png" type="Texture" id=8]
 [ext_resource path="res://Cenas/Player_Feira.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scripts/seta.gd" type="Script" id=12]
@@ -46,7 +46,7 @@ position = Vector2( 840, 124 )
 scale = Vector2( 3.83858, 3.51389 )
 frames = SubResource( 5 )
 animation = "setas"
-frame = 4
+frame = 5
 playing = true
 script = ExtResource( 12 )
 

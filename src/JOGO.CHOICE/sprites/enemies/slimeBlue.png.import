@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tile008.png-1b572f0eef6a98388474a1202b4d56ca.stex"
+path="res://.import/slimeBlue.png-5bd310f699adb3f28d8de021f0d766f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/moedas/spriteboy/spritegaroto/tile008.png"
-dest_files=[ "res://.import/tile008.png-1b572f0eef6a98388474a1202b4d56ca.stex" ]
+source_file="res://sprites/enemies/slimeBlue.png"
+dest_files=[ "res://.import/slimeBlue.png-5bd310f699adb3f28d8de021f0d766f6.stex" ]
 
 [params]
 
