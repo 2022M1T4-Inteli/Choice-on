@@ -236,12 +236,12 @@ position = Vector2( 13199, 1680 )
 position = Vector2( 14254, 3394 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 199, 3113 )
+position = Vector2( 212, 3064 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( 0, -16 )
 current = true
-zoom = Vector2( 2.2, 2.2 )
+zoom = Vector2( 1.5, 1.5 )
 drag_margin_h_enabled = true
 drag_margin_left = 0.0
 drag_margin_top = 0.0
@@ -251,11 +251,11 @@ drag_margin_bottom = 0.0
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 position = Vector2( -12.9995, -4.99951 )
 scale = Vector2( 2222.95, -77.3916 )
-zoom = Vector2( 10, 10 )
+zoom = Vector2( 5.5, 5.5 )
 limit_left = -15
-limit_top = -520
+limit_top = -40
 limit_right = 17600
-limit_bottom = 58
+limit_bottom = 0
 
 [node name="Quizz" parent="Player" instance=ExtResource( 8 )]
 visible = false
