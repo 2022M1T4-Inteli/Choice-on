@@ -59,6 +59,7 @@ shape = SubResource( 1 )
 scale = Vector2( 0.133824, 0.13395 )
 frames = ExtResource( 1 )
 animation = "andar"
+frame = 2
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -88,6 +89,11 @@ texture = ExtResource( 3 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.7
 one_shot = true
+
+[node name="inventario" parent="." instance=ExtResource( 5 )]
+visible = false
+position = Vector2( -7, -51 )
+scale = Vector2( 1, 0.879998 )
 
 [node name="Control2" type="Node2D" parent="."]
 
@@ -129,11 +135,6 @@ Espaço = Diálogos"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="inventario" parent="Control2" instance=ExtResource( 5 )]
-visible = false
-position = Vector2( -7, -51 )
-scale = Vector2( 1, 0.879998 )
 
 [node name="vida_moeda" type="Node2D" parent="Control2"]
 position = Vector2( -245, -160 )

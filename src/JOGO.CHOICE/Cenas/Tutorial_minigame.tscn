@@ -88,6 +88,7 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="Node2D"]
 position = Vector2( -2395, -1614 )
+rotation = 0.000190039
 scale = Vector2( 9.71289, 4.95844 )
 texture = ExtResource( 11 )
 centered = false
@@ -194,10 +195,10 @@ __meta__ = {
 }
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="Node2D"]
-margin_left = -893.0
-margin_top = -1022.0
-margin_right = 976.0
-margin_bottom = -881.0
+margin_left = -975.0
+margin_top = -999.0
+margin_right = 1126.0
+margin_bottom = -858.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 22 )
 text = "Aperte \"M\" para sair do mapa!"
@@ -228,13 +229,14 @@ position = Vector2( -1174, 476 )
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( -1, -100 )
 current = true
+zoom = Vector2( 0.7, 0.7 )
 limit_bottom = 680
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2( 82, 101 )
+position = Vector2( -3, -34 )
 scale = Vector2( 2222.95, -77.3916 )
-zoom = Vector2( 3, 3 )
+zoom = Vector2( 2, 2 )
 limit_left = -1900
 limit_top = -1300
-limit_right = 17600
+limit_right = 1900
 limit_bottom = 58
