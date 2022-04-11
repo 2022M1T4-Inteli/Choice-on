@@ -4,11 +4,12 @@
 [ext_resource path="res://Cenas/Tenda.tscn" type="PackedScene" id=2]
 [ext_resource path="res://sprites/diretor.png" type="Texture" id=3]
 [ext_resource path="res://Cenas/Player_Feira.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://sprites/maira.pixel.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Feira.gd" type="Script" id=7]
 [ext_resource path="res://Cenas/Dialog.tscn" type="PackedScene" id=8]
 [ext_resource path="res://sprites/fundo.png" type="Texture" id=9]
+
 
 [sub_resource type="DynamicFont" id=2]
 size = 100

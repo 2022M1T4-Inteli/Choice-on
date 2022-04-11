@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/disclaimer.gd" type="Script" id=2]
-[ext_resource path="res://sprites/—Pngtree—torn paper from notebook_5540252.png" type="Texture" id=3]
+[ext_resource path="res://sprites/folha.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48

@@ -4,12 +4,13 @@
 [ext_resource path="res://Scripts/PlayerMinigame.gd" type="Script" id=2]
 [ext_resource path="res://sprites/red.png" type="Texture" id=3]
 [ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=5]
-[ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Scripts/RichTextLabelFase1.gd" type="Script" id=7]
 [ext_resource path="res://sprites/heart.png" type="Texture" id=8]
-[ext_resource path="res://sprites/moedas/ezgif.com-gif-maker (3).png" type="Texture" id=9]
+[ext_resource path="res://sprites/itens/moeda/ezgif.com-gif-maker (3).png" type="Texture" id=9]
 [ext_resource path="res://sprites/dialog.png" type="Texture" id=10]
 [ext_resource path="res://sprites/Artefato.png" type="Texture" id=11]
+
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 23.5

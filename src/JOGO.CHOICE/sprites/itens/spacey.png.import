@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bolinha.png-7a4ff4cfddfaa96d74973e8bc27d3ad9.stex"
+path="res://.import/spacey.png-db7f2c361f024236d2065a6483e72f97.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/bolinha.png"
-dest_files=[ "res://.import/bolinha.png-7a4ff4cfddfaa96d74973e8bc27d3ad9.stex" ]
+source_file="res://sprites/itens/spacey.png"
+dest_files=[ "res://.import/spacey.png-db7f2c361f024236d2065a6483e72f97.stex" ]
 
 [params]
 

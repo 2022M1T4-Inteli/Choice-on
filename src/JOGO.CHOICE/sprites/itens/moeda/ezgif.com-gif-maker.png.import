@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bolinha.png-7a4ff4cfddfaa96d74973e8bc27d3ad9.stex"
+path="res://.import/ezgif.com-gif-maker.png-e2f31a98dc66fd33c5f2412cf64339ed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/bolinha.png"
-dest_files=[ "res://.import/bolinha.png-7a4ff4cfddfaa96d74973e8bc27d3ad9.stex" ]
+source_file="res://sprites/itens/moeda/ezgif.com-gif-maker.png"
+dest_files=[ "res://.import/ezgif.com-gif-maker.png-e2f31a98dc66fd33c5f2412cf64339ed.stex" ]
 
 [params]
 

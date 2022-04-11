@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bolinha.png-7a4ff4cfddfaa96d74973e8bc27d3ad9.stex"
+path="res://.import/pngwing.com (3).png-05739d566bc8ce7cbde61cf769a197f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/bolinha.png"
-dest_files=[ "res://.import/bolinha.png-7a4ff4cfddfaa96d74973e8bc27d3ad9.stex" ]
+source_file="res://sprites/itens/pngwing.com (3).png"
+dest_files=[ "res://.import/pngwing.com (3).png-05739d566bc8ce7cbde61cf769a197f9.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

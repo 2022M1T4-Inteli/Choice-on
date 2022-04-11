@@ -6,8 +6,9 @@
 [ext_resource path="res://Cenas/Inimigo.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Cenas/artefato1.tscn" type="PackedScene" id=8]
-[ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://sprites/céu.jpg" type="Texture" id=11]
+
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 56.5201, 212.5 )

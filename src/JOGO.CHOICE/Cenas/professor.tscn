@@ -2,10 +2,11 @@
 
 [ext_resource path="res://sprites/tenda.professor.png" type="Texture" id=1]
 [ext_resource path="res://sprites/professor.png" type="Texture" id=2]
-[ext_resource path="res://sprites/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Scripts/professor.gd" type="Script" id=4]
 [ext_resource path="res://Cenas/Dialog.tscn" type="PackedScene" id=5]
 [ext_resource path="res://sprites/fundo.png" type="Texture" id=6]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
