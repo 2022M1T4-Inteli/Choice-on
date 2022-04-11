@@ -291,7 +291,7 @@ position = Vector2( 13199, 1680 )
 position = Vector2( 14254, 3394 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 215, 3156 )
+position = Vector2( 227, 3091 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( 0, -16 )

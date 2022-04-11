@@ -5,8 +5,9 @@ var inventario = false
 
 func _ready():
 	Classglobal.Scene = "Cena 1"
-	Classglobal.passarfase = false
+	Classglobal.passfase = false
 	Classglobal.frozen = false
+
 	checkpoint()
 
 func _process(delta):
