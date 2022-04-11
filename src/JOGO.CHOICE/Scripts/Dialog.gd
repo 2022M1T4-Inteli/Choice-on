@@ -5,9 +5,13 @@ var dialogProfessor = [
 	" Desculpe o estresse, é que estou meio encrencado. Há meses venho trabalhando em um projeto gigante de engenharia de computação, algo que mudará o mundo.",
 	" Mas ontem aconteceu algo que atrapalhou todo o andamento desse plano...",
 	" Estava de passagem pelo Jardim Flutuante do Inteli e acabei perdendo algumas peças importantíssimas para o projeto. Agora, preciso urgentemente de sua ajuda para recuperá-las.",
-	' Toda vez que você coletar uma peça, te ensinarei algo novo sobre o curso de engenharia da computação.', 
+	' Toda vez que você coletar uma peça, te ensinarei algo novo sobre o curso de engenharia da computação.',
 	' Mas precisamos combinar uma coisa: preste muita atenção a tudo o que será dito, pois ao fim do Jardim, você precisará responder corretamente a algumas perguntas do Oráculo Inteliano para passar de fase.',
-	' Aprenda, se divirta, mas tenha muito cuidado, em alguns momentos o caminho é perigoso.'
+	' Ao longo de sua jornada, você poderá abrir um mini mapa apertando a tecla “M”, em que você verá a localização das peças, circuladas de amarelo.',
+	' Além disso, é possível consultar a qualquer momento a explicação associada a cada peça acessando o inventário, apertando a tecla “I”.',
+	' Aprenda, se divirta, mas tenha muito cuidado, em alguns momentos o caminho é perigoso, o Jardim está cheio de gosmas verdes que podem te machucar. Para matá-las, pule em suas cabeças ou atire uma bola de fogo apertando a tecla “F”.',
+	'Fique tranquilo, esses comandos aparecerão no canto direito da tela para você consultar sempre que necessário.',
+	'Ah, ia quase me esquecendo, caso você consiga coletar 20 moedas, você poderá utilizar uma bomba que eliminará duas das quatro alternativas em uma das perguntas do quiz. Boa sorte, meu jovem!'
 ]
  
 var dialogDiretor = [
