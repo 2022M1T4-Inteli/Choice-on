@@ -3,8 +3,8 @@ extends Control
 var perguntas = ["Essa é uma lista dos projetos recém feitos pelos professores que frequentam o Jardim Flutuante do Inteli: veículo terrestre autônomo, aplicações para celulares, inteligência artificial para jogos digitais, gerenciamento e análise de big data. Quero que você analise as seguintes afirmações acerca da atuação de um engenheiro de computação nesses projetos e marque a correta, ou melhor, a mais correta, rs.", 
 "Como você viu, essas gosmas verdes ficam surgindo a todo instante aqui no Jardim Flutuante do Inteli… Ninguém mais aguenta elas. Estava precisando de um canhão inteligente que mire automaticamente e exploda esses bichinhos insuportáveis. O engenheiro que está em minha equipe está um pouco confuso em relação a como implementar isso. Qual o melhor modo para implementar essa função?"]
 
-var respostas = [["a) Um engenheiro de computação pode atuar na construção de um veículo terrestre autônomo, pois envolve hardware (o veículo) e software (a inteligência do veículo).", 
-				  "b) Um engenheiro de computação poderia atuar em todos os projetos citados, pois todos envolvem hardware, software, ou os dois combinados. ", 
+var respostas = [["a) Um engenheiro de computação poderia atuar em todos os projetos citados, pois todos envolvem hardware, software, ou os dois combinados. ",
+				  "b) Um engenheiro de computação pode atuar na construção de um veículo terrestre autônomo, pois envolve hardware (o veículo) e software (a inteligência do veículo).", 
 				  "c) O engenheiro de computação só conseguiria fazer com 100% de eficiência o veículo terrestre autônomo, pois é o único dos projetos que, além de software, envolve hardware.", 
 				  "d)  Não é ideal que um engenheiro desenvolva um aplicativo para celular, já que esse projeto não envolve nada de hardware, apenas software."],
 				 ["a) Utilizando sistemas embarcados, que são sistemas físicos desenvolvidos para uma função específica que possuem um computador anexado a eles.", 
