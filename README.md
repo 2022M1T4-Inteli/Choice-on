@@ -66,23 +66,10 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
-<b>Android:</b>
-
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
 Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
 
 <b>HTML:</b>
 
@@ -117,28 +104,37 @@ Coloque código do prompt de comnando se for necessário
 
 A cada atualização os detalhes devem ser lançados aqui.
   
-Data Pessoa que alterou Versão
+Data/Pessoa que alterou/Versão
   
 19/02 Future Minds 1.0<br>
 Documentamos as ideias iniciais do jogo, qual o conceito, objetivos, diferenciais. Além disso, documentamos a persona e os requisitos coletados na entrevista com o usuário.<br>
+  
 05/03 Bianca Casemiro 2.0<br>
 Documentamos conceitos mais detalhados sobre o jogo, como o fluxo do jogo, quais serão as mecânicas envolvidas, qual será navegação pelo mundo, aspectos da história. Além disso, definimos as funções matemáticas envolvidas no jogo.  <br>
+
 10/03 Camila e Gabriela 3.0<br>
 Foi feita uma tabela de qualidade de software do jogo.<br>
+
 16/03 João lucas  4.0<br>
 Alguns pontos do GDD foram atualizado. <br>
 22/03 Allan Casado 5.0<br>
 Foi feita a descrição do Value proposition.<br>
+  
 24/03 Allan Casado 6.0<br>
 Foi refeita a parte de requisitos funcionais e requisitos não funcionais.<br>
+  
 25/03 Allan Casado 7.0<br>
 Adição de 3 user stories e atualização do status da game story.<br>
+  
 30/03 João Lucas 8.0<br>
 Foi documentada a playtest, que foi feita por meio de teste com os usuários que jogaram o jogo. Apresentamos o jogo para os testers e coletamos feedbacks.<br>
+  
 05/04 Henri e Pedro Romão  9.0<br>
 Revisaram a seção 6.4.<br>
+  
 08/04 João Lucas 10.0<br>
 Revisou todas as seções do gdd, corrigindo a gramática. Além disso, alterou a estrutura da documentação dos testes de usabilidade (playtest).<br>
+  
 09/04 Allan Casado 11.0<br>
 Preenchimento da seção 2.4 do GDD.<br>
 
