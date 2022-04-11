@@ -7,7 +7,9 @@ func _ready():
 	Classglobal.Scene = "Cena 1"
 	Classglobal.passarfase = false
 	Classglobal.frozen = false
-	checkpoint()
+	Classglobal.n_artefatos = 5
+	Classglobal.coins = 40
+	#checkpoint()
 
 func _process(delta):
 	if Classglobal.Scene == "Cena 1":

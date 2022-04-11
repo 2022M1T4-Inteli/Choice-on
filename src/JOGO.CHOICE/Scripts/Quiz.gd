@@ -7,10 +7,10 @@ var respostas = [["a) Um engenheiro de computação poderia atuar em todos os pr
 				  "b) Um engenheiro de computação pode atuar na construção de um veículo terrestre autônomo, pois envolve hardware (o veículo) e software (a inteligência do veículo).", 
 				  "c) O engenheiro de computação só conseguiria fazer com 100% de eficiência o veículo terrestre autônomo, pois é o único dos projetos que, além de software, envolve hardware.", 
 				  "d)  Não é ideal que um engenheiro desenvolva um aplicativo para celular, já que esse projeto não envolve nada de hardware, apenas software."],
-				 ["a) Utilizando sistemas embarcados, que são sistemas físicos desenvolvidos para uma função específica que possuem um computador anexado a eles.", 
+				 ["a) Criar um software e transmiti-lo via bluetooth para o canhão", 
 				  "b) Utilizar IoT (Internet das coisas) para detectar aparelhos nas gosmas e fazer a mira seguir esse sinal", 
 				  "c) Por meio de sistemas embarcados, que são sistemas físicos com propósito geral que possuem um software associado a eles. ", 
-				  "d) Criar um software e transmiti-lo via bluetooth para o canhão"]]
+				  "d) Utilizando sistemas embarcados, que são sistemas físicos desenvolvidos para uma função específica que possuem um computador anexado a eles."]]
 
 var pergIndex = 0
 
@@ -33,6 +33,8 @@ func _on_Button_pressed():
 		respondeu += 1
 		pergIndex += 1
 		respIndex += 1
+		$Buttons/Button4.visible = true
+		$Buttons/Button3.visible = true
 	elif respondeu == 1:
 		Classglobal.lives = 0
 		$Buttons.visible = false
@@ -72,8 +74,12 @@ func _on_Button4_pressed():
 
 
 func _on_Button5_pressed():
-	if Classglobal.coins >= 20:
+	if Classglobal.coins >= 20 and respondeu == 0:
 		Classglobal.coins -= 20
-		$Buttons/Button4/Resposta4.text = ' '
-		$Buttons/Button3/Resposta3.text = ' '
+		$Buttons/Button4.visible = false
+		$Buttons/Button3.visible = false
+	elif Classglobal.coins >= 20 and respondeu == 1:
+		Classglobal.coins -= 20
+		$Buttons/Button3.visible = false
+		$Buttons/Button2.visible = false
 

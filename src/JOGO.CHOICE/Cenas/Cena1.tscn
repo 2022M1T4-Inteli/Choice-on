@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Cenas/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -14,7 +14,17 @@
 [ext_resource path="res://Cenas/Circle.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Cenas/Ceu.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Cenas/coin.tscn" type="PackedScene" id=14]
+[ext_resource path="res://sprites/placa.ir.png" type="Texture" id=15]
+[ext_resource path="res://sprites/placa.nãoir1.png" type="Texture" id=16]
 [ext_resource path="res://Cenas/portal.tscn" type="PackedScene" id=20]
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://sprites/VCR_OSD_MONO_1.001.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 72
+outline_color = Color( 1, 0, 0, 1 )
+font_data = SubResource( 7 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 8772.5, 327.75 )
@@ -44,6 +54,51 @@ __meta__ = {
 
 [node name="Ceu" parent="Cenario" instance=ExtResource( 13 )]
 position = Vector2( 455, 1422 )
+
+[node name="Label" type="Label" parent="Cenario"]
+margin_left = 6577.0
+margin_top = 2347.0
+margin_right = 7039.0
+margin_bottom = 2445.0
+custom_colors/font_color = Color( 0.0509804, 0, 0.952941, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "CHECKPOINT!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Placair" type="Sprite" parent="Cenario"]
+position = Vector2( 865, 2499 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 15 )
+
+[node name="Placair2" type="Sprite" parent="Cenario"]
+position = Vector2( 8509, 2371 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 15 )
+
+[node name="Placair3" type="Sprite" parent="Cenario"]
+position = Vector2( 8601, 2448 )
+rotation = 1.5708
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 15 )
+
+[node name="Placanãoir1" type="Sprite" parent="Cenario"]
+position = Vector2( 458, 4439 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 16 )
+
+[node name="Placanãoir2" type="Sprite" parent="Cenario"]
+position = Vector2( 981, 2073 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 16 )
+
+[node name="Placanãoir3" type="Sprite" parent="Cenario"]
+position = Vector2( 12803, 2011 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 16 )
 
 [node name="Portal" parent="." instance=ExtResource( 20 )]
 position = Vector2( 16765, 3350 )
@@ -236,7 +291,7 @@ position = Vector2( 13199, 1680 )
 position = Vector2( 14254, 3394 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 212, 3064 )
+position = Vector2( 14366, 4247 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( 0, -16 )

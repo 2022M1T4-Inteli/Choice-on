@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Professor.png-7c0dba783d49d8fe2c42f4a63fd5187f.stex"
+path="res://.import/placa.nãoir1.png-fbabd8d78222ea9bc692f5937ea82f49.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Professor.png"
-dest_files=[ "res://.import/Professor.png-7c0dba783d49d8fe2c42f4a63fd5187f.stex" ]
+source_file="res://sprites/placa.nãoir1.png"
+dest_files=[ "res://.import/placa.nãoir1.png-fbabd8d78222ea9bc692f5937ea82f49.stex" ]
 
 [params]
 
