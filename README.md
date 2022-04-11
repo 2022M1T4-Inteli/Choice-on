@@ -117,6 +117,7 @@ Foi feita uma tabela de qualidade de software do jogo.<br>
 
 16/03 João lucas  4.0<br>
 Alguns pontos do GDD foram atualizado. <br>
+  
 22/03 Allan Casado 5.0<br>
 Foi feita a descrição do Value proposition.<br>
   
