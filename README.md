@@ -27,9 +27,9 @@ O jogo se desenrola em um ambiente escolar (feira de ciências), onde o jogador 
 
 💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
+O objetivo do jogo é instruir sobre os cursos de bacharelado do Inteli, principalmente sobre as diferenças entre eles, tanto no que se refere a parte técnica, quanto às possíveis áreas de atuação e possibilidades dos profissionais formados nesses cursos. 
 <br><br>
-May the force be with you!
+O jogo foi desenvolvido com o fito de ampliar o espectro de interessados na graduação na área da computação em relação às áreas de tecnologia e sua possível atuação no mercado de trabalho, assim, poderá ajudar o jogador a escolher um dos cursos para si, considerando suas habilidades e gostos.
 <br><br>
 
 ## 🛠 Estrutura de pastas
