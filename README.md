@@ -97,7 +97,6 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 ```sh
 make install
 npm test
-Coloque código do prompt de comnando se for necessário
 ```
 
 ## 🗃 Histórico de lançamentos
