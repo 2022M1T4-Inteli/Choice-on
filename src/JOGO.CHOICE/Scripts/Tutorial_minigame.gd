@@ -1,7 +1,7 @@
 extends Control
 
 var zoom = false
-var inventario = false
+var inventory = false
 
 func _ready():
 	Classglobal.Scene = "Tutorial 2"
@@ -20,15 +20,15 @@ func inventario():
 	$Player/inventario.position.y = -200
 	
 	
-	if Input.is_action_just_pressed("inventairo") && !inventario:
+	if Input.is_action_just_pressed("inventairo") && !inventory:
 		$Player/inventario.visible = true
-		inventario = true
-	elif Input.is_action_just_pressed("inventairo") && inventario:
+		inventory = true
+	elif Input.is_action_just_pressed("inventairo") && inventory:
 		$Player/inventario.visible = false
-		inventario = false
+		inventory = false
 
 func mapa():
-	if Input.is_action_just_pressed("minimapa") and zoom == false and !inventario:
+	if Input.is_action_just_pressed("minimapa") and zoom == false and !inventory:
 		zoom = true
 		$Player/Camera2D2.current = true
 		$Player/circles.visible = true

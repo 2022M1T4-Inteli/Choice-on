@@ -53,6 +53,7 @@ func load_dialog():
 			$RichTextLabel.bbcode_text = dialogProfessor[dialogNumber_P]
 			dialogNumber_P += 1
 		else:
+			Classglobal.professorf = true
 			self.visible = false
 			Classglobal.frozen = false
 

@@ -93,7 +93,7 @@ func assets():
 		
 		$Control2/vida_moeda/vida.text = str(Classglobal.lives) + '/5'
 		
-		$Control2/vida_moeda/n_artefatos.text = str(Classglobal.n_artefatos) + '/5'
+		$Control2/vida_moeda/n_artefatos.text = str(Classglobal.numberArtifacts) + '/5'
 
 func _on_Fallzone1_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn") 

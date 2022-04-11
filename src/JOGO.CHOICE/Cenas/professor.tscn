@@ -7,7 +7,6 @@
 [ext_resource path="res://Cenas/Dialog.tscn" type="PackedScene" id=5]
 [ext_resource path="res://sprites/fundo.png" type="Texture" id=6]
 
-
 [sub_resource type="DynamicFont" id=1]
 size = 100
 outline_size = 3
@@ -66,6 +65,3 @@ rect_scale = Vector2( 1.74371, 1.99124 )
 custom_fonts/normal_font = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
 text = "APERTE ESPAÇO"
-__meta__ = {
-"_edit_use_anchors_": false
-}

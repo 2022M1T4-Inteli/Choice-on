@@ -69,7 +69,7 @@ func _on_Button4_pressed():
 		$RichTextLabel.text = "Você Acertou!!, passe pelo portal!"
 		$Buttons.visible = false
 		Classglobal.frozen = false
-		Classglobal.passfase = true
+		Classglobal.passLevel = true
 		Classglobal.quiz = false
 
 

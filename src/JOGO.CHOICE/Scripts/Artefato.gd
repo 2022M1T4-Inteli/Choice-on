@@ -11,5 +11,5 @@ func _on_Area2D_body_exited(body):
 func _process(delta):
 	if can_interact == true and Classglobal.Scene == "Cena 1":
 		queue_free()
-		Classglobal.n_artefatos += 1
+		Classglobal.numberArtifacts += 1
 

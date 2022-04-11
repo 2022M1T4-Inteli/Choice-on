@@ -6,15 +6,17 @@ var Scene
 
 var lives = 5
 
-var n_artefatos = 0
+var numberArtifacts = 0
 
 var quiz = false
 
 var coins = 0
 
-var passfase = false
+var passLevel = false
 
-var oraculo = false
+var professorf = false
+
+var oracle = false
 
 var checkpoint = null
 
