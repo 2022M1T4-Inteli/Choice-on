@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex"
+path="res://.import/Prancheta 2.png-0687822d95b1f9d073ebc3487e94ea71.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Logo.png"
-dest_files=[ "res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex" ]
+source_file="res://sprites/logo_animacao/1x/Prancheta 2.png"
+dest_files=[ "res://.import/Prancheta 2.png-0687822d95b1f9d073ebc3487e94ea71.stex" ]
 
 [params]
 

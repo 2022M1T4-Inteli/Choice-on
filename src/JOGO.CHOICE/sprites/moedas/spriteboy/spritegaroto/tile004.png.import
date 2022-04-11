@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex"
+path="res://.import/tile004.png-596f5cb2a0b0337d38f5320ae7ffd661.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Logo.png"
-dest_files=[ "res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex" ]
+source_file="res://sprites/moedas/spriteboy/spritegaroto/tile004.png"
+dest_files=[ "res://.import/tile004.png-596f5cb2a0b0337d38f5320ae7ffd661.stex" ]
 
 [params]
 

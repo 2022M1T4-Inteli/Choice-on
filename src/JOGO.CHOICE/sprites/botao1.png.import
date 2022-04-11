@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex"
+path="res://.import/botao1.png-626597b08e50816667f877396e91115f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Logo.png"
-dest_files=[ "res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex" ]
+source_file="res://sprites/botao1.png"
+dest_files=[ "res://.import/botao1.png-626597b08e50816667f877396e91115f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

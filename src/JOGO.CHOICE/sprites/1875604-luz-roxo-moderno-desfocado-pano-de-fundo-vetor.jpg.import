@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex"
+path="res://.import/1875604-luz-roxo-moderno-desfocado-pano-de-fundo-vetor.jpg-90a8124835ac17307af5c94d98f00f39.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Logo.png"
-dest_files=[ "res://.import/Logo.png-dfb5a7153cbedcf5364b5e499ea443e7.stex" ]
+source_file="res://sprites/1875604-luz-roxo-moderno-desfocado-pano-de-fundo-vetor.jpg"
+dest_files=[ "res://.import/1875604-luz-roxo-moderno-desfocado-pano-de-fundo-vetor.jpg-90a8124835ac17307af5c94d98f00f39.stex" ]
 
 [params]
 
