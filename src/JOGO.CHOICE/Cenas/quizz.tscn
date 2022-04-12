@@ -4,7 +4,6 @@
 [ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://sprites/bomba.png" type="Texture" id=3]
 
-
 [sub_resource type="DynamicFont" id=16]
 font_data = ExtResource( 2 )
 

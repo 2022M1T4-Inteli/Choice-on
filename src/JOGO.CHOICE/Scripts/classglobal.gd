@@ -10,6 +10,8 @@ var numberArtifacts = 0
 
 var quiz = false
 
+var quizf = false
+
 var coins = 0
 
 var passLevel = false

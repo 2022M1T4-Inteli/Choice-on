@@ -4,7 +4,7 @@ func _ready():
 	$Sprite/AnimationPlayer.play("Robo")
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("cena") && Classglobal.oracle == true:
+	if Input.is_action_just_pressed("cena") && Classglobal.oracle == true && Classglobal.quizf = false:
 		Classglobal.frozen = true
 		$RichTextLabel.visible = false
 		Classglobal.quiz = true

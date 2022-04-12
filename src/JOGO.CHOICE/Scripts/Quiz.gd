@@ -66,6 +66,7 @@ func _on_Button4_pressed():
 		$Buttons.visible = false
 		Classglobal.quiz = false
 	elif respondeu == 1:
+		Classglobal.quizf = true
 		$RichTextLabel.text = "Você Acertou!!, passe pelo portal!"
 		$Buttons.visible = false
 		Classglobal.frozen = false

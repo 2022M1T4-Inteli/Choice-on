@@ -16,15 +16,13 @@
 [ext_resource path="res://Cenas/coin.tscn" type="PackedScene" id=14]
 [ext_resource path="res://sprites/placa.ir.png" type="Texture" id=15]
 [ext_resource path="res://sprites/placa.nãoir1.png" type="Texture" id=16]
+[ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=17]
 [ext_resource path="res://Cenas/portal.tscn" type="PackedScene" id=20]
-
-[sub_resource type="DynamicFontData" id=7]
-font_path = "res://sprites/VCR_OSD_MONO_1.001.ttf"
 
 [sub_resource type="DynamicFont" id=8]
 size = 72
 outline_color = Color( 1, 0, 0, 1 )
-font_data = SubResource( 7 )
+font_data = ExtResource( 17 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 8772.5, 327.75 )
@@ -56,10 +54,10 @@ __meta__ = {
 position = Vector2( 455, 1422 )
 
 [node name="Label" type="Label" parent="Cenario"]
-margin_left = 6577.0
-margin_top = 2347.0
-margin_right = 7039.0
-margin_bottom = 2445.0
+margin_left = 6551.0
+margin_top = 2349.0
+margin_right = 7013.0
+margin_bottom = 2447.0
 custom_colors/font_color = Color( 0.0509804, 0, 0.952941, 1 )
 custom_fonts/font = SubResource( 8 )
 text = "CHECKPOINT!"
@@ -70,19 +68,19 @@ __meta__ = {
 }
 
 [node name="Placair" type="Sprite" parent="Cenario"]
-position = Vector2( 865, 2499 )
-scale = Vector2( 0.1, 0.1 )
+position = Vector2( 884.858, 2483.07 )
+scale = Vector2( 0.154631, 0.154631 )
 texture = ExtResource( 15 )
 
 [node name="Placair2" type="Sprite" parent="Cenario"]
-position = Vector2( 8509, 2371 )
-scale = Vector2( 0.1, 0.1 )
+position = Vector2( 8501, 2358 )
+scale = Vector2( 0.151201, 0.151201 )
 texture = ExtResource( 15 )
 
 [node name="Placair3" type="Sprite" parent="Cenario"]
-position = Vector2( 8601, 2448 )
+position = Vector2( 8614.89, 2465.32 )
 rotation = 1.5708
-scale = Vector2( 0.1, 0.1 )
+scale = Vector2( 0.14765, 0.14765 )
 texture = ExtResource( 15 )
 
 [node name="Placanãoir1" type="Sprite" parent="Cenario"]
