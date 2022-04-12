@@ -20,7 +20,7 @@ func _physics_process(delta):
 	if is_on_wall(): #se colidir com uma parede ela deixa de existir
 		queue_free()
 
-	if is_on_floor(): #permite a bolinha quicar 5 vezes
+	if is_on_floor(): #permite a bolinha quicar 5 vezes depois deixar de existir
 		if bounces < 5:
 			motion.y = BOUNCE
 			bounces += 1
