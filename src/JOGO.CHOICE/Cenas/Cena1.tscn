@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Cenas/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -36,10 +36,16 @@ extents = Vector2( 7816.5, 62.5 )
 extents = Vector2( 125, 3141 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 86.375, 584.75 )
+extents = Vector2( 86.375, 573.875 )
 
 [sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 310.5, 28.25 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 734.75, 82 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 809, 50 )
 
 [node name="Cena1" type="Node2D"]
 position = Vector2( 4, 2 )
@@ -362,12 +368,24 @@ position = Vector2( -20, 55 )
 shape = SubResource( 6 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Fallzones/StaticBody2D"]
-position = Vector2( 1342.63, -1468 )
+position = Vector2( 1342.63, -1457.13 )
 shape = SubResource( 9 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Fallzones/StaticBody2D"]
 position = Vector2( 14797, -928.75 )
 shape = SubResource( 10 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Fallzones/StaticBody2D"]
+position = Vector2( 689, -1949 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Fallzones/StaticBody2D"]
+position = Vector2( 10183.3, -2383 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Fallzones/StaticBody2D"]
+position = Vector2( 12110, -1088 )
+shape = SubResource( 12 )
 
 [node name="Sprites" type="Node2D" parent="."]
 visible = false
