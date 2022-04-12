@@ -1,8 +1,9 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Cenas/Player.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://Scripts/PlayerMinigame.gd" type="Script" id=2]
 [ext_resource path="res://sprites/red.png" type="Texture" id=3]
+[ext_resource path="res://Cenas/quizz.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Cenas/Inventario.tscn" type="PackedScene" id=5]
 [ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Scripts/RichTextLabelFase1.gd" type="Script" id=7]
@@ -10,7 +11,6 @@
 [ext_resource path="res://sprites/itens/moeda/ezgif.com-gif-maker (3).png" type="Texture" id=9]
 [ext_resource path="res://sprites/dialog.png" type="Texture" id=10]
 [ext_resource path="res://sprites/Artefato.png" type="Texture" id=11]
-
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 23.5
@@ -60,7 +60,7 @@ shape = SubResource( 1 )
 scale = Vector2( 0.133824, 0.13395 )
 frames = ExtResource( 1 )
 animation = "andar"
-frame = 2
+frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -91,6 +91,14 @@ texture = ExtResource( 3 )
 wait_time = 0.7
 one_shot = true
 
+[node name="Quizz" parent="." instance=ExtResource( 4 )]
+visible = false
+margin_left = -6.0
+margin_top = -338.0
+margin_right = -6.0
+margin_bottom = -338.0
+rect_scale = Vector2( 1.2, 1.4 )
+
 [node name="inventario" parent="." instance=ExtResource( 5 )]
 visible = false
 position = Vector2( -7, -51 )
@@ -110,7 +118,10 @@ __meta__ = {
 [node name="RichTextLabel" type="RichTextLabel" parent="Control2/Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -25.0
+margin_left = 14.0
+margin_top = -47.0
+margin_right = 14.0
+margin_bottom = -22.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 4 )
 custom_styles/normal = SubResource( 5 )

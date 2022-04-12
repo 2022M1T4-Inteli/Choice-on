@@ -11,7 +11,7 @@ func _physics_process(delta):
 
 
 func _on_Area2D_body_entered(body):
-	if Classglobal.numberArtifacts == 5:
+	if Classglobal.numberArtifacts == 5 && Classglobal.quizf == false:
 		$RichTextLabel.visible = true
 		Classglobal.oracle = true
 

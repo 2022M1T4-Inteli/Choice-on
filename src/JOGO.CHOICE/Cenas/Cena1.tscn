@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Cenas/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://Cenas/Artefato.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Cenas/MobSpawner.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Cena1.gd" type="Script" id=7]
-[ext_resource path="res://Cenas/quizz.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Cenas/checkpoint.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Cenas/oraculo.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Cenas/MobSpawner_One.tscn" type="PackedScene" id=11]
@@ -295,7 +294,7 @@ position = Vector2( 13199, 1680 )
 position = Vector2( 14254, 3394 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 227, 3091 )
+position = Vector2( 141, 3077 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( 0, -16 )
@@ -315,13 +314,6 @@ limit_left = -15
 limit_top = -40
 limit_right = 17600
 limit_bottom = 0
-
-[node name="Quizz" parent="Player" instance=ExtResource( 8 )]
-visible = false
-margin_left = 47.0
-margin_top = -237.0
-margin_right = 47.0
-margin_bottom = -237.0
 
 [node name="Fallzones" type="Node2D" parent="."]
 __meta__ = {

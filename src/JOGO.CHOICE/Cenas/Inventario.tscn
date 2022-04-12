@@ -3,7 +3,6 @@
 [ext_resource path="res://Scripts/inventario.gd" type="Script" id=1]
 [ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
 
-
 [sub_resource type="DynamicFont" id=4]
 size = 35
 font_data = ExtResource( 2 )
@@ -68,9 +67,9 @@ margin_bottom = -4.0
 scrolling_enabled = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Artefato_1"]
-margin_left = 46.0
-margin_top = 16.0
-margin_right = 1230.0
+margin_left = 29.0
+margin_top = 8.0
+margin_right = 1270.0
 margin_bottom = 875.0
 custom_fonts/normal_font = SubResource( 1 )
 text = "Aqui aparecerão as informações que você obter ao coletar artefatos no minigame!"
