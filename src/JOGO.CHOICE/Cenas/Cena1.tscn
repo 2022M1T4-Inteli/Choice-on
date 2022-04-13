@@ -362,6 +362,8 @@ shape = SubResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Fallzones"]
 position = Vector2( -43, 3037 )
+collision_layer = 2
+collision_mask = 21
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fallzones/StaticBody2D"]
 position = Vector2( -20, 55 )
