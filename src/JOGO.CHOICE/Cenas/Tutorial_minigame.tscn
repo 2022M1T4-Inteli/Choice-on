@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Tutorial_minigame.gd" type="Script" id=2]
@@ -9,10 +9,11 @@
 [ext_resource path="res://sprites/fontes/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://sprites/céu.jpg" type="Texture" id=11]
 
-
-
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 56.5201, 212.5 )
+
+[sub_resource type="RectangleShape2D" id=23]
+extents = Vector2( 2320.78, 68.4848 )
 
 [sub_resource type="DynamicFont" id=13]
 size = 25
@@ -116,6 +117,10 @@ shape = SubResource( 6 )
 position = Vector2( 1564.31, -138.182 )
 scale = Vector2( 1.252, 200 )
 shape = SubResource( 6 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Node2D/Area2D"]
+position = Vector2( -472.168, -1981.21 )
+shape = SubResource( 23 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Node2D"]
 margin_left = 517.0
