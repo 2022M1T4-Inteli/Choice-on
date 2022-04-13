@@ -61,6 +61,7 @@ func _physics_process(delta):
 
 	motion.x = lerp(motion.x,0,0.5) # Lerp permite a nice gliding stop |||
 
+#funcao para permitir o instance de uma fireball, utliza as variaveis direction, tiro e motion
 func fire():
 	var direction = 1 if not $Sprite_Player.flip_h else -1
 	if Input.is_action_just_pressed("fireball"):
@@ -70,6 +71,7 @@ func fire():
 		tiro.position.x = position.x + 25
 		tiro.position.y = position.y
 
+#funcao que aplica a gravidade ao player e reseta as variaveis countjump e side
 func a_gravity():
 	if is_on_floor():
 		countJump = 0
@@ -78,15 +80,18 @@ func a_gravity():
 	else:
 		motion.y += GRAVITY
 
+#funcao ativada caso o player pule em um mob e o elimine, utiliza a variavel motion
 func bounce():
 	motion.y = - 500
 
+#funcao que contabiliza os danos causados por mobs ao player e muda sua cor, utiliza as variaveis Scene e lives
 func ouch():
 	if Classglobal.Scene == "Cena 1":
 		Classglobal.lives -= 1
 	set_modulate(Color(1.5,0.3,0.3,0.4))
 	$Timer.start()
 
+#funcao que permite a visibilidade e atualizacao dos assets planejados para o minigame, utiliza a variavel Scene
 func assets():
 	if Classglobal.Scene == "Cena 1":
 		$Control2/vida_moeda/moeda.text = str(Classglobal.coins) 
@@ -95,6 +100,7 @@ func assets():
 		
 		$Control2/vida_moeda/n_artefatos.text = str(Classglobal.numberArtifacts) + '/5'
 
+#as funcoes fallzone reconhecem que o player caiu e recomeca a fase com menos vida, utiliza a variavel lives
 func _on_Fallzone1_body_entered(body):
 	get_tree().change_scene("res://Cenas/Cena1.tscn") 
 	Classglobal.lives -= 1

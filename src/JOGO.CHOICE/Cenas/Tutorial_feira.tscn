@@ -10,7 +10,6 @@
 [ext_resource path="res://Scripts/seta.gd" type="Script" id=12]
 [ext_resource path="res://sprites/tutorial_feira/caminhozin.tres" type="TileSet" id=14]
 
-
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 5 ) ],
@@ -43,11 +42,11 @@ scale = Vector2( 1.47432, 1.60972 )
 texture = ExtResource( 6 )
 
 [node name="setas" type="AnimatedSprite" parent="Node2D"]
-position = Vector2( 840, 124 )
+position = Vector2( 1037, 122 )
 scale = Vector2( 3.83858, 3.51389 )
 frames = SubResource( 5 )
 animation = "setas"
-frame = 5
+frame = 3
 playing = true
 script = ExtResource( 12 )
 
@@ -97,9 +96,9 @@ position = Vector2( 920, 395 )
 scale = Vector2( 0.64, 0.56 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Node2D"]
-margin_left = 73.0
+margin_left = 92.0
 margin_top = 66.0
-margin_right = 713.0
+margin_right = 732.0
 margin_bottom = 193.0
 custom_colors/default_color = Color( 1, 1, 1, 1 )
 custom_fonts/normal_font = SubResource( 27 )

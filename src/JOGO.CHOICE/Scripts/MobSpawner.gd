@@ -5,7 +5,7 @@ var rand = RandomNumberGenerator.new()
 
 func _ready():
 	pass
-
+#funcao que spawna mobs com um unico eixo y mas variando o eixo x, utiliza as variáveis enemyScene, enemy e x
 func _on_Timer_timeout():
 #	print(limite)
 #	if limite != 0:

@@ -1,5 +1,5 @@
 extends Node
-
+#variaveis utilizadas ao longe do processo
 var frozen = false
 
 var Scene 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Cenas/WorldCena1.tres" type="TileSet" id=1]
 [ext_resource path="res://Cenas/Player.tscn" type="PackedScene" id=2]
@@ -46,6 +46,9 @@ extents = Vector2( 734.75, 82 )
 
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 809, 50 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 9995.5, 84 )
 
 [node name="Cena1" type="Node2D"]
 position = Vector2( 4, 2 )
@@ -409,6 +412,10 @@ shape = SubResource( 11 )
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="Fallzones/StaticBody2D"]
 position = Vector2( 12110, -1088 )
 shape = SubResource( 12 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Fallzones/StaticBody2D"]
+position = Vector2( 9242.5, 4012 )
+shape = SubResource( 13 )
 
 [node name="Sprites" type="Node2D" parent="."]
 visible = false
