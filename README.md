@@ -22,7 +22,7 @@ O jogo se desenrola em um ambiente escolar (feira de ciências), onde o jogador 
 <br><br>
 <p align="center">
 <img src="https://github.com/2022M1T4/Projeto1/blob/main/images/Choice%20on.jpeg?raw=true" alt="NOME DO JOGO" border="0">
-  Logo Choice On by Joao Gonzalez
+  Logo Choice On by Future Minds
 
 
 💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
@@ -87,9 +87,7 @@ Este modelo pode ser copiado e utilizado à vontade.
 Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
 
 ## 💻 Configuração para Desenvolvimento
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
+  
 Para abrir este projeto você necessita das seguintes ferramentas:
 
 -<a href="https://godotengine.org/download">GODOT</a>
@@ -103,7 +101,7 @@ npm test
 
 A cada atualização os detalhes devem ser lançados aqui.
   
-Data/Pessoa que alterou/Versão
+Data/Entrega/Versão
   
 18/02 Primeira entrega 1.0<br>
 Feira de profissões com um personagem conseguindo andar pela quadra<br>
@@ -117,7 +115,7 @@ Foi criado um mapa maior no minigame de plataforma já com moedas e artefatos, c
 01/04 Quarta entrega 4.0<br>
 Trocamos as sprites do jogo, colocamos o sistema de dano, implementamos as fireballs, minimapa, inventários e todos os diálogos necessários (Diretor na feira de profissões, professor na tenda e artefatos ao longo do jogo) <br>
   
-22/03 Allan Casado 5.0<br>
+14/04 Entrega final 5.0<br>
 Adição de um checkpoint, criação de uma bomba que elimina duas respostas erradas no quiz, criação de tutoriais para a feira e o minigame, melhora nas artes do jogo e refinamento da user experience no jogo com adição de placas que dão um direcionamento durante o minijogo<br>
 
 
