@@ -29,7 +29,7 @@ O jogo se desenrola em um ambiente escolar (feira de ciências), onde o jogador 
 <br><br>
 O objetivo do jogo é instruir sobre os cursos de bacharelado do Inteli, principalmente sobre as diferenças entre eles, tanto no que se refere a parte técnica, quanto às possíveis áreas de atuação e possibilidades dos profissionais formados nesses cursos. 
 <br><br>
-O jogo foi desenvolvido com o fito de ampliar o espectro de interessados na graduação na área da computação em relação às áreas de tecnologia e sua possível atuação no mercado de trabalho, assim, poderá ajudar o jogador a escolher um dos cursos para si, considerando suas habilidades e gostos.
+O jogo foi desenvolvido com o principal objetivo de auxiliar os alunos que possuem interesse em cursar algum dos quatro cursos oferecidos pelo Inteli mas não sabem ao certo qual dos cursos escolher. O jogo Choice On oferece explicações sobre as diferenças e semelhanças entre os cursos de maneira leve e lúdica, com o objetivo de sanar as dúvidas dos alunos interessados nesses bacharelados. 
 <br><br>
 
 ## 🛠 Estrutura de pastas
@@ -105,38 +105,20 @@ A cada atualização os detalhes devem ser lançados aqui.
   
 Data/Pessoa que alterou/Versão
   
-19/02 Future Minds 1.0<br>
-Documentamos as ideias iniciais do jogo, qual o conceito, objetivos, diferenciais. Além disso, documentamos a persona e os requisitos coletados na entrevista com o usuário.<br>
+18/02 Primeira entrega 1.0<br>
+Feira de profissões com um personagem conseguindo andar pela quadra<br>
   
-05/03 Bianca Casemiro 2.0<br>
-Documentamos conceitos mais detalhados sobre o jogo, como o fluxo do jogo, quais serão as mecânicas envolvidas, qual será navegação pelo mundo, aspectos da história. Além disso, definimos as funções matemáticas envolvidas no jogo.  <br>
+04/03 Segunda entrega 2.0<br>
+Adicionada a tenda com o professor, ainda sem diálogo, e a primeira versão do minigame de plataforma com um mapa básico e sem inimigos ainda <br>
 
-10/03 Camila e Gabriela 3.0<br>
-Foi feita uma tabela de qualidade de software do jogo.<br>
+18/03 Tercecira entrega 3.0<br>
+Foi criado um mapa maior no minigame de plataforma já com moedas e artefatos, colocado os inimigos, ainda sem sistema de dano, implementados o oráculo com o quiz e o diretor na feira de profissões<br>
 
-16/03 João lucas  4.0<br>
-Alguns pontos do GDD foram atualizado. <br>
+01/04 Quarta entrega 4.0<br>
+Trocamos as sprites do jogo, colocamos o sistema de dano, implementamos as fireballs, minimapa, inventários e todos os diálogos necessários (Diretor na feira de profissões, professor na tenda e artefatos ao longo do jogo) <br>
   
 22/03 Allan Casado 5.0<br>
-Foi feita a descrição do Value proposition.<br>
-  
-24/03 Allan Casado 6.0<br>
-Foi refeita a parte de requisitos funcionais e requisitos não funcionais.<br>
-  
-25/03 Allan Casado 7.0<br>
-Adição de 3 user stories e atualização do status da game story.<br>
-  
-30/03 João Lucas 8.0<br>
-Foi documentada a playtest, que foi feita por meio de teste com os usuários que jogaram o jogo. Apresentamos o jogo para os testers e coletamos feedbacks.<br>
-  
-05/04 Henri e Pedro Romão  9.0<br>
-Revisaram a seção 6.4.<br>
-  
-08/04 João Lucas 10.0<br>
-Revisou todas as seções do gdd, corrigindo a gramática. Além disso, alterou a estrutura da documentação dos testes de usabilidade (playtest).<br>
-  
-09/04 Allan Casado 11.0<br>
-Preenchimento da seção 2.4 do GDD.<br>
+Adição de um checkpoint, criação de uma bomba que elimina duas respostas erradas no quiz, criação de tutoriais para a feira e o minigame, melhora nas artes do jogo e refinamento da user experience no jogo com adição de placas que dão um direcionamento durante o minijogo<br>
 
 
 ## 📋 Licença/License
