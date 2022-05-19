@@ -43,12 +43,13 @@ O jogo foi desenvolvido com o principal objetivo de auxiliar os alunos que possu
 - Raiz<br><br>
 | --> documentos<br>
   &emsp;| --> antigos<br>
-  &emsp;|  GDD_T4_M1_G1_Future_Minds_Inteli_Choice_On_v_1_0.PDF<br>
+  &emsp;|--> GDD_T4_M1_G1_Future_Minds_Inteli_Choice_On_v_1_0.PDF.docx.pdf
 | --> executáveis<br>
   &emsp;| --> windows<br>
   &emsp;| --> html<br>
 | --> imagens<br>
 | --> src<br>
+  &emsp;| --> JOGO.CHOICE
 | readme.md<br>
 
 A pasta raiz contém um arquivo principal:
